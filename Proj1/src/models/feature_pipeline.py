@@ -1,4 +1,11 @@
 
+from sklearn.base import BaseEstimator, TransformerMixin
+from pathlib import Path
+import pickle
+from sklearn.pipeline import Pipeline
+import pandas as pd
+
+
 class FeaturePipeline(BaseEstimator, TransformerMixin):
     """
     Custom feature engineering transformer.
@@ -39,3 +46,5 @@ class FeaturePipeline(BaseEstimator, TransformerMixin):
         Useful for MI score calculations.
         """
         pass
+
+
