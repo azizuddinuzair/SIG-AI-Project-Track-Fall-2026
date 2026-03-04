@@ -5,7 +5,7 @@ Useful for validating feature engineering logic and exploring archetypes.
 
 import pathlib
 import pandas as pd
-from feature_engineering import calculate_all_features
+from Proj1.scripts.creating_csv.feature_engineering import calculate_all_features
 
 
 def test_pokemon_features(pokemon_names, csv_path=None):
@@ -14,11 +14,11 @@ def test_pokemon_features(pokemon_names, csv_path=None):
     
     Args:
         pokemon_names: List of Pokemon names to test (lowercase)
-        csv_path: Optional path to CSV file. Defaults to ../data/all_pokemon_stats.csv
+        csv_path: Optional path to CSV file. Defaults to ../data/test/fully_evolved_pokemon_stats.csv
     """
     if csv_path is None:
         data_folder = pathlib.Path(__file__).resolve().parents[1] / "data"
-        csv_path = data_folder / "all_pokemon_stats.csv"
+        csv_path = data_folder / "test" / "fully_evolved_pokemon_stats.csv"
     
     # Load and process data
     df = pd.read_csv(csv_path)
@@ -58,12 +58,30 @@ def test_pokemon_features(pokemon_names, csv_path=None):
                pokemon['special-attack'] + pokemon['special-defense'] + pokemon['speed'])
         print(f"  Base Stat Total: {bst:.0f}")
         
-        print(f"\nEngineered Features:")
+        print(f"\nEngineered Features (Core Stats):")
         print(f"  Offensive Index:        {pokemon['offensive_index']:6.1f}")
         print(f"  Defensive Index:        {pokemon['defensive_index']:6.1f}")
         print(f"  Speed Percentile:       {pokemon['speed_percentile']:6.3f}")
         print(f"  Physical/Special Bias:  {pokemon['physical_special_bias']:6.3f}")
-        print(f"  Bulk-to-Speed Ratio:    {pokemon['bulk_to_speed_ratio']:6.3f}")
+        
+        # Show type defense profile (strengths and weaknesses)
+        type_names = ['normal', 'fire', 'water', 'grass', 'electric', 'ice', 'fighting',
+                      'poison', 'ground', 'flying', 'psychic', 'bug', 'rock', 'ghost',
+                      'dragon', 'dark', 'steel', 'fairy']
+        
+        resists = []  # 0.5x damage
+        weaks = []    # 2.0x damage
+        
+        for type_name in type_names:
+            multiplier = pokemon[f'type_defense_{type_name}']
+            if multiplier == 0.5:
+                resists.append(type_name)
+            elif multiplier == 2.0:
+                weaks.append(type_name)
+        
+        print(f"\nType Defense Profile (18D):")
+        print(f"  Resists ({len(resists)}):  {', '.join(resists) if resists else 'None'}")
+        print(f"  Weak to ({len(weaks)}):    {', '.join(weaks) if weaks else 'None'}")
     
     # Summary
     print("\n" + "=" * 80)
@@ -83,7 +101,7 @@ def compare_pokemon(pokemon_names, csv_path=None):
     """
     if csv_path is None:
         data_folder = pathlib.Path(__file__).resolve().parents[1] / "data"
-        csv_path = data_folder / "all_pokemon_stats.csv"
+        csv_path = data_folder / "test" / "fully_evolved_pokemon_stats.csv"
     
     df = pd.read_csv(csv_path)
     df_with_features = calculate_all_features(df)
@@ -95,12 +113,12 @@ def compare_pokemon(pokemon_names, csv_path=None):
         print("⚠️  None of the specified Pokemon were found")
         return
     
-    # Select columns to display
+    # Select columns to display (core features only for readability)
     display_cols = [
         "name", "type1", "type2", "hp", "attack", "defense", 
         "special-attack", "special-defense", "speed",
         "offensive_index", "defensive_index", "speed_percentile",
-        "physical_special_bias", "bulk_to_speed_ratio"
+        "physical_special_bias"
     ]
     
     pd.set_option('display.max_columns', None)

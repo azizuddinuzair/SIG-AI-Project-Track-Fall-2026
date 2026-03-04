@@ -68,8 +68,8 @@ def build_all_pokemon_dataframe():
     return df
 
 if __name__ == "__main__":
-    # Data Folder: ../data (relative to this script)
-    data_folder = pathlib.Path(__file__).resolve().parents[1] / "data"
+    # Data Folder: ../../../data (scripts moved to creating_csv subfolder)
+    data_folder = pathlib.Path(__file__).resolve().parents[2] / "data"
     if not data_folder.exists():
         data_folder.mkdir()
 
