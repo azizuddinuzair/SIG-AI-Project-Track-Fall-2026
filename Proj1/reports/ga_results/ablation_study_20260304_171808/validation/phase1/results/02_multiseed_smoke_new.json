@@ -1,0 +1,26 @@
+{
+  "test": "Multi-Seed Validation",
+  "num_seeds": 1,
+  "seeds": [
+    42
+  ],
+  "successful_runs": 1,
+  "failed_runs": 0,
+  "run_details": [
+    {
+      "seed": 42,
+      "best_fitness": 0.7166509244929442,
+      "best_team": "kyogre,groudon,flutter-mane,stakataka,miraidon,blaziken",
+      "convergence_generation": 14,
+      "elapsed_seconds": 21.549306631088257,
+      "final_population_std": 0.01171418993843641
+    }
+  ],
+  "mean_fitness": 0.7166509244929442,
+  "max_fitness": 0.7166509244929442,
+  "min_fitness": 0.7166509244929442,
+  "std_fitness": null,
+  "std_percent": null,
+  "verdict": "[INCONCLUSIVE] Too many failures or seeds",
+  "interpretation": "Only 1 successful runs. Need more data."
+}

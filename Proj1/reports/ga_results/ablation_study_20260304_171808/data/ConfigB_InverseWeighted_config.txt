@@ -1,0 +1,30 @@
+Configuration: ConfigB_InverseWeighted
+============================================================
+
+population:
+  size: 150
+  generations: 250
+  tournament_k: 3
+  elitism: 5
+
+fitness:
+  base_stats_weight: 0.4
+  type_coverage_weight: 0.3
+  synergy_weight: 0.15
+  diversity_weight: 0.0
+  imbalance_lambda: 0.0
+  weakness_lambda: 0.1
+
+initialization:
+  method: inverse
+
+mutation:
+  rate: 0.15
+  weighted: True
+
+crossover:
+  rate: 0.8
+  type: two_point
+
+random_seed: 42
+name: ConfigB_InverseWeighted

@@ -1,0 +1,218 @@
+{
+  "phase": "Phase 2 - Ablation & Sensitivity",
+  "strategy": "Runtime-optimized (100 pop \u00d7 100 gen, fixed seed=42)",
+  "date": "2026-03-04T22:39:28.234247",
+  "num_pokemon": 535,
+  "experiments": {
+    "entropy_sweep": {
+      "experiment": "entropy_sweep",
+      "runs": [
+        {
+          "experiment": "entropy_sweep",
+          "diversity_weight": 0.5,
+          "best_fitness": 1.0902245571114075,
+          "best_team": "regirock,lunala,eternatus,venusaur,zamazenta,zekrom",
+          "convergence_generation": 5,
+          "elapsed_seconds": 60.99415421485901,
+          "final_population_std": 0.026166551298952047
+        },
+        {
+          "experiment": "entropy_sweep",
+          "diversity_weight": 0.35,
+          "best_fitness": 0.9139183861714436,
+          "best_team": "nihilego,hoopa,xerneas,manaphy,zamazenta,zekrom",
+          "convergence_generation": 5,
+          "elapsed_seconds": 61.17739963531494,
+          "final_population_std": 0.02090679355890253
+        },
+        {
+          "experiment": "entropy_sweep",
+          "diversity_weight": 0.25,
+          "best_fitness": 0.8357493029731384,
+          "best_team": "regirock,roserade,flutter-mane,mewtwo,zamazenta,zekrom",
+          "convergence_generation": 5,
+          "elapsed_seconds": 100.27630400657654,
+          "final_population_std": 0.030308670330925422
+        },
+        {
+          "experiment": "entropy_sweep",
+          "diversity_weight": 0.15,
+          "best_fitness": 0.7334396128221321,
+          "best_team": "venusaur,groudon,flutter-mane,stakataka,zekrom,mewtwo",
+          "convergence_generation": 5,
+          "elapsed_seconds": 96.29456186294556,
+          "final_population_std": 0.02850564359876154
+        },
+        {
+          "experiment": "entropy_sweep",
+          "diversity_weight": 0.1,
+          "best_fitness": 0.668140466904783,
+          "best_team": "regirock,groudon,flutter-mane,vileplume,mew,zekrom",
+          "convergence_generation": 5,
+          "elapsed_seconds": 809.5801539421082,
+          "final_population_std": 0.029441797988075183
+        }
+      ]
+    },
+    "ablation_tests": {
+      "experiment": "ablation_tests",
+      "runs": [
+        {
+          "experiment": "ablation_test",
+          "test_name": "baseline_full",
+          "best_fitness": 0.7334396128221321,
+          "best_team": "venusaur,groudon,flutter-mane,stakataka,zekrom,mewtwo",
+          "convergence_generation": 5,
+          "elapsed_seconds": 96.52685022354126,
+          "final_population_std": 0.02850564359876154
+        },
+        {
+          "experiment": "ablation_test",
+          "test_name": "no_entropy",
+          "best_fitness": 0.5885649358811729,
+          "best_team": "polteageist,groudon,volcanion,zekrom,eternatus,zacian",
+          "convergence_generation": 5,
+          "elapsed_seconds": 1163.600445985794,
+          "final_population_std": 0.03687874025400918
+        },
+        {
+          "experiment": "ablation_test",
+          "test_name": "no_balance_penalty",
+          "best_fitness": 0.7194703847242933,
+          "best_team": "ho-oh,groudon,flutter-mane,eternatus,serperior,zekrom",
+          "convergence_generation": 5,
+          "elapsed_seconds": 105.38272356987,
+          "final_population_std": 0.024409491539151625
+        },
+        {
+          "experiment": "ablation_test",
+          "test_name": "no_weakness_penalty",
+          "best_fitness": 0.8171553351576414,
+          "best_team": "lunala,groudon,flutter-mane,zarude,zapdos,stakataka",
+          "convergence_generation": 5,
+          "elapsed_seconds": 74.950608253479,
+          "final_population_std": 0.03447006412214155
+        },
+        {
+          "experiment": "ablation_test",
+          "test_name": "uniform_init_no_diversity",
+          "best_fitness": 0.7004388259352716,
+          "best_team": "lugia,zekrom,eternatus,zarude,koraidon,sandy-shocks",
+          "convergence_generation": 5,
+          "elapsed_seconds": 60.177483558654785,
+          "final_population_std": 0.027910441395279418
+        }
+      ]
+    },
+    "init_sensitivity": {
+      "experiment": "init_sensitivity",
+      "runs": [
+        {
+          "experiment": "init_sensitivity",
+          "init_method": "uniform",
+          "best_fitness": 0.7177537414224864,
+          "best_team": "stakataka,volcanion,lunala,xerneas,blissey,raikou",
+          "convergence_generation": 5,
+          "elapsed_seconds": 101.01835536956787,
+          "final_population_std": 0.0
+        },
+        {
+          "experiment": "init_sensitivity",
+          "init_method": "inverse",
+          "best_fitness": 0.7507549978281073,
+          "best_team": "eternatus,bewear,lunala,regirock,kyogre,miraidon",
+          "convergence_generation": 5,
+          "elapsed_seconds": 98.56230688095093,
+          "final_population_std": 0.040181086556601034
+        },
+        {
+          "experiment": "init_sensitivity",
+          "init_method": "sqrt_weighted",
+          "best_fitness": 0.7334396128221321,
+          "best_team": "venusaur,groudon,flutter-mane,stakataka,zekrom,mewtwo",
+          "convergence_generation": 5,
+          "elapsed_seconds": 98.74055433273315,
+          "final_population_std": 0.02850564359876154
+        }
+      ]
+    },
+    "neighbor_sampling": {
+      "experiment": "neighbor_sampling",
+      "positions": [
+        {
+          "position": 0,
+          "pokemon": "baxcalibur",
+          "archetype": "Balanced All-Rounder",
+          "sample_size": 50,
+          "original_fitness": 0.7323711133754189,
+          "max_neighbor_fitness": 0.7373333425506828,
+          "min_neighbor_fitness": 0.653327246076417,
+          "mean_neighbor_fitness": 0.6974215920660484,
+          "max_delta": 0.004962229175263899,
+          "peak_sharpness": "high"
+        },
+        {
+          "position": 1,
+          "pokemon": "groudon",
+          "archetype": "Generalist",
+          "sample_size": 50,
+          "original_fitness": 0.7323711133754189,
+          "max_neighbor_fitness": 0.7304903356535801,
+          "min_neighbor_fitness": 0.6266611917534657,
+          "mean_neighbor_fitness": 0.6709661898073109,
+          "max_delta": -0.001880777721838811,
+          "peak_sharpness": "high"
+        },
+        {
+          "position": 2,
+          "pokemon": "flutter-mane",
+          "archetype": "Defensive Pivot",
+          "sample_size": 43,
+          "original_fitness": 0.7323711133754189,
+          "max_neighbor_fitness": 0.7323711133754189,
+          "min_neighbor_fitness": 0.619713219667901,
+          "mean_neighbor_fitness": 0.6749360761227235,
+          "max_delta": 0.0,
+          "peak_sharpness": "high"
+        },
+        {
+          "position": 3,
+          "pokemon": "stakataka",
+          "archetype": "Defensive Wall",
+          "sample_size": 33,
+          "original_fitness": 0.7323711133754189,
+          "max_neighbor_fitness": 0.7323711133754189,
+          "min_neighbor_fitness": 0.6520643965056466,
+          "mean_neighbor_fitness": 0.6843651526030172,
+          "max_delta": 0.0,
+          "peak_sharpness": "high"
+        },
+        {
+          "position": 4,
+          "pokemon": "miraidon",
+          "archetype": "Speed Sweeper",
+          "sample_size": 35,
+          "original_fitness": 0.7323711133754189,
+          "max_neighbor_fitness": 0.7323711133754189,
+          "min_neighbor_fitness": 0.6517039856713271,
+          "mean_neighbor_fitness": 0.691031860224474,
+          "max_delta": 0.0,
+          "peak_sharpness": "high"
+        },
+        {
+          "position": 5,
+          "pokemon": "mewtwo",
+          "archetype": "Fast Attacker",
+          "sample_size": 50,
+          "original_fitness": 0.7323711133754189,
+          "max_neighbor_fitness": 0.7323711133754189,
+          "min_neighbor_fitness": 0.6672823819793886,
+          "mean_neighbor_fitness": 0.6967851991428462,
+          "max_delta": 0.0,
+          "peak_sharpness": "high"
+        }
+      ]
+    }
+  },
+  "elapsed_seconds": 2929.0211448669434
+}

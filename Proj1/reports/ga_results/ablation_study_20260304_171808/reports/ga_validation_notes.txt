@@ -1,0 +1,51 @@
+GA Research & Testing Learnings (Mar 4, 2026)
+
+Context
+- Project: Pokemon GA team optimization
+- Goal: verify optimization quality, prevent metric drift, and lock practical config choices
+
+What we tested
+1) Phase 3 system validation
+- Random baseline comparison (GA vs random sampling)
+- Local-optimum sharpness using neighbor swaps
+- Entropy overfitting check
+- Fitness component scaling checks
+- Multi-seed stability checks
+
+2) Phase 2 ablation and sensitivity
+- Entropy/diversity weight sensitivity sweep
+- Component ablation (remove individual terms)
+- Initialization method sensitivity
+- Additional neighborhood robustness probes
+
+3) Final short validation run
+- Config: inverse initialization, entropy enabled, weakness_lambda = 0
+- Quick stability with 2 seeds
+
+Critical engineering practices learned
+- Single source of truth for config access is essential (nested keys must be used consistently).
+- Always re-compute fitness from team + config and assert equality against stored best fitness.
+- Added strict consistency tolerance: 1e-6 to catch silent drift early.
+- Use deep copy for nested config mutations inside experiments.
+
+Key findings
+- GA consistently beats random baseline (material gap).
+- Entropy/diversity term is important; removing it causes large fitness drop.
+- Weakness penalty (as previously tuned) is net harmful; setting weakness_lambda=0 improved outcomes.
+- Inverse archetype initialization performs best among tested initialization strategies.
+- Stability across seeds is strong under the selected setup.
+
+Final quick validation outcome (40 pop, 30 generations, 2 seeds)
+- Mean best fitness: 0.7540
+- Std dev: 0.003808
+- CV: 0.51%
+- Avg unique types in best teams: 5.5
+- Fitness consistency assertion: PASS
+
+Practical takeaway
+- Recommended baseline config for next iteration:
+  - initialization.method = inverse
+  - fitness.diversity_weight = 0.15
+  - fitness.weakness_lambda = 0.0
+  - mutation.weighted = true
+- Next high-value improvement is team-aware mutation pressure (underrepresented archetypes within a team), then re-validate.

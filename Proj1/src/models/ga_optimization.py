@@ -57,7 +57,7 @@ class PokemonGA:
         self.fitness_scores = []
         self.fitness_history = []
         
-        print(f"🧬 GA Initialized:")
+        print(f"[GA] GA Initialized:")
         print(f"   Config: {config['name']}")
         print(f"   Population: {config['population']['size']}")
         print(f"   Generations: {config['population']['generations']}")
@@ -525,7 +525,7 @@ def load_pokemon_data() -> pd.DataFrame:
         raise FileNotFoundError(f"Missing clustered data: {data_path}")
     
     df = pd.read_csv(data_path)
-    print(f"📂 Loaded {len(df)} Pokémon from: {data_path.name}")
+    print(f"[DATA] Loaded {len(df)} Pokemon from: {data_path.name}")
     
     # Verify required columns
     required_cols = ['name', 'archetype', 'cluster', 'offensive_index', 'defensive_index']

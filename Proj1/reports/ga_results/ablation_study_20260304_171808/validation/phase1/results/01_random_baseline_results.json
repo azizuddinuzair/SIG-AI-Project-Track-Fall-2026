@@ -1,0 +1,15 @@
+{
+  "test": "Random Baseline",
+  "num_samples": 100000,
+  "elapsed_seconds": 166.54919576644897,
+  "configc_best_fitness": 0.7323711133754189,
+  "configc_best_team": "baxcalibur,groudon,flutter-mane,stakataka,miraidon,mewtwo",
+  "random_mean_fitness": 0.38090012456817696,
+  "random_max_fitness": 0.6632264274449207,
+  "random_min_fitness": -0.17272275516312457,
+  "random_std_fitness": 0.08526738820079262,
+  "configc_percentile": 100.0,
+  "teams_better_than_configc": 0,
+  "verdict": "[FAIL] GA not optimizing (below top 20%)",
+  "interpretation": "ConfigC worse than 0.0% of random teams. Check fitness function."
+}

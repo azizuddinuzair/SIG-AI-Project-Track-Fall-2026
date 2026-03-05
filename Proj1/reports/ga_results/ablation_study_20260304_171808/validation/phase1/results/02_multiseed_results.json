@@ -1,0 +1,62 @@
+{
+  "test": "Multi-Seed Validation",
+  "num_seeds": 5,
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    999
+  ],
+  "successful_runs": 5,
+  "failed_runs": 0,
+  "run_details": [
+    {
+      "seed": 42,
+      "best_fitness": 0.7323711133754189,
+      "best_team": "baxcalibur,groudon,flutter-mane,stakataka,miraidon,mewtwo",
+      "convergence_generation": 14,
+      "elapsed_seconds": 210.77740120887756,
+      "final_population_std": 0.0
+    },
+    {
+      "seed": 123,
+      "best_fitness": 0.7323711133754189,
+      "best_team": "baxcalibur,groudon,flutter-mane,stakataka,miraidon,mewtwo",
+      "convergence_generation": 14,
+      "elapsed_seconds": 211.7290017604828,
+      "final_population_std": 0.0
+    },
+    {
+      "seed": 456,
+      "best_fitness": 0.7323711133754189,
+      "best_team": "baxcalibur,groudon,flutter-mane,stakataka,miraidon,mewtwo",
+      "convergence_generation": 14,
+      "elapsed_seconds": 210.33527255058289,
+      "final_population_std": 0.0
+    },
+    {
+      "seed": 789,
+      "best_fitness": 0.7323711133754189,
+      "best_team": "baxcalibur,groudon,flutter-mane,stakataka,miraidon,mewtwo",
+      "convergence_generation": 14,
+      "elapsed_seconds": 210.66597747802734,
+      "final_population_std": 0.0
+    },
+    {
+      "seed": 999,
+      "best_fitness": 0.7323711133754189,
+      "best_team": "baxcalibur,groudon,flutter-mane,stakataka,miraidon,mewtwo",
+      "convergence_generation": 14,
+      "elapsed_seconds": 196.04740643501282,
+      "final_population_std": 0.0
+    }
+  ],
+  "mean_fitness": 0.7323711133754189,
+  "max_fitness": 0.7323711133754189,
+  "min_fitness": 0.7323711133754189,
+  "std_fitness": null,
+  "std_percent": null,
+  "verdict": "[PASS] Highly reproducible (std < 1%)",
+  "interpretation": "Solution is robust and consistent across seeds."
+}

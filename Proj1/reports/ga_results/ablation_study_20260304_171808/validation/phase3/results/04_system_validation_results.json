@@ -1,0 +1,562 @@
+{
+  "phase": "Phase 3 - System Validation",
+  "date": "2026-03-04T22:31:25.706961",
+  "num_pokemon": 535,
+  "tests": {
+    "random_baseline": {
+      "experiment": "random_baseline",
+      "n_samples": 10000,
+      "mean_fitness": 0.3798679316979787,
+      "median_fitness": 0.3870411166879157,
+      "std_fitness": 0.08502371091134095,
+      "min_fitness": -0.03241494539039541,
+      "max_fitness": 0.6553319458320788,
+      "percentile_25": 0.32923671970997875,
+      "percentile_75": 0.44032290640636845,
+      "percentile_95": 0.5051480657454164,
+      "percentile_99": 0.5449802099215575,
+      "best_team": [
+        "dusknoir",
+        "stakataka",
+        "raikou",
+        "rayquaza",
+        "great-tusk",
+        "armarouge"
+      ],
+      "elapsed_seconds": 18.826569318771362
+    },
+    "multi_swap_neighbors": {
+      "experiment": "multi_swap_neighbors",
+      "n_samples": 1000,
+      "swap_size": 2,
+      "original_fitness": 0.7334396128221321,
+      "n_improvements": 0,
+      "improvement_rate": 0.0,
+      "max_improvement": 0.0,
+      "mean_improvement": 0.0,
+      "best_neighbor": null,
+      "elapsed_seconds": 6.51709771156311
+    },
+    "entropy_overfitting": {
+      "experiment": "entropy_overfitting",
+      "analysis": [
+        {
+          "diversity_weight": 0.5,
+          "fitness": 1.0902245571114075,
+          "recomputed_fitness": 1.0902245571114075,
+          "unique_archetypes": 6,
+          "team": [
+            "regirock",
+            "lunala",
+            "eternatus",
+            "venusaur",
+            "zamazenta",
+            "zekrom"
+          ],
+          "breakdown": {
+            "total": 1.0902245571114075,
+            "base_strength": 0.7043572170301143,
+            "type_coverage": 0.9444444444444444,
+            "synergy": 0.6861740982920406,
+            "entropy_bonus": 0.5,
+            "imbalance_penalty": -0.005555555555555556,
+            "weakness_penalty": -0.07222222222222223,
+            "base_fitness": 0.6680023348891851
+          }
+        },
+        {
+          "diversity_weight": 0.35,
+          "fitness": 0.9139183861714436,
+          "recomputed_fitness": 0.9139183861714436,
+          "unique_archetypes": 6,
+          "team": [
+            "nihilego",
+            "hoopa",
+            "xerneas",
+            "manaphy",
+            "zamazenta",
+            "zekrom"
+          ],
+          "breakdown": {
+            "total": 0.9139183861714436,
+            "base_strength": 0.6977933541017654,
+            "type_coverage": 0.9444444444444444,
+            "synergy": 0.6764514079826933,
+            "entropy_bonus": 0.35,
+            "imbalance_penalty": -0.005555555555555556,
+            "weakness_penalty": -0.09444444444444447,
+            "base_fitness": 0.6639183861714435
+          }
+        },
+        {
+          "diversity_weight": 0.25,
+          "fitness": 0.8357493029731384,
+          "recomputed_fitness": 0.8357493029731384,
+          "unique_archetypes": 6,
+          "team": [
+            "regirock",
+            "roserade",
+            "flutter-mane",
+            "mewtwo",
+            "zamazenta",
+            "zekrom"
+          ],
+          "breakdown": {
+            "total": 0.8357493029731384,
+            "base_strength": 0.6685202492211839,
+            "type_coverage": 0.9444444444444444,
+            "synergy": 0.7519043181940619,
+            "entropy_bonus": 0.25,
+            "imbalance_penalty": -0.005555555555555556,
+            "weakness_penalty": -0.07222222222222223,
+            "base_fitness": 0.6635270807509162
+          }
+        },
+        {
+          "diversity_weight": 0.15,
+          "fitness": 0.7334396128221321,
+          "recomputed_fitness": 0.7334396128221321,
+          "unique_archetypes": 6,
+          "team": [
+            "venusaur",
+            "groudon",
+            "flutter-mane",
+            "stakataka",
+            "zekrom",
+            "mewtwo"
+          ],
+          "breakdown": {
+            "total": 0.7334396128221321,
+            "base_strength": 0.6980913811007269,
+            "type_coverage": 0.9444444444444444,
+            "synergy": 0.7687611432863496,
+            "entropy_bonus": 0.15,
+            "imbalance_penalty": -0.005555555555555556,
+            "weakness_penalty": -0.08888888888888889,
+            "base_fitness": 0.6778840572665765
+          }
+        },
+        {
+          "diversity_weight": 0.1,
+          "fitness": 0.668140466904783,
+          "recomputed_fitness": 0.668140466904783,
+          "unique_archetypes": 6,
+          "team": [
+            "regirock",
+            "groudon",
+            "flutter-mane",
+            "vileplume",
+            "mew",
+            "zekrom"
+          ],
+          "breakdown": {
+            "total": 0.668140466904783,
+            "base_strength": 0.6493561786085151,
+            "type_coverage": 0.9444444444444444,
+            "synergy": 0.741171821594365,
+            "entropy_bonus": 0.1,
+            "imbalance_penalty": -0.005555555555555556,
+            "weakness_penalty": -0.08055555555555557,
+            "base_fitness": 0.6542515780158942
+          }
+        }
+      ]
+    },
+    "component_scales": {
+      "experiment": "component_scales",
+      "teams_analyzed": [
+        {
+          "team_name": "baseline_full",
+          "total_fitness": 0.7334396128221321,
+          "breakdown": {
+            "total": 0.7334396128221321,
+            "base_strength": 0.6980913811007269,
+            "type_coverage": 0.9444444444444444,
+            "synergy": 0.7687611432863496,
+            "entropy_bonus": 0.15,
+            "imbalance_penalty": -0.005555555555555556,
+            "weakness_penalty": -0.08888888888888889,
+            "base_fitness": 0.6778840572665765
+          }
+        },
+        {
+          "team_name": "entropy_0.5",
+          "total_fitness": 0.7402245571114074,
+          "breakdown": {
+            "total": 0.7402245571114074,
+            "base_strength": 0.7043572170301143,
+            "type_coverage": 0.9444444444444444,
+            "synergy": 0.6861740982920406,
+            "entropy_bonus": 0.15,
+            "imbalance_penalty": -0.005555555555555556,
+            "weakness_penalty": -0.07222222222222223,
+            "base_fitness": 0.6680023348891851
+          }
+        },
+        {
+          "team_name": "entropy_0.35",
+          "total_fitness": 0.7139183861714435,
+          "breakdown": {
+            "total": 0.7139183861714435,
+            "base_strength": 0.6977933541017654,
+            "type_coverage": 0.9444444444444444,
+            "synergy": 0.6764514079826933,
+            "entropy_bonus": 0.15,
+            "imbalance_penalty": -0.005555555555555556,
+            "weakness_penalty": -0.09444444444444447,
+            "base_fitness": 0.6639183861714435
+          }
+        },
+        {
+          "team_name": "entropy_0.25",
+          "total_fitness": 0.7357493029731385,
+          "breakdown": {
+            "total": 0.7357493029731385,
+            "base_strength": 0.6685202492211839,
+            "type_coverage": 0.9444444444444444,
+            "synergy": 0.7519043181940619,
+            "entropy_bonus": 0.15,
+            "imbalance_penalty": -0.005555555555555556,
+            "weakness_penalty": -0.07222222222222223,
+            "base_fitness": 0.6635270807509162
+          }
+        },
+        {
+          "team_name": "entropy_0.15",
+          "total_fitness": 0.7334396128221321,
+          "breakdown": {
+            "total": 0.7334396128221321,
+            "base_strength": 0.6980913811007269,
+            "type_coverage": 0.9444444444444444,
+            "synergy": 0.7687611432863496,
+            "entropy_bonus": 0.15,
+            "imbalance_penalty": -0.005555555555555556,
+            "weakness_penalty": -0.08888888888888889,
+            "base_fitness": 0.6778840572665765
+          }
+        },
+        {
+          "team_name": "entropy_0.1",
+          "total_fitness": 0.7181404669047831,
+          "breakdown": {
+            "total": 0.7181404669047831,
+            "base_strength": 0.6493561786085151,
+            "type_coverage": 0.9444444444444444,
+            "synergy": 0.741171821594365,
+            "entropy_bonus": 0.15,
+            "imbalance_penalty": -0.005555555555555556,
+            "weakness_penalty": -0.08055555555555557,
+            "base_fitness": 0.6542515780158942
+          }
+        }
+      ]
+    },
+    "ga_stability": {
+      "experiment": "ga_stability",
+      "n_runs": 20,
+      "config": {
+        "name": "StabilityTest",
+        "population": {
+          "size": 50,
+          "generations": 50,
+          "tournament_k": 3,
+          "elitism": 5
+        },
+        "fitness": {
+          "base_stats_weight": 0.4,
+          "type_coverage_weight": 0.3,
+          "synergy_weight": 0.15,
+          "diversity_weight": 0.15,
+          "imbalance_lambda": 0.2,
+          "weakness_lambda": 0.1
+        },
+        "initialization": {
+          "method": "inverse"
+        },
+        "mutation": {
+          "rate": 0.15,
+          "weighted": true
+        },
+        "crossover": {
+          "rate": 0.8,
+          "type": "two_point"
+        },
+        "random_seed": 42
+      },
+      "runs": [
+        {
+          "seed": 100,
+          "best_fitness": 0.6844019720451066,
+          "best_team": [
+            "raikou",
+            "cobalion",
+            "latias",
+            "roaring-moon",
+            "kyurem",
+            "stakataka"
+          ],
+          "convergence_generation": 0
+        },
+        {
+          "seed": 101,
+          "best_fitness": 0.7176522179958215,
+          "best_team": [
+            "dragapult",
+            "diancie",
+            "zamazenta",
+            "zekrom",
+            "roserade",
+            "lugia"
+          ],
+          "convergence_generation": 0
+        },
+        {
+          "seed": 102,
+          "best_fitness": 0.6411529398558571,
+          "best_team": [
+            "miraidon",
+            "mewtwo",
+            "haxorus",
+            "roaring-moon",
+            "manaphy",
+            "iron-moth"
+          ],
+          "convergence_generation": 0
+        },
+        {
+          "seed": 103,
+          "best_fitness": 0.704910262756719,
+          "best_team": [
+            "xurkitree",
+            "hoopa",
+            "eternatus",
+            "torterra",
+            "regirock",
+            "hitmontop"
+          ],
+          "convergence_generation": 0
+        },
+        {
+          "seed": 104,
+          "best_fitness": 0.692796226747192,
+          "best_team": [
+            "dialga",
+            "beedrill",
+            "torterra",
+            "lunala",
+            "miraidon",
+            "regirock"
+          ],
+          "convergence_generation": 0
+        },
+        {
+          "seed": 105,
+          "best_fitness": 0.7067098815468242,
+          "best_team": [
+            "miraidon",
+            "goodra",
+            "lunala",
+            "poliwrath",
+            "stakataka",
+            "porygon-z"
+          ],
+          "convergence_generation": 0
+        },
+        {
+          "seed": 106,
+          "best_fitness": 0.6816210932609723,
+          "best_team": [
+            "dialga",
+            "blastoise",
+            "sneasler",
+            "xurkitree",
+            "regirock",
+            "hoopa"
+          ],
+          "convergence_generation": 0
+        },
+        {
+          "seed": 107,
+          "best_fitness": 0.6547478978395447,
+          "best_team": [
+            "kecleon",
+            "rhyperior",
+            "xerneas",
+            "wo-chien",
+            "lugia",
+            "raikou"
+          ],
+          "convergence_generation": 0
+        },
+        {
+          "seed": 108,
+          "best_fitness": 0.7270151451530286,
+          "best_team": [
+            "hydreigon",
+            "zekrom",
+            "mewtwo",
+            "zamazenta",
+            "gigalith",
+            "roserade"
+          ],
+          "convergence_generation": 0
+        },
+        {
+          "seed": 109,
+          "best_fitness": 0.6814378675888425,
+          "best_team": [
+            "regirock",
+            "venomoth",
+            "haxorus",
+            "torterra",
+            "xurkitree",
+            "lunala"
+          ],
+          "convergence_generation": 0
+        },
+        {
+          "seed": 110,
+          "best_fitness": 0.7005136539290114,
+          "best_team": [
+            "hydreigon",
+            "diancie",
+            "kartana",
+            "miraidon",
+            "mewtwo",
+            "clodsire"
+          ],
+          "convergence_generation": 0
+        },
+        {
+          "seed": 111,
+          "best_fitness": 0.6801940843696448,
+          "best_team": [
+            "lugia",
+            "miraidon",
+            "dragapult",
+            "cobalion",
+            "gigalith",
+            "tapu-bulu"
+          ],
+          "convergence_generation": 0
+        },
+        {
+          "seed": 112,
+          "best_fitness": 0.6382952728472557,
+          "best_team": [
+            "diancie",
+            "goodra",
+            "quaquaval",
+            "lunala",
+            "zeraora",
+            "munkidori"
+          ],
+          "convergence_generation": 0
+        },
+        {
+          "seed": 113,
+          "best_fitness": 0.6871993838250637,
+          "best_team": [
+            "klinklang",
+            "swampert",
+            "diancie",
+            "lugia",
+            "miraidon",
+            "hydreigon"
+          ],
+          "convergence_generation": 0
+        },
+        {
+          "seed": 114,
+          "best_fitness": 0.6960035487843783,
+          "best_team": [
+            "miraidon",
+            "torterra",
+            "latios",
+            "diancie",
+            "goodra",
+            "overqwil"
+          ],
+          "convergence_generation": 0
+        },
+        {
+          "seed": 115,
+          "best_fitness": 0.6920812420486154,
+          "best_team": [
+            "probopass",
+            "iron-bundle",
+            "ursaluna",
+            "infernape",
+            "zekrom",
+            "flutter-mane"
+          ],
+          "convergence_generation": 0
+        },
+        {
+          "seed": 116,
+          "best_fitness": 0.6694299988264298,
+          "best_team": [
+            "eternatus",
+            "tyranitar",
+            "mesprit",
+            "miraidon",
+            "poliwrath",
+            "zekrom"
+          ],
+          "convergence_generation": 0
+        },
+        {
+          "seed": 117,
+          "best_fitness": 0.644483067004697,
+          "best_team": [
+            "arbok",
+            "chandelure",
+            "celebi",
+            "florges",
+            "zekrom",
+            "rhyperior"
+          ],
+          "convergence_generation": 0
+        },
+        {
+          "seed": 118,
+          "best_fitness": 0.6660759579873152,
+          "best_team": [
+            "ho-oh",
+            "stakataka",
+            "raging-bolt",
+            "runerigus",
+            "lilligant",
+            "florges"
+          ],
+          "convergence_generation": 0
+        },
+        {
+          "seed": 119,
+          "best_fitness": 0.6733343756603596,
+          "best_team": [
+            "necrozma",
+            "spectrier",
+            "chesnaught",
+            "rayquaza",
+            "regirock",
+            "raikou"
+          ],
+          "convergence_generation": 0
+        }
+      ],
+      "statistics": {
+        "mean_fitness": 0.682002804503634,
+        "std_fitness": 0.023918535448008305,
+        "min_fitness": 0.6382952728472557,
+        "max_fitness": 0.7270151451530286,
+        "median_fitness": 0.6830115326530395,
+        "cv_fitness": 0.03507102212785821,
+        "mean_conv_gen": 0.0,
+        "std_conv_gen": 0.0
+      },
+      "elapsed_seconds": 283.8620092868805
+    }
+  },
+  "total_elapsed_seconds": 309.2390789985657
+}

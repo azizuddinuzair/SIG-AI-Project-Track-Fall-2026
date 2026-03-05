@@ -1,0 +1,114 @@
+{
+  "config": {
+    "name": "FinalValidation",
+    "population": {
+      "size": 40,
+      "generations": 30,
+      "tournament_k": 3,
+      "elitism": 5
+    },
+    "fitness": {
+      "base_stats_weight": 0.4,
+      "type_coverage_weight": 0.3,
+      "synergy_weight": 0.15,
+      "diversity_weight": 0.15,
+      "imbalance_lambda": 0.2,
+      "weakness_lambda": 0.0
+    },
+    "initialization": {
+      "method": "inverse"
+    },
+    "mutation": {
+      "rate": 0.15,
+      "weighted": true
+    },
+    "crossover": {
+      "rate": 0.8
+    },
+    "random_seed": 42
+  },
+  "seeds": [
+    42,
+    43
+  ],
+  "results_per_seed": [
+    {
+      "seed": 42,
+      "best_fitness": 0.7501518288766216,
+      "fitness_breakdown": {
+        "total": 0.7501518288766216,
+        "base_strength": 0.5250020768431984,
+        "type_coverage": 0.9444444444444444,
+        "synergy": 0.7491548024104293,
+        "entropy_bonus": 0.15,
+        "imbalance_penalty": -0.005555555555555556,
+        "weakness_penalty": 0.0,
+        "base_fitness": 0.6057073844321771
+      },
+      "team_names": [
+        "ampharos",
+        "dhelmise",
+        "gliscor",
+        "tyranitar",
+        "solgaleo",
+        "flutter-mane"
+      ],
+      "types_in_team": [
+        "electric",
+        "ghost",
+        "ground",
+        "rock",
+        "psychic"
+      ],
+      "num_types": 5,
+      "base_strength_component": 0.5250020768431984,
+      "mean_offensive_index": 202.66666666666666,
+      "mean_defensive_index": 237.41666666666666,
+      "consistency_check": "PASS"
+    },
+    {
+      "seed": 43,
+      "best_fitness": 0.7577671239649802,
+      "fitness_breakdown": {
+        "total": 0.7577671239649802,
+        "base_strength": 0.6479885773624092,
+        "type_coverage": 0.8333333333333334,
+        "synergy": 0.6941816571704803,
+        "entropy_bonus": 0.15,
+        "imbalance_penalty": -0.005555555555555556,
+        "weakness_penalty": 0.0,
+        "base_fitness": 0.6133226795205358
+      },
+      "team_names": [
+        "honchkrow",
+        "zekrom",
+        "xerneas",
+        "kyogre",
+        "stakataka",
+        "oranguru"
+      ],
+      "types_in_team": [
+        "dark",
+        "dragon",
+        "fairy",
+        "water",
+        "rock",
+        "normal"
+      ],
+      "num_types": 6,
+      "base_strength_component": 0.6479885773624092,
+      "mean_offensive_index": 224.33333333333334,
+      "mean_defensive_index": 256.25,
+      "consistency_check": "PASS"
+    }
+  ],
+  "summary": {
+    "mean_best_fitness": 0.7539594764208009,
+    "std_best_fitness": 0.003807647544179338,
+    "cv_best_fitness": 0.5050201852034563,
+    "mean_base_strength": 0.5864953271028038,
+    "mean_num_types": 5.5,
+    "consistency_check": "PASS",
+    "total_runtime_seconds": 8.750112056732178
+  }
+}

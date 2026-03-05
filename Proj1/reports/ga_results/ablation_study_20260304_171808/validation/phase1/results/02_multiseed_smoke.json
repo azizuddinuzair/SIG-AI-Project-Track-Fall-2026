@@ -1,0 +1,23 @@
+{
+  "test": "Multi-Seed Validation",
+  "num_seeds": 1,
+  "seeds": [
+    42
+  ],
+  "successful_runs": 0,
+  "failed_runs": 1,
+  "run_details": [
+    {
+      "seed": 42,
+      "best_fitness": null,
+      "error": "'PokemonGA' object has no attribute 'best_fitness'"
+    }
+  ],
+  "mean_fitness": null,
+  "max_fitness": null,
+  "min_fitness": null,
+  "std_fitness": null,
+  "std_percent": null,
+  "verdict": "[INCONCLUSIVE] Too many failures or seeds",
+  "interpretation": "Only 0 successful runs. Need more data."
+}

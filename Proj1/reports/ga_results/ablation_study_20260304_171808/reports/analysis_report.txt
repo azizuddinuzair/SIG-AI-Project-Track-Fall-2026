@@ -1,0 +1,31 @@
+================================================================================
+GA ABLATION STUDY ANALYSIS REPORT
+================================================================================
+
+
+ConfigA_Baseline:
+----------------------------------------
+  Initial fitness: 0.4721
+  Final fitness: 0.7160
+  Improvement: +0.2439
+  Final max fitness: 0.7239
+  Final entropy: 1.7812
+  Rare archetypes: 100.0%
+
+ConfigB_InverseWeighted:
+----------------------------------------
+  Initial fitness: 0.3080
+  Final fitness: 0.6410
+  Improvement: +0.3330
+  Final max fitness: 0.6488
+  Final entropy: 2.2450
+  Rare archetypes: 98.7%
+
+ConfigC_Full:
+----------------------------------------
+  Initial fitness: 0.3939
+  Final fitness: 0.7214
+  Improvement: +0.3274
+  Final max fitness: 0.7324
+  Final entropy: 2.5494
+  Rare archetypes: 100.0%
