@@ -1,0 +1,47 @@
+name,role_prior,archetype,allowed_move_count,canonical_move_count,canonical_moves,fetch_status
+machamp,breaker,Physical Attacker,8,4,close-combat;earthquake;knock-off;drain-punch,ok
+okidogi,breaker,Physical Attacker,8,4,close-combat;knock-off;body-press;drain-punch,ok
+arboliva,bulky_pivot,Balanced All-Rounder,2,4,encore;protect;unknown;unknown,ok
+blissey,bulky_pivot,Balanced All-Rounder,5,4,stealth-rock;toxic;protect;soft-boiled,ok
+giratina-origin,bulky_pivot,Balanced All-Rounder,5,4,defog;toxic;protect;thunder-wave,ok
+enamorus-therian,bulky_wincon,Defensive Tank,5,4,moonblast;outrage;protect;psychic,ok
+lycanroc-midnight,bulky_wincon,Defensive Tank,6,4,toxic;close-combat;knock-off;outrage,ok
+oricorio-baile,bulky_wincon,Defensive Tank,5,4,roost;toxic;defog;protect,ok
+pyroar-mega,bulky_wincon,Defensive Tank,0,4,unknown;unknown;unknown;unknown,ok
+diancie,defensive_wall,Defensive Tank,9,4,toxic;protect;body-press;encore,ok
+mimikyu-busted,defensive_wall,Defensive Tank,12,4,toxic;protect;dark-pulse;drain-punch,ok
+rhyperior,defensive_wall,Defensive Tank,10,4,toxic;protect;body-press;earthquake,ok
+shuckle,defensive_wall,Defensive Tank,6,4,toxic;protect;earthquake;encore,ok
+stakataka,defensive_wall,Defensive Tank,5,4,toxic;protect;body-press;earthquake,ok
+tapu-fini,defensive_wall,Defensive Tank,11,4,haze;toxic;protect;defog,ok
+darmanitan-zen,fast_pivot,Fast Attacker,12,4,u-turn;taunt;body-press;earthquake,ok
+gengar,fast_pivot,Generalist,15,4,taunt;knock-off;dark-pulse;thunder-wave,ok
+hypno,fast_pivot,Fast Attacker,14,4,taunt;knock-off;thunder-wave;body-press,ok
+landorus-therian,fast_pivot,Fast Attacker,9,4,u-turn;taunt;knock-off;defog,ok
+lugia,fast_pivot,Fast Attacker,14,4,thunder-wave;brave-bird;defog;earthquake,ok
+wyrdeer,fast_pivot,Fast Attacker,7,4,thunder-wave;earthquake;protect;psychic,ok
+zygarde-50,fast_pivot,Fast Attacker,6,4,draco-meteor;earthquake;haze;outrage,ok
+arceus,mixed_balanced,Generalist,25,4,earthquake;ice-beam;thunderbolt;recover,ok
+bouffalant,mixed_balanced,Generalist,7,4,earthquake;close-combat;outrage;protect,ok
+diggersby,mixed_balanced,Generalist,6,4,u-turn;knock-off;earthquake;protect,ok
+greedent,mixed_balanced,Generalist,4,4,knock-off;earthquake;body-press;protect,ok
+gyarados,mixed_balanced,Generalist,11,4,earthquake;ice-beam;thunderbolt;dark-pulse,ok
+meowscarada,mixed_balanced,Balanced All-Rounder,7,4,u-turn;knock-off;dark-pulse;giga-drain,ok
+obstagoon,mixed_balanced,Generalist,9,4,ice-beam;thunderbolt;body-press;close-combat,ok
+stoutland,mixed_balanced,Generalist,6,4,thunderbolt;protect;shadow-ball;surf,ok
+ting-lu,mixed_balanced,Generalist,5,4,earthquake;body-press;dark-pulse;protect,ok
+toxapex,mixed_balanced,Generalist,9,4,knock-off;ice-beam;recover;baneful-bunker,ok
+arctozolt,physical_sweeper,Speed Sweeper,7,4,hydro-pump;ice-beam;protect;surf,ok
+dragapult,physical_sweeper,Balanced All-Rounder,11,4,dragon-claw;outrage;draco-meteor;hydro-pump,ok
+sneasler,physical_sweeper,Physical Attacker,6,4,close-combat;protect;shadow-ball;taunt,ok
+urshifu-single-strike,physical_sweeper,Physical Attacker,8,4,wicked-blow;close-combat;body-press;dark-pulse,ok
+urshifu-single-strike-gmax,physical_sweeper,Physical Attacker,0,4,unknown;unknown;unknown;unknown,ok
+victreebel,physical_sweeper,Balanced All-Rounder,5,4,knock-off;encore;giga-drain;protect,ok
+zamazenta,physical_sweeper,Physical Attacker,4,4,close-combat;body-press;moonblast;protect,ok
+zekrom,physical_sweeper,Speed Sweeper,13,4,dragon-claw;outrage;body-press;defog,ok
+zeraora,physical_sweeper,Speed Sweeper,10,4,close-combat;knock-off;outrage;drain-punch,ok
+bellibolt,special_sweeper,Speed Sweeper,5,4,thunderbolt;protect;thunder-wave;toxic,ok
+heliolisk,special_sweeper,Speed Sweeper,8,4,dark-pulse;thunderbolt;protect;surf,ok
+miraidon,special_sweeper,Speed Sweeper,10,4,draco-meteor;overheat;thunderbolt;dragon-claw,ok
+raging-bolt,special_sweeper,Speed Sweeper,9,4,draco-meteor;thunderbolt;body-press;earthquake,ok
+raikou,special_sweeper,Speed Sweeper,6,4,shadow-ball;thunderbolt;protect;thunder-wave,ok

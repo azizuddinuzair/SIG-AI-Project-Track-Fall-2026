@@ -1,0 +1,61 @@
+pokemon,archetype,move,move_class,weighted_frequency,raw_count,unique_team_occurrences,normalized_weighted_frequency
+arctozolt,Speed Sweeper,hydro-pump,offense,2.0380647845084123,3,3,0.6793549281694707
+arctozolt,Speed Sweeper,ice-beam,offense,2.0380647845084123,3,3,0.6793549281694707
+arctozolt,Speed Sweeper,protect,utility,2.0380647845084123,3,3,0.6793549281694707
+arctozolt,Speed Sweeper,surf,offense,2.0380647845084123,3,3,0.6793549281694707
+bastiodon,Defensive Tank,body-press,offense,4.578458739130994,7,7,0.6540655341615705
+bastiodon,Defensive Tank,earthquake,offense,4.578458739130994,7,7,0.6540655341615705
+bastiodon,Defensive Tank,protect,utility,4.578458739130994,7,7,0.6540655341615705
+bastiodon,Defensive Tank,toxic,utility,4.578458739130994,7,7,0.6540655341615705
+blissey,Balanced All-Rounder,protect,utility,6.593688095591107,10,10,0.6593688095591107
+blissey,Balanced All-Rounder,soft-boiled,recovery,6.593688095591107,10,10,0.6593688095591107
+blissey,Balanced All-Rounder,stealth-rock,hazard,6.593688095591107,10,10,0.6593688095591107
+blissey,Balanced All-Rounder,toxic,utility,6.593688095591107,10,10,0.6593688095591107
+eelektross,Speed Sweeper,close-combat,offense,1.2844075879442007,2,2,0.6422037939721004
+eelektross,Speed Sweeper,dragon-claw,offense,1.2844075879442007,2,2,0.6422037939721004
+eelektross,Speed Sweeper,knock-off,offense,1.2844075879442007,2,2,0.6422037939721004
+eelektross,Speed Sweeper,outrage,offense,1.2844075879442007,2,2,0.6422037939721004
+enamorus-incarnate,Defensive Tank,moonblast,offense,0.6401609497783866,1,1,0.6401609497783866
+enamorus-incarnate,Defensive Tank,outrage,offense,0.6401609497783866,1,1,0.6401609497783866
+enamorus-incarnate,Defensive Tank,protect,utility,0.6401609497783866,1,1,0.6401609497783866
+enamorus-incarnate,Defensive Tank,psychic,offense,0.6401609497783866,1,1,0.6401609497783866
+golisopod,Physical Attacker,close-combat,offense,3.8927027923073867,6,6,0.6487837987178978
+golisopod,Physical Attacker,dark-pulse,offense,3.8927027923073867,6,6,0.6487837987178978
+golisopod,Physical Attacker,ice-beam,offense,3.8927027923073867,6,6,0.6487837987178978
+golisopod,Physical Attacker,knock-off,offense,3.8927027923073867,6,6,0.6487837987178978
+obstagoon,Generalist,body-press,offense,6.593688095591107,10,10,0.6593688095591107
+obstagoon,Generalist,close-combat,offense,6.593688095591107,10,10,0.6593688095591107
+obstagoon,Generalist,ice-beam,offense,6.593688095591107,10,10,0.6593688095591107
+obstagoon,Generalist,thunderbolt,offense,6.593688095591107,10,10,0.6593688095591107
+okidogi,Physical Attacker,body-press,offense,0.6914105681993898,1,1,0.6914105681993898
+okidogi,Physical Attacker,close-combat,offense,0.6914105681993898,1,1,0.6914105681993898
+okidogi,Physical Attacker,drain-punch,offense,0.6914105681993898,1,1,0.6914105681993898
+okidogi,Physical Attacker,knock-off,offense,0.6914105681993898,1,1,0.6914105681993898
+oricorio-baile,Defensive Tank,defog,utility,1.3750684066817258,2,2,0.6875342033408629
+oricorio-baile,Defensive Tank,protect,utility,1.3750684066817258,2,2,0.6875342033408629
+oricorio-baile,Defensive Tank,roost,recovery,1.3750684066817258,2,2,0.6875342033408629
+oricorio-baile,Defensive Tank,toxic,utility,1.3750684066817258,2,2,0.6875342033408629
+raging-bolt,Speed Sweeper,body-press,offense,0.6499642651828201,1,1,0.6499642651828201
+raging-bolt,Speed Sweeper,draco-meteor,offense,0.6499642651828201,1,1,0.6499642651828201
+raging-bolt,Speed Sweeper,earthquake,offense,0.6499642651828201,1,1,0.6499642651828201
+raging-bolt,Speed Sweeper,thunderbolt,offense,0.6499642651828201,1,1,0.6499642651828201
+sneasler,Physical Attacker,close-combat,offense,2.00957473508433,3,3,0.66985824502811
+sneasler,Physical Attacker,protect,utility,2.00957473508433,3,3,0.66985824502811
+sneasler,Physical Attacker,shadow-ball,offense,2.00957473508433,3,3,0.66985824502811
+sneasler,Physical Attacker,taunt,utility,2.00957473508433,3,3,0.66985824502811
+thundurus-incarnate,Speed Sweeper,dark-pulse,offense,0.649718103793963,1,1,0.649718103793963
+thundurus-incarnate,Speed Sweeper,defog,utility,0.649718103793963,1,1,0.649718103793963
+thundurus-incarnate,Speed Sweeper,psychic,offense,0.649718103793963,1,1,0.649718103793963
+thundurus-incarnate,Speed Sweeper,thunderbolt,offense,0.649718103793963,1,1,0.649718103793963
+thundurus-therian,Speed Sweeper,dark-pulse,offense,0.6493765754766246,1,1,0.6493765754766246
+thundurus-therian,Speed Sweeper,defog,utility,0.6493765754766246,1,1,0.6493765754766246
+thundurus-therian,Speed Sweeper,psychic,offense,0.6493765754766246,1,1,0.6493765754766246
+thundurus-therian,Speed Sweeper,thunderbolt,offense,0.6493765754766246,1,1,0.6493765754766246
+zapdos,Speed Sweeper,brave-bird,offense,1.3221567786850854,2,2,0.6610783893425427
+zapdos,Speed Sweeper,defog,utility,1.3221567786850854,2,2,0.6610783893425427
+zapdos,Speed Sweeper,heat-wave,offense,1.3221567786850854,2,2,0.6610783893425427
+zapdos,Speed Sweeper,thunderbolt,offense,1.3221567786850854,2,2,0.6610783893425427
+zygarde-50,Fast Attacker,draco-meteor,offense,6.593688095591107,10,10,0.6593688095591107
+zygarde-50,Fast Attacker,earthquake,offense,6.593688095591107,10,10,0.6593688095591107
+zygarde-50,Fast Attacker,haze,utility,6.593688095591107,10,10,0.6593688095591107
+zygarde-50,Fast Attacker,outrage,offense,6.593688095591107,10,10,0.6593688095591107

@@ -1,0 +1,30 @@
+name,role_prior,archetype,allowed_move_count,canonical_move_count,canonical_moves,fetch_status
+blissey,bulky_pivot,Balanced All-Rounder,5,4,stealth-rock;toxic;protect;soft-boiled,ok
+florges,bulky_pivot,Balanced All-Rounder,5,4,defog;wish;toxic;protect,ok
+hydrapple,bulky_pivot,Balanced All-Rounder,2,4,recover;protect;unknown;unknown,ok
+kingambit,bulky_pivot,Balanced All-Rounder,4,4,stealth-rock;protect;taunt;thunder-wave,ok
+aurorus,defensive_wall,Defensive Tank,11,4,toxic;protect;dark-pulse;earthquake,ok
+shuckle,defensive_wall,Defensive Tank,6,4,toxic;protect;earthquake;encore,ok
+stakataka,defensive_wall,Defensive Tank,5,4,toxic;protect;body-press;earthquake,ok
+camerupt,fast_pivot,Fast Attacker,8,4,body-press;earthquake;flare-blitz;heat-wave,ok
+darmanitan-standard,fast_pivot,Fast Attacker,12,4,u-turn;taunt;body-press;earthquake,ok
+darmanitan-zen,fast_pivot,Fast Attacker,12,4,u-turn;taunt;body-press;earthquake,ok
+latias,fast_pivot,Fast Attacker,14,4,thunder-wave;defog;draco-meteor;dragon-claw,ok
+meowstic-male,fast_pivot,Fast Attacker,8,4,dark-pulse;thunder-wave;protect;psychic,ok
+diggersby,mixed_balanced,Generalist,6,4,u-turn;knock-off;earthquake;protect,ok
+manaphy,mixed_balanced,Generalist,12,4,u-turn;knock-off;ice-beam;flip-turn,ok
+oinkologne-female,mixed_balanced,Generalist,2,4,body-press;protect;unknown;unknown,ok
+stoutland,mixed_balanced,Generalist,6,4,thunderbolt;protect;shadow-ball;surf,ok
+arctozolt,physical_sweeper,Speed Sweeper,7,4,hydro-pump;ice-beam;protect;surf,ok
+dracozolt,physical_sweeper,Speed Sweeper,8,4,earthquake;dragon-claw;outrage;draco-meteor,ok
+eelektross,physical_sweeper,Speed Sweeper,13,4,close-combat;knock-off;dragon-claw;outrage,ok
+marshadow,physical_sweeper,Physical Attacker,8,4,close-combat;knock-off;outrage;drain-punch,ok
+sneasler,physical_sweeper,Physical Attacker,6,4,close-combat;protect;shadow-ball;taunt,ok
+urshifu-single-strike,physical_sweeper,Physical Attacker,8,4,wicked-blow;close-combat;body-press;dark-pulse,ok
+urshifu-single-strike-gmax,physical_sweeper,Physical Attacker,0,4,unknown;unknown;unknown;unknown,ok
+victreebel,physical_sweeper,Balanced All-Rounder,5,4,knock-off;encore;giga-drain;protect,ok
+zekrom,physical_sweeper,Speed Sweeper,13,4,dragon-claw;outrage;body-press;defog,ok
+zeraora,physical_sweeper,Speed Sweeper,10,4,close-combat;knock-off;outrage;drain-punch,ok
+miraidon,special_sweeper,Speed Sweeper,10,4,draco-meteor;overheat;thunderbolt;dragon-claw,ok
+raging-bolt,special_sweeper,Speed Sweeper,9,4,draco-meteor;thunderbolt;body-press;earthquake,ok
+xurkitree,special_sweeper,Speed Sweeper,5,4,thunderbolt;protect;thunder-wave;toxic,ok

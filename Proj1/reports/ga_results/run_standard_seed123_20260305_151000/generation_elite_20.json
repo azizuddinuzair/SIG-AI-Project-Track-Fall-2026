@@ -1,0 +1,447 @@
+[
+  {
+    "rank": 1,
+    "fitness": 0.704072339516365,
+    "breakdown": {
+      "total": 0.704072339516365,
+      "base_strength": 0.4445302530253026,
+      "type_coverage": 0.9444444444444444,
+      "synergy": 0.9898830701897751,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.05,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.6096278950719206
+    },
+    "pokemon": [
+      {
+        "name": "arctozolt",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": "ice",
+        "hp": 90,
+        "attack": 100,
+        "defense": 90,
+        "special-attack": 90,
+        "special-defense": 80,
+        "speed": 55
+      },
+      {
+        "name": "darmanitan-zen",
+        "archetype": "Fast Attacker",
+        "type1": "fire",
+        "type2": "psychic",
+        "hp": 105,
+        "attack": 30,
+        "defense": 105,
+        "special-attack": 140,
+        "special-defense": 105,
+        "speed": 55
+      },
+      {
+        "name": "stakataka",
+        "archetype": "Defensive Tank",
+        "type1": "rock",
+        "type2": "steel",
+        "hp": 61,
+        "attack": 131,
+        "defense": 211,
+        "special-attack": 53,
+        "special-defense": 101,
+        "speed": 13
+      },
+      {
+        "name": "urshifu-single-strike-gmax",
+        "archetype": "Physical Attacker",
+        "type1": "fighting",
+        "type2": "dark",
+        "hp": 100,
+        "attack": 130,
+        "defense": 100,
+        "special-attack": 63,
+        "special-defense": 60,
+        "speed": 97
+      },
+      {
+        "name": "bouffalant",
+        "archetype": "Generalist",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 95,
+        "attack": 110,
+        "defense": 95,
+        "special-attack": 40,
+        "special-defense": 95,
+        "speed": 55
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 255,
+        "attack": 10,
+        "defense": 10,
+        "special-attack": 75,
+        "special-defense": 135,
+        "speed": 55
+      }
+    ]
+  },
+  {
+    "rank": 2,
+    "fitness": 0.7032785238608585,
+    "breakdown": {
+      "total": 0.7032785238608585,
+      "base_strength": 0.47799229922992303,
+      "type_coverage": 1.0,
+      "synergy": 0.9694329166814841,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.07777777777777779,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.6366118571941919
+    },
+    "pokemon": [
+      {
+        "name": "arctozolt",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": "ice",
+        "hp": 90,
+        "attack": 100,
+        "defense": 90,
+        "special-attack": 90,
+        "special-defense": 80,
+        "speed": 55
+      },
+      {
+        "name": "darmanitan-zen",
+        "archetype": "Fast Attacker",
+        "type1": "fire",
+        "type2": "psychic",
+        "hp": 105,
+        "attack": 30,
+        "defense": 105,
+        "special-attack": 140,
+        "special-defense": 105,
+        "speed": 55
+      },
+      {
+        "name": "stakataka",
+        "archetype": "Defensive Tank",
+        "type1": "rock",
+        "type2": "steel",
+        "hp": 61,
+        "attack": 131,
+        "defense": 211,
+        "special-attack": 53,
+        "special-defense": 101,
+        "speed": 13
+      },
+      {
+        "name": "okidogi",
+        "archetype": "Physical Attacker",
+        "type1": "poison",
+        "type2": "fighting",
+        "hp": 88,
+        "attack": 128,
+        "defense": 115,
+        "special-attack": 58,
+        "special-defense": 86,
+        "speed": 80
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 255,
+        "attack": 10,
+        "defense": 10,
+        "special-attack": 75,
+        "special-defense": 135,
+        "speed": 55
+      },
+      {
+        "name": "ting-lu",
+        "archetype": "Generalist",
+        "type1": "dark",
+        "type2": "ground",
+        "hp": 155,
+        "attack": 110,
+        "defense": 125,
+        "special-attack": 55,
+        "special-defense": 80,
+        "speed": 45
+      }
+    ]
+  },
+  {
+    "rank": 3,
+    "fitness": 0.7032785238608585,
+    "breakdown": {
+      "total": 0.7032785238608585,
+      "base_strength": 0.47799229922992303,
+      "type_coverage": 1.0,
+      "synergy": 0.9694329166814841,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.07777777777777779,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.6366118571941919
+    },
+    "pokemon": [
+      {
+        "name": "arctozolt",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": "ice",
+        "hp": 90,
+        "attack": 100,
+        "defense": 90,
+        "special-attack": 90,
+        "special-defense": 80,
+        "speed": 55
+      },
+      {
+        "name": "darmanitan-zen",
+        "archetype": "Fast Attacker",
+        "type1": "fire",
+        "type2": "psychic",
+        "hp": 105,
+        "attack": 30,
+        "defense": 105,
+        "special-attack": 140,
+        "special-defense": 105,
+        "speed": 55
+      },
+      {
+        "name": "stakataka",
+        "archetype": "Defensive Tank",
+        "type1": "rock",
+        "type2": "steel",
+        "hp": 61,
+        "attack": 131,
+        "defense": 211,
+        "special-attack": 53,
+        "special-defense": 101,
+        "speed": 13
+      },
+      {
+        "name": "okidogi",
+        "archetype": "Physical Attacker",
+        "type1": "poison",
+        "type2": "fighting",
+        "hp": 88,
+        "attack": 128,
+        "defense": 115,
+        "special-attack": 58,
+        "special-defense": 86,
+        "speed": 80
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 255,
+        "attack": 10,
+        "defense": 10,
+        "special-attack": 75,
+        "special-defense": 135,
+        "speed": 55
+      },
+      {
+        "name": "ting-lu",
+        "archetype": "Generalist",
+        "type1": "dark",
+        "type2": "ground",
+        "hp": 155,
+        "attack": 110,
+        "defense": 125,
+        "special-attack": 55,
+        "special-defense": 80,
+        "speed": 45
+      }
+    ]
+  },
+  {
+    "rank": 4,
+    "fitness": 0.7032785238608585,
+    "breakdown": {
+      "total": 0.7032785238608585,
+      "base_strength": 0.47799229922992303,
+      "type_coverage": 1.0,
+      "synergy": 0.9694329166814841,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.07777777777777779,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.6366118571941919
+    },
+    "pokemon": [
+      {
+        "name": "arctozolt",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": "ice",
+        "hp": 90,
+        "attack": 100,
+        "defense": 90,
+        "special-attack": 90,
+        "special-defense": 80,
+        "speed": 55
+      },
+      {
+        "name": "darmanitan-zen",
+        "archetype": "Fast Attacker",
+        "type1": "fire",
+        "type2": "psychic",
+        "hp": 105,
+        "attack": 30,
+        "defense": 105,
+        "special-attack": 140,
+        "special-defense": 105,
+        "speed": 55
+      },
+      {
+        "name": "stakataka",
+        "archetype": "Defensive Tank",
+        "type1": "rock",
+        "type2": "steel",
+        "hp": 61,
+        "attack": 131,
+        "defense": 211,
+        "special-attack": 53,
+        "special-defense": 101,
+        "speed": 13
+      },
+      {
+        "name": "okidogi",
+        "archetype": "Physical Attacker",
+        "type1": "poison",
+        "type2": "fighting",
+        "hp": 88,
+        "attack": 128,
+        "defense": 115,
+        "special-attack": 58,
+        "special-defense": 86,
+        "speed": 80
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 255,
+        "attack": 10,
+        "defense": 10,
+        "special-attack": 75,
+        "special-defense": 135,
+        "speed": 55
+      },
+      {
+        "name": "ting-lu",
+        "archetype": "Generalist",
+        "type1": "dark",
+        "type2": "ground",
+        "hp": 155,
+        "attack": 110,
+        "defense": 125,
+        "special-attack": 55,
+        "special-defense": 80,
+        "speed": 45
+      }
+    ]
+  },
+  {
+    "rank": 5,
+    "fitness": 0.6903507784550829,
+    "breakdown": {
+      "total": 0.6903507784550829,
+      "base_strength": 0.4679174917491749,
+      "type_coverage": 1.0,
+      "synergy": 0.9101141005916418,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.07777777777777779,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.6236841117884162
+    },
+    "pokemon": [
+      {
+        "name": "arctozolt",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": "ice",
+        "hp": 90,
+        "attack": 100,
+        "defense": 90,
+        "special-attack": 90,
+        "special-defense": 80,
+        "speed": 55
+      },
+      {
+        "name": "landorus-therian",
+        "archetype": "Fast Attacker",
+        "type1": "ground",
+        "type2": "flying",
+        "hp": 89,
+        "attack": 145,
+        "defense": 90,
+        "special-attack": 105,
+        "special-defense": 80,
+        "speed": 91
+      },
+      {
+        "name": "stakataka",
+        "archetype": "Defensive Tank",
+        "type1": "rock",
+        "type2": "steel",
+        "hp": 61,
+        "attack": 131,
+        "defense": 211,
+        "special-attack": 53,
+        "special-defense": 101,
+        "speed": 13
+      },
+      {
+        "name": "okidogi",
+        "archetype": "Physical Attacker",
+        "type1": "poison",
+        "type2": "fighting",
+        "hp": 88,
+        "attack": 128,
+        "defense": 115,
+        "special-attack": 58,
+        "special-defense": 86,
+        "speed": 80
+      },
+      {
+        "name": "gengar",
+        "archetype": "Generalist",
+        "type1": "ghost",
+        "type2": "poison",
+        "hp": 60,
+        "attack": 65,
+        "defense": 60,
+        "special-attack": 130,
+        "special-defense": 75,
+        "speed": 110
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 255,
+        "attack": 10,
+        "defense": 10,
+        "special-attack": 75,
+        "special-defense": 135,
+        "speed": 55
+      }
+    ]
+  }
+]

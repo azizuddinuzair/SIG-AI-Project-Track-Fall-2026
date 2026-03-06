@@ -54,9 +54,11 @@ print("=" * 80)
 # LOAD DATA
 # ============================================================================
 print("\n[1/5] Loading data and models...")
+# Load data and models
 csv_path = DATA_DIR / "pokemon_with_clusters.csv"
 pca_path = MODELS_DIR / "pca.pkl"
 gmm_path = MODELS_DIR / "gmm_full_k12.pkl"
+scaler_path = MODELS_DIR / "scaler.pkl"  # ADD: Load scaler
 features_pca_path = MODELS_DIR / "features_pca_full.npy"
 
 df = pd.read_csv(csv_path)
@@ -65,17 +67,49 @@ df = pd.read_csv(csv_path)
 try:
     pca = joblib.load(pca_path)
     gmm = joblib.load(gmm_path)
+    scaler = joblib.load(scaler_path)  # ADD: Load scaler
 except:
     with open(pca_path, "rb") as f:
         pca = pickle.load(f)
     with open(gmm_path, "rb") as f:
         gmm = pickle.load(f)
+    with open(scaler_path, "rb") as f:
+        scaler = pickle.load(f)  # ADD: Load scaler
 
 features_pca = np.load(features_pca_path)
 
 print(f"   ✓ Loaded {len(df)} Pokemon with {len(df.columns)} features")
 print(f"   ✓ PCA model: 23D → {features_pca.shape[1]}D")
 print(f"   ✓ GMM model: k={gmm.n_components} clusters")
+
+# Assign clusters to all Pokemon (including new forms)
+feature_cols = ['offensive_index', 'defensive_index', 'speed_percentile', 'physical_special_bias'] + \
+               [f'type_defense_{t}' for t in ['normal', 'fire', 'water', 'grass', 'electric', 'ice', 
+                'fighting', 'poison', 'ground', 'flying', 'psychic', 'bug', 'rock', 'ghost', 
+                'dragon', 'dark', 'steel', 'fairy']]
+features_raw = df[feature_cols].values
+features_scaled = scaler.transform(features_raw)  # FIX: Scale first
+features_pca = pca.transform(features_scaled)     # FIX: Then PCA
+df['cluster'] = gmm.predict(features_pca)
+
+# Map clusters to archetypes
+cluster_to_archetype = {
+    0: 'Generalist', 1: 'Generalist', 2: 'Generalist',
+    3: 'Defensive Pivot', 4: 'Defensive Pivot',
+    5: 'Defensive Wall', 6: 'Defensive Wall',
+    7: 'Fast Attacker', 8: 'Fast Attacker',
+    9: 'Balanced All-Rounder',
+    10: 'Speed Sweeper',
+    11: 'Speed Sweeper'
+}
+df['archetype'] = df['cluster'].map(cluster_to_archetype)
+
+# Save updated CSV
+df.to_csv(csv_path, index=False)
+print(f"   ✓ Assigned clusters to all {len(df)} Pokemon")
+
+# Save updated features_pca
+np.save(features_pca_path, features_pca)
 
 # ============================================================================
 # DELIVERABLE 1: Persist Models with Clear Names

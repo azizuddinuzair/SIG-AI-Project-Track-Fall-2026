@@ -1,0 +1,175 @@
+pokemon,archetype,move,move_class,weighted_frequency,raw_count,unique_team_occurrences,normalized_weighted_frequency
+arboliva,Balanced All-Rounder,encore,utility,0.664581234292299,1,1,0.664581234292299
+arboliva,Balanced All-Rounder,protect,utility,0.664581234292299,1,1,0.664581234292299
+arceus,Generalist,earthquake,offense,0.7394672727271693,1,1,0.7394672727271693
+arceus,Generalist,ice-beam,offense,0.7394672727271693,1,1,0.7394672727271693
+arceus,Generalist,recover,recovery,0.7394672727271693,1,1,0.7394672727271693
+arceus,Generalist,thunderbolt,offense,0.7394672727271693,1,1,0.7394672727271693
+arctozolt,Speed Sweeper,hydro-pump,offense,6.879133379701648,10,10,0.6879133379701649
+arctozolt,Speed Sweeper,ice-beam,offense,6.879133379701648,10,10,0.6879133379701649
+arctozolt,Speed Sweeper,protect,utility,6.879133379701648,10,10,0.6879133379701649
+arctozolt,Speed Sweeper,surf,offense,6.879133379701648,10,10,0.6879133379701649
+bellibolt,Speed Sweeper,protect,utility,1.3082424517104108,2,2,0.6541212258552054
+bellibolt,Speed Sweeper,thunder-wave,utility,1.3082424517104108,2,2,0.6541212258552054
+bellibolt,Speed Sweeper,thunderbolt,offense,1.3082424517104108,2,2,0.6541212258552054
+bellibolt,Speed Sweeper,toxic,utility,1.3082424517104108,2,2,0.6541212258552054
+blissey,Balanced All-Rounder,protect,utility,7.4991257229728046,11,11,0.6817387020884368
+blissey,Balanced All-Rounder,soft-boiled,recovery,7.4991257229728046,11,11,0.6817387020884368
+blissey,Balanced All-Rounder,stealth-rock,hazard,7.4991257229728046,11,11,0.6817387020884368
+blissey,Balanced All-Rounder,toxic,utility,7.4991257229728046,11,11,0.6817387020884368
+bouffalant,Generalist,close-combat,offense,1.4126297116581523,2,2,0.7063148558290762
+bouffalant,Generalist,earthquake,offense,1.4126297116581523,2,2,0.7063148558290762
+bouffalant,Generalist,outrage,offense,1.4126297116581523,2,2,0.7063148558290762
+bouffalant,Generalist,protect,utility,1.4126297116581523,2,2,0.7063148558290762
+darmanitan-zen,Fast Attacker,body-press,offense,4.751974731890377,7,7,0.6788535331271968
+darmanitan-zen,Fast Attacker,earthquake,offense,4.751974731890377,7,7,0.6788535331271968
+darmanitan-zen,Fast Attacker,taunt,utility,4.751974731890377,7,7,0.6788535331271968
+darmanitan-zen,Fast Attacker,u-turn,pivot,4.751974731890377,7,7,0.6788535331271968
+diancie,Defensive Tank,body-press,offense,0.6819026521844932,1,1,0.6819026521844932
+diancie,Defensive Tank,encore,utility,0.6819026521844932,1,1,0.6819026521844932
+diancie,Defensive Tank,protect,utility,0.6819026521844932,1,1,0.6819026521844932
+diancie,Defensive Tank,toxic,utility,0.6819026521844932,1,1,0.6819026521844932
+diggersby,Generalist,earthquake,offense,0.6282159481757872,1,1,0.6282159481757872
+diggersby,Generalist,knock-off,offense,0.6282159481757872,1,1,0.6282159481757872
+diggersby,Generalist,protect,utility,0.6282159481757872,1,1,0.6282159481757872
+diggersby,Generalist,u-turn,pivot,0.6282159481757872,1,1,0.6282159481757872
+dragapult,Balanced All-Rounder,draco-meteor,offense,1.3017680428093292,2,2,0.6508840214046646
+dragapult,Balanced All-Rounder,dragon-claw,offense,1.3017680428093292,2,2,0.6508840214046646
+dragapult,Balanced All-Rounder,hydro-pump,offense,1.3017680428093292,2,2,0.6508840214046646
+dragapult,Balanced All-Rounder,outrage,offense,1.3017680428093292,2,2,0.6508840214046646
+enamorus-therian,Defensive Tank,moonblast,offense,0.6282159481757872,1,1,0.6282159481757872
+enamorus-therian,Defensive Tank,outrage,offense,0.6282159481757872,1,1,0.6282159481757872
+enamorus-therian,Defensive Tank,protect,utility,0.6282159481757872,1,1,0.6282159481757872
+enamorus-therian,Defensive Tank,psychic,offense,0.6282159481757872,1,1,0.6282159481757872
+gengar,Generalist,dark-pulse,offense,3.3396908542097545,5,5,0.667938170841951
+gengar,Generalist,knock-off,offense,3.3396908542097545,5,5,0.667938170841951
+gengar,Generalist,taunt,utility,3.3396908542097545,5,5,0.667938170841951
+gengar,Generalist,thunder-wave,utility,3.3396908542097545,5,5,0.667938170841951
+giratina-origin,Balanced All-Rounder,defog,utility,0.7394672727271693,1,1,0.7394672727271693
+giratina-origin,Balanced All-Rounder,protect,utility,0.7394672727271693,1,1,0.7394672727271693
+giratina-origin,Balanced All-Rounder,thunder-wave,utility,0.7394672727271693,1,1,0.7394672727271693
+giratina-origin,Balanced All-Rounder,toxic,utility,0.7394672727271693,1,1,0.7394672727271693
+greedent,Generalist,body-press,offense,1.325563869602605,2,2,0.6627819348013025
+greedent,Generalist,earthquake,offense,1.325563869602605,2,2,0.6627819348013025
+greedent,Generalist,knock-off,offense,1.325563869602605,2,2,0.6627819348013025
+greedent,Generalist,protect,utility,1.325563869602605,2,2,0.6627819348013025
+gyarados,Generalist,dark-pulse,offense,0.6199923432711568,1,1,0.6199923432711568
+gyarados,Generalist,earthquake,offense,0.6199923432711568,1,1,0.6199923432711568
+gyarados,Generalist,ice-beam,offense,0.6199923432711568,1,1,0.6199923432711568
+gyarados,Generalist,thunderbolt,offense,0.6199923432711568,1,1,0.6199923432711568
+heliolisk,Speed Sweeper,dark-pulse,offense,0.6581068253912173,1,1,0.6581068253912173
+heliolisk,Speed Sweeper,protect,utility,0.6581068253912173,1,1,0.6581068253912173
+heliolisk,Speed Sweeper,surf,offense,0.6581068253912173,1,1,0.6581068253912173
+heliolisk,Speed Sweeper,thunderbolt,offense,0.6581068253912173,1,1,0.6581068253912173
+hypno,Fast Attacker,body-press,offense,0.6282159481757872,1,1,0.6282159481757872
+hypno,Fast Attacker,knock-off,offense,0.6282159481757872,1,1,0.6282159481757872
+hypno,Fast Attacker,taunt,utility,0.6282159481757872,1,1,0.6282159481757872
+hypno,Fast Attacker,thunder-wave,utility,0.6282159481757872,1,1,0.6282159481757872
+landorus-therian,Fast Attacker,defog,utility,3.460194340954961,5,5,0.6920388681909923
+landorus-therian,Fast Attacker,knock-off,offense,3.460194340954961,5,5,0.6920388681909923
+landorus-therian,Fast Attacker,taunt,utility,3.460194340954961,5,5,0.6920388681909923
+landorus-therian,Fast Attacker,u-turn,pivot,3.460194340954961,5,5,0.6920388681909923
+lugia,Fast Attacker,brave-bird,offense,0.7394672727271693,1,1,0.7394672727271693
+lugia,Fast Attacker,defog,utility,0.7394672727271693,1,1,0.7394672727271693
+lugia,Fast Attacker,earthquake,offense,0.7394672727271693,1,1,0.7394672727271693
+lugia,Fast Attacker,thunder-wave,utility,0.7394672727271693,1,1,0.7394672727271693
+lycanroc-midnight,Defensive Tank,close-combat,offense,0.6553451304231507,1,1,0.6553451304231507
+lycanroc-midnight,Defensive Tank,knock-off,offense,0.6553451304231507,1,1,0.6553451304231507
+lycanroc-midnight,Defensive Tank,outrage,offense,0.6553451304231507,1,1,0.6553451304231507
+lycanroc-midnight,Defensive Tank,toxic,utility,0.6553451304231507,1,1,0.6553451304231507
+machamp,Physical Attacker,close-combat,offense,0.6581068253912173,1,1,0.6581068253912173
+machamp,Physical Attacker,drain-punch,offense,0.6581068253912173,1,1,0.6581068253912173
+machamp,Physical Attacker,earthquake,offense,0.6581068253912173,1,1,0.6581068253912173
+machamp,Physical Attacker,knock-off,offense,0.6581068253912173,1,1,0.6581068253912173
+meowscarada,Balanced All-Rounder,dark-pulse,offense,0.6282159481757872,1,1,0.6282159481757872
+meowscarada,Balanced All-Rounder,giga-drain,offense,0.6282159481757872,1,1,0.6282159481757872
+meowscarada,Balanced All-Rounder,knock-off,offense,0.6282159481757872,1,1,0.6282159481757872
+meowscarada,Balanced All-Rounder,u-turn,pivot,0.6282159481757872,1,1,0.6282159481757872
+mimikyu-busted,Defensive Tank,dark-pulse,offense,0.6199923432711568,1,1,0.6199923432711568
+mimikyu-busted,Defensive Tank,drain-punch,offense,0.6199923432711568,1,1,0.6199923432711568
+mimikyu-busted,Defensive Tank,protect,utility,0.6199923432711568,1,1,0.6199923432711568
+mimikyu-busted,Defensive Tank,toxic,utility,0.6199923432711568,1,1,0.6199923432711568
+miraidon,Speed Sweeper,draco-meteor,offense,0.7394672727271693,1,1,0.7394672727271693
+miraidon,Speed Sweeper,dragon-claw,offense,0.7394672727271693,1,1,0.7394672727271693
+miraidon,Speed Sweeper,overheat,offense,0.7394672727271693,1,1,0.7394672727271693
+miraidon,Speed Sweeper,thunderbolt,offense,0.7394672727271693,1,1,0.7394672727271693
+obstagoon,Generalist,body-press,offense,0.6914105681993898,1,1,0.6914105681993898
+obstagoon,Generalist,close-combat,offense,0.6914105681993898,1,1,0.6914105681993898
+obstagoon,Generalist,ice-beam,offense,0.6914105681993898,1,1,0.6914105681993898
+obstagoon,Generalist,thunderbolt,offense,0.6914105681993898,1,1,0.6914105681993898
+okidogi,Physical Attacker,body-press,offense,3.3332481619622754,5,5,0.6666496323924551
+okidogi,Physical Attacker,close-combat,offense,3.3332481619622754,5,5,0.6666496323924551
+okidogi,Physical Attacker,drain-punch,offense,3.3332481619622754,5,5,0.6666496323924551
+okidogi,Physical Attacker,knock-off,offense,3.3332481619622754,5,5,0.6666496323924551
+oricorio-baile,Defensive Tank,defog,utility,0.6914105681993898,1,1,0.6914105681993898
+oricorio-baile,Defensive Tank,protect,utility,0.6914105681993898,1,1,0.6914105681993898
+oricorio-baile,Defensive Tank,roost,recovery,0.6914105681993898,1,1,0.6914105681993898
+oricorio-baile,Defensive Tank,toxic,utility,0.6914105681993898,1,1,0.6914105681993898
+raging-bolt,Speed Sweeper,body-press,offense,0.6282159481757872,1,1,0.6282159481757872
+raging-bolt,Speed Sweeper,draco-meteor,offense,0.6282159481757872,1,1,0.6282159481757872
+raging-bolt,Speed Sweeper,earthquake,offense,0.6282159481757872,1,1,0.6282159481757872
+raging-bolt,Speed Sweeper,thunderbolt,offense,0.6282159481757872,1,1,0.6282159481757872
+raikou,Speed Sweeper,protect,utility,0.6199923432711568,1,1,0.6199923432711568
+raikou,Speed Sweeper,shadow-ball,offense,0.6199923432711568,1,1,0.6199923432711568
+raikou,Speed Sweeper,thunder-wave,utility,0.6199923432711568,1,1,0.6199923432711568
+raikou,Speed Sweeper,thunderbolt,offense,0.6199923432711568,1,1,0.6199923432711568
+rhyperior,Defensive Tank,body-press,offense,1.3017680428093292,2,2,0.6508840214046646
+rhyperior,Defensive Tank,earthquake,offense,1.3017680428093292,2,2,0.6508840214046646
+rhyperior,Defensive Tank,protect,utility,1.3017680428093292,2,2,0.6508840214046646
+rhyperior,Defensive Tank,toxic,utility,1.3017680428093292,2,2,0.6508840214046646
+shuckle,Defensive Tank,earthquake,offense,0.7134421146646022,1,1,0.7134421146646022
+shuckle,Defensive Tank,encore,utility,0.7134421146646022,1,1,0.7134421146646022
+shuckle,Defensive Tank,protect,utility,0.7134421146646022,1,1,0.7134421146646022
+shuckle,Defensive Tank,toxic,utility,0.7134421146646022,1,1,0.7134421146646022
+sneasler,Physical Attacker,close-combat,offense,0.6436612174181119,1,1,0.6436612174181119
+sneasler,Physical Attacker,protect,utility,0.6436612174181119,1,1,0.6436612174181119
+sneasler,Physical Attacker,shadow-ball,offense,0.6436612174181119,1,1,0.6436612174181119
+sneasler,Physical Attacker,taunt,utility,0.6436612174181119,1,1,0.6436612174181119
+stakataka,Defensive Tank,body-press,offense,2.76931893027726,4,4,0.692329732569315
+stakataka,Defensive Tank,earthquake,offense,2.76931893027726,4,4,0.692329732569315
+stakataka,Defensive Tank,protect,utility,2.76931893027726,4,4,0.692329732569315
+stakataka,Defensive Tank,toxic,utility,2.76931893027726,4,4,0.692329732569315
+stoutland,Generalist,protect,utility,0.7134421146646022,1,1,0.7134421146646022
+stoutland,Generalist,shadow-ball,offense,0.7134421146646022,1,1,0.7134421146646022
+stoutland,Generalist,surf,offense,0.7134421146646022,1,1,0.7134421146646022
+stoutland,Generalist,thunderbolt,offense,0.7134421146646022,1,1,0.7134421146646022
+tapu-fini,Defensive Tank,defog,utility,0.7394672727271693,1,1,0.7394672727271693
+tapu-fini,Defensive Tank,haze,utility,0.7394672727271693,1,1,0.7394672727271693
+tapu-fini,Defensive Tank,protect,utility,0.7394672727271693,1,1,0.7394672727271693
+tapu-fini,Defensive Tank,toxic,utility,0.7394672727271693,1,1,0.7394672727271693
+ting-lu,Generalist,body-press,offense,0.7032785238608585,1,1,0.7032785238608585
+ting-lu,Generalist,dark-pulse,offense,0.7032785238608585,1,1,0.7032785238608585
+ting-lu,Generalist,earthquake,offense,0.7032785238608585,1,1,0.7032785238608585
+ting-lu,Generalist,protect,utility,0.7032785238608585,1,1,0.7032785238608585
+toxapex,Generalist,baneful-bunker,recovery,1.3729091292725162,2,2,0.6864545646362581
+toxapex,Generalist,ice-beam,offense,1.3729091292725162,2,2,0.6864545646362581
+toxapex,Generalist,knock-off,offense,1.3729091292725162,2,2,0.6864545646362581
+toxapex,Generalist,recover,recovery,1.3729091292725162,2,2,0.6864545646362581
+urshifu-single-strike,Physical Attacker,body-press,offense,1.4529093873917716,2,2,0.7264546936958858
+urshifu-single-strike,Physical Attacker,close-combat,offense,1.4529093873917716,2,2,0.7264546936958858
+urshifu-single-strike,Physical Attacker,dark-pulse,offense,1.4529093873917716,2,2,0.7264546936958858
+urshifu-single-strike,Physical Attacker,wicked-blow,offense,1.4529093873917716,2,2,0.7264546936958858
+victreebel,Balanced All-Rounder,encore,utility,0.7134421146646022,1,1,0.7134421146646022
+victreebel,Balanced All-Rounder,giga-drain,offense,0.7134421146646022,1,1,0.7134421146646022
+victreebel,Balanced All-Rounder,knock-off,offense,0.7134421146646022,1,1,0.7134421146646022
+victreebel,Balanced All-Rounder,protect,utility,0.7134421146646022,1,1,0.7134421146646022
+wyrdeer,Fast Attacker,earthquake,offense,0.6553451304231507,1,1,0.6553451304231507
+wyrdeer,Fast Attacker,protect,utility,0.6553451304231507,1,1,0.6553451304231507
+wyrdeer,Fast Attacker,psychic,offense,0.6553451304231507,1,1,0.6553451304231507
+wyrdeer,Fast Attacker,thunder-wave,utility,0.6553451304231507,1,1,0.6553451304231507
+zamazenta,Physical Attacker,body-press,offense,0.6553451304231507,1,1,0.6553451304231507
+zamazenta,Physical Attacker,close-combat,offense,0.6553451304231507,1,1,0.6553451304231507
+zamazenta,Physical Attacker,moonblast,offense,0.6553451304231507,1,1,0.6553451304231507
+zamazenta,Physical Attacker,protect,utility,0.6553451304231507,1,1,0.6553451304231507
+zekrom,Speed Sweeper,body-press,offense,0.7134421146646022,1,1,0.7134421146646022
+zekrom,Speed Sweeper,defog,utility,0.7134421146646022,1,1,0.7134421146646022
+zekrom,Speed Sweeper,dragon-claw,offense,0.7134421146646022,1,1,0.7134421146646022
+zekrom,Speed Sweeper,outrage,offense,0.7134421146646022,1,1,0.7134421146646022
+zeraora,Speed Sweeper,close-combat,offense,0.6199923432711568,1,1,0.6199923432711568
+zeraora,Speed Sweeper,drain-punch,offense,0.6199923432711568,1,1,0.6199923432711568
+zeraora,Speed Sweeper,knock-off,offense,0.6199923432711568,1,1,0.6199923432711568
+zeraora,Speed Sweeper,outrage,offense,0.6199923432711568,1,1,0.6199923432711568
+zygarde-50,Fast Attacker,draco-meteor,offense,0.6914105681993898,1,1,0.6914105681993898
+zygarde-50,Fast Attacker,earthquake,offense,0.6914105681993898,1,1,0.6914105681993898
+zygarde-50,Fast Attacker,haze,utility,0.6914105681993898,1,1,0.6914105681993898
+zygarde-50,Fast Attacker,outrage,offense,0.6914105681993898,1,1,0.6914105681993898

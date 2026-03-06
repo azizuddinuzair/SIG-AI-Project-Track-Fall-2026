@@ -1,0 +1,9 @@
+name,role_prior,archetype,allowed_move_count,canonical_move_count,canonical_moves,fetch_status
+kommo-o,breaker,Physical Attacker,10,4,close-combat;earthquake;draco-meteor;body-press,ok
+arboliva,bulky_pivot,Balanced All-Rounder,2,4,encore;protect;unknown;unknown,ok
+bastiodon,defensive_wall,Defensive Tank,9,4,toxic;protect;body-press;earthquake,ok
+gothitelle,fast_pivot,Fast Attacker,9,4,taunt;dark-pulse;thunder-wave;protect,ok
+indeedee-female,fast_pivot,Fast Attacker,5,4,drain-punch;protect;psychic;psyshock,ok
+scolipede,fast_pivot,Generalist,3,4,earthquake;protect;toxic;unknown,ok
+absol,mixed_balanced,Generalist,11,4,knock-off;ice-beam;thunderbolt;close-combat,ok
+miraidon,special_sweeper,Speed Sweeper,10,4,draco-meteor;overheat;thunderbolt;dragon-claw,ok

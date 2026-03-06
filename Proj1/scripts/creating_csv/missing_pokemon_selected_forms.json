@@ -1,0 +1,409 @@
+[
+  {
+    "base": "aegislash",
+    "available_varieties": [
+      "aegislash-shield",
+      "aegislash-blade"
+    ],
+    "selected_forms": [
+      "aegislash-shield"
+    ]
+  },
+  {
+    "base": "basculegion",
+    "available_varieties": [
+      "basculegion-male",
+      "basculegion-female"
+    ],
+    "selected_forms": [
+      "basculegion-male",
+      "basculegion-female"
+    ]
+  },
+  {
+    "base": "darmanitan",
+    "available_varieties": [
+      "darmanitan-standard",
+      "darmanitan-zen",
+      "darmanitan-galar-standard",
+      "darmanitan-galar-zen"
+    ],
+    "selected_forms": [
+      "darmanitan-standard",
+      "darmanitan-zen",
+      "darmanitan-galar-standard",
+      "darmanitan-galar-zen"
+    ]
+  },
+  {
+    "base": "deoxys",
+    "available_varieties": [
+      "deoxys-normal",
+      "deoxys-attack",
+      "deoxys-defense",
+      "deoxys-speed"
+    ],
+    "selected_forms": [
+      "deoxys-normal",
+      "deoxys-attack",
+      "deoxys-defense",
+      "deoxys-speed"
+    ]
+  },
+  {
+    "base": "dudunsparce",
+    "available_varieties": [
+      "dudunsparce-two-segment",
+      "dudunsparce-three-segment"
+    ],
+    "selected_forms": [
+      "dudunsparce-three-segment"
+    ]
+  },
+  {
+    "base": "eiscue",
+    "available_varieties": [
+      "eiscue-ice",
+      "eiscue-noice"
+    ],
+    "selected_forms": [
+      "eiscue-noice"
+    ]
+  },
+  {
+    "base": "enamorus",
+    "available_varieties": [
+      "enamorus-incarnate",
+      "enamorus-therian"
+    ],
+    "selected_forms": [
+      "enamorus-incarnate",
+      "enamorus-therian"
+    ]
+  },
+  {
+    "base": "giratina",
+    "available_varieties": [
+      "giratina-altered",
+      "giratina-origin"
+    ],
+    "selected_forms": [
+      "giratina-altered",
+      "giratina-origin"
+    ]
+  },
+  {
+    "base": "gourgeist",
+    "available_varieties": [
+      "gourgeist-average",
+      "gourgeist-small",
+      "gourgeist-large",
+      "gourgeist-super"
+    ],
+    "selected_forms": [
+      "gourgeist-average",
+      "gourgeist-small",
+      "gourgeist-large",
+      "gourgeist-super"
+    ]
+  },
+  {
+    "base": "indeedee",
+    "available_varieties": [
+      "indeedee-male",
+      "indeedee-female"
+    ],
+    "selected_forms": [
+      "indeedee-male",
+      "indeedee-female"
+    ]
+  },
+  {
+    "base": "keldeo",
+    "available_varieties": [
+      "keldeo-ordinary",
+      "keldeo-resolute"
+    ],
+    "selected_forms": [
+      "keldeo-ordinary",
+      "keldeo-resolute"
+    ]
+  },
+  {
+    "base": "landorus",
+    "available_varieties": [
+      "landorus-incarnate",
+      "landorus-therian"
+    ],
+    "selected_forms": [
+      "landorus-incarnate",
+      "landorus-therian"
+    ]
+  },
+  {
+    "base": "lycanroc",
+    "available_varieties": [
+      "lycanroc-midday",
+      "lycanroc-midnight",
+      "lycanroc-dusk"
+    ],
+    "selected_forms": [
+      "lycanroc-midday",
+      "lycanroc-midnight",
+      "lycanroc-dusk"
+    ]
+  },
+  {
+    "base": "maushold",
+    "available_varieties": [
+      "maushold-family-of-four",
+      "maushold-family-of-three"
+    ],
+    "selected_forms": [
+      "maushold-family-of-three"
+    ]
+  },
+  {
+    "base": "meloetta",
+    "available_varieties": [
+      "meloetta-aria",
+      "meloetta-pirouette"
+    ],
+    "selected_forms": [
+      "meloetta-aria",
+      "meloetta-pirouette"
+    ]
+  },
+  {
+    "base": "meowstic",
+    "available_varieties": [
+      "meowstic-male",
+      "meowstic-female",
+      "meowstic-mega"
+    ],
+    "selected_forms": [
+      "meowstic-male",
+      "meowstic-female",
+      "meowstic-mega"
+    ]
+  },
+  {
+    "base": "mimikyu",
+    "available_varieties": [
+      "mimikyu-disguised",
+      "mimikyu-busted",
+      "mimikyu-totem-disguised",
+      "mimikyu-totem-busted"
+    ],
+    "selected_forms": [
+      "mimikyu-busted"
+    ]
+  },
+  {
+    "base": "minior",
+    "available_varieties": [
+      "minior-red-meteor",
+      "minior-orange-meteor",
+      "minior-yellow-meteor",
+      "minior-green-meteor",
+      "minior-blue-meteor",
+      "minior-indigo-meteor",
+      "minior-violet-meteor",
+      "minior-red",
+      "minior-orange",
+      "minior-yellow",
+      "minior-green",
+      "minior-blue",
+      "minior-indigo",
+      "minior-violet"
+    ],
+    "selected_forms": [
+      "minior-red-meteor"
+    ]
+  },
+  {
+    "base": "morpeko",
+    "available_varieties": [
+      "morpeko-full-belly",
+      "morpeko-hangry"
+    ],
+    "selected_forms": [
+      "morpeko-hangry"
+    ]
+  },
+  {
+    "base": "oinkologne",
+    "available_varieties": [
+      "oinkologne-male",
+      "oinkologne-female"
+    ],
+    "selected_forms": [
+      "oinkologne-male",
+      "oinkologne-female"
+    ]
+  },
+  {
+    "base": "oricorio",
+    "available_varieties": [
+      "oricorio-baile",
+      "oricorio-pom-pom",
+      "oricorio-pau",
+      "oricorio-sensu"
+    ],
+    "selected_forms": [
+      "oricorio-baile",
+      "oricorio-pom-pom",
+      "oricorio-pau",
+      "oricorio-sensu"
+    ]
+  },
+  {
+    "base": "palafin",
+    "available_varieties": [
+      "palafin-zero",
+      "palafin-hero"
+    ],
+    "selected_forms": [
+      "palafin-hero"
+    ]
+  },
+  {
+    "base": "pyroar",
+    "available_varieties": [
+      "pyroar-male",
+      "pyroar-mega"
+    ],
+    "selected_forms": [
+      "pyroar-male",
+      "pyroar-mega"
+    ]
+  },
+  {
+    "base": "shaymin",
+    "available_varieties": [
+      "shaymin-land",
+      "shaymin-sky"
+    ],
+    "selected_forms": [
+      "shaymin-land",
+      "shaymin-sky"
+    ]
+  },
+  {
+    "base": "squawkabilly",
+    "available_varieties": [
+      "squawkabilly-green-plumage",
+      "squawkabilly-blue-plumage",
+      "squawkabilly-yellow-plumage",
+      "squawkabilly-white-plumage"
+    ],
+    "selected_forms": [
+      "squawkabilly-blue-plumage"
+    ]
+  },
+  {
+    "base": "tatsugiri",
+    "available_varieties": [
+      "tatsugiri-curly",
+      "tatsugiri-droopy",
+      "tatsugiri-stretchy",
+      "tatsugiri-curly-mega",
+      "tatsugiri-droopy-mega",
+      "tatsugiri-stretchy-mega"
+    ],
+    "selected_forms": [
+      "tatsugiri-droopy"
+    ]
+  },
+  {
+    "base": "thundurus",
+    "available_varieties": [
+      "thundurus-incarnate",
+      "thundurus-therian"
+    ],
+    "selected_forms": [
+      "thundurus-incarnate",
+      "thundurus-therian"
+    ]
+  },
+  {
+    "base": "tornadus",
+    "available_varieties": [
+      "tornadus-incarnate",
+      "tornadus-therian"
+    ],
+    "selected_forms": [
+      "tornadus-incarnate",
+      "tornadus-therian"
+    ]
+  },
+  {
+    "base": "toxtricity",
+    "available_varieties": [
+      "toxtricity-amped",
+      "toxtricity-low-key",
+      "toxtricity-amped-gmax",
+      "toxtricity-low-key-gmax"
+    ],
+    "selected_forms": [
+      "toxtricity-low-key"
+    ]
+  },
+  {
+    "base": "urshifu",
+    "available_varieties": [
+      "urshifu-single-strike",
+      "urshifu-rapid-strike",
+      "urshifu-single-strike-gmax",
+      "urshifu-rapid-strike-gmax"
+    ],
+    "selected_forms": [
+      "urshifu-single-strike",
+      "urshifu-rapid-strike",
+      "urshifu-single-strike-gmax",
+      "urshifu-rapid-strike-gmax"
+    ]
+  },
+  {
+    "base": "wishiwashi",
+    "available_varieties": [
+      "wishiwashi-solo",
+      "wishiwashi-school"
+    ],
+    "selected_forms": [
+      "wishiwashi-school"
+    ]
+  },
+  {
+    "base": "wormadam",
+    "available_varieties": [
+      "wormadam-plant",
+      "wormadam-sandy",
+      "wormadam-trash"
+    ],
+    "selected_forms": [
+      "wormadam-plant",
+      "wormadam-sandy",
+      "wormadam-trash"
+    ]
+  },
+  {
+    "base": "zygarde",
+    "available_varieties": [
+      "zygarde-50",
+      "zygarde-10-power-construct",
+      "zygarde-50-power-construct",
+      "zygarde-complete",
+      "zygarde-10",
+      "zygarde-mega"
+    ],
+    "selected_forms": [
+      "zygarde-50",
+      "zygarde-10-power-construct",
+      "zygarde-50-power-construct",
+      "zygarde-complete",
+      "zygarde-10",
+      "zygarde-mega"
+    ]
+  }
+]

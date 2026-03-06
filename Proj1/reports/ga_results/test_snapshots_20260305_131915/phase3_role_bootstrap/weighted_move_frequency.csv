@@ -1,0 +1,30 @@
+pokemon,archetype,move,move_class,weighted_frequency,raw_count,unique_team_occurrences,normalized_weighted_frequency
+absol,Generalist,close-combat,offense,1.2661534075320406,2,2,0.6330767037660203
+absol,Generalist,ice-beam,offense,1.2661534075320406,2,2,0.6330767037660203
+absol,Generalist,knock-off,offense,1.2661534075320406,2,2,0.6330767037660203
+absol,Generalist,thunderbolt,offense,1.2661534075320406,2,2,0.6330767037660203
+arboliva,Balanced All-Rounder,encore,utility,1.8956163303582447,3,3,0.6318721101194149
+arboliva,Balanced All-Rounder,protect,utility,1.8956163303582447,3,3,0.6318721101194149
+bastiodon,Defensive Tank,body-press,offense,1.8956163303582447,3,3,0.6318721101194149
+bastiodon,Defensive Tank,earthquake,offense,1.8956163303582447,3,3,0.6318721101194149
+bastiodon,Defensive Tank,protect,utility,1.8956163303582447,3,3,0.6318721101194149
+bastiodon,Defensive Tank,toxic,utility,1.8956163303582447,3,3,0.6318721101194149
+gothitelle,Fast Attacker,dark-pulse,offense,0.6361427103666805,1,1,0.6361427103666805
+gothitelle,Fast Attacker,protect,utility,0.6361427103666805,1,1,0.6361427103666805
+gothitelle,Fast Attacker,taunt,utility,0.6361427103666805,1,1,0.6361427103666805
+gothitelle,Fast Attacker,thunder-wave,utility,0.6361427103666805,1,1,0.6361427103666805
+indeedee-female,Fast Attacker,drain-punch,offense,1.2594736199915642,2,2,0.6297368099957821
+indeedee-female,Fast Attacker,protect,utility,1.2594736199915642,2,2,0.6297368099957821
+indeedee-female,Fast Attacker,psychic,offense,1.2594736199915642,2,2,0.6297368099957821
+indeedee-female,Fast Attacker,psyshock,offense,1.2594736199915642,2,2,0.6297368099957821
+kommo-o,Physical Attacker,body-press,offense,1.8956163303582447,3,3,0.6318721101194149
+kommo-o,Physical Attacker,close-combat,offense,1.8956163303582447,3,3,0.6318721101194149
+kommo-o,Physical Attacker,draco-meteor,offense,1.8956163303582447,3,3,0.6318721101194149
+kommo-o,Physical Attacker,earthquake,offense,1.8956163303582447,3,3,0.6318721101194149
+miraidon,Speed Sweeper,draco-meteor,offense,1.8956163303582447,3,3,0.6318721101194149
+miraidon,Speed Sweeper,dragon-claw,offense,1.8956163303582447,3,3,0.6318721101194149
+miraidon,Speed Sweeper,overheat,offense,1.8956163303582447,3,3,0.6318721101194149
+miraidon,Speed Sweeper,thunderbolt,offense,1.8956163303582447,3,3,0.6318721101194149
+scolipede,Generalist,earthquake,offense,0.6294629228262039,1,1,0.6294629228262039
+scolipede,Generalist,protect,utility,0.6294629228262039,1,1,0.6294629228262039
+scolipede,Generalist,toxic,utility,0.6294629228262039,1,1,0.6294629228262039

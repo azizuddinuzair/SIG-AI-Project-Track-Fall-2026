@@ -1,0 +1,123 @@
+{
+  "accuracy": 0.25,
+  "kappa": 0.05882352941176472,
+  "test_count": 16,
+  "predictions": [
+    {
+      "pokemon": "alakazam",
+      "ground_truth": "Sweeper",
+      "predicted_role": "Mixed",
+      "predicted_archetype": "Generalist",
+      "confidence": 0.9999999946845994
+    },
+    {
+      "pokemon": "dragapult",
+      "ground_truth": "Sweeper",
+      "predicted_role": "Mixed",
+      "predicted_archetype": "Balanced All-Rounder",
+      "confidence": 0.999999895563498
+    },
+    {
+      "pokemon": "cloyster",
+      "ground_truth": "Sweeper",
+      "predicted_role": "Pivot",
+      "predicted_archetype": "Defensive Pivot",
+      "confidence": 1.0
+    },
+    {
+      "pokemon": "volcarona",
+      "ground_truth": "Sweeper",
+      "predicted_role": "Sweeper",
+      "predicted_archetype": "Speed Sweeper",
+      "confidence": 1.0
+    },
+    {
+      "pokemon": "gyarados",
+      "ground_truth": "Sweeper",
+      "predicted_role": "Mixed",
+      "predicted_archetype": "Generalist",
+      "confidence": 0.9999999991986126
+    },
+    {
+      "pokemon": "blissey",
+      "ground_truth": "Wall",
+      "predicted_role": "Mixed",
+      "predicted_archetype": "Balanced All-Rounder",
+      "confidence": 0.9643127425276456
+    },
+    {
+      "pokemon": "toxapex",
+      "ground_truth": "Wall",
+      "predicted_role": "Mixed",
+      "predicted_archetype": "Generalist",
+      "confidence": 0.999998645401706
+    },
+    {
+      "pokemon": "skarmory",
+      "ground_truth": "Wall",
+      "predicted_role": "Mixed",
+      "predicted_archetype": "Balanced All-Rounder",
+      "confidence": 0.9999366846899004
+    },
+    {
+      "pokemon": "corviknight",
+      "ground_truth": "Pivot",
+      "predicted_role": "Mixed",
+      "predicted_archetype": "Balanced All-Rounder",
+      "confidence": 0.9999717899707001
+    },
+    {
+      "pokemon": "rotom",
+      "ground_truth": "Pivot",
+      "predicted_role": "Wall",
+      "predicted_archetype": "Defensive Wall",
+      "confidence": 1.0
+    },
+    {
+      "pokemon": "landorus-therian",
+      "ground_truth": "Pivot",
+      "predicted_role": "Mixed",
+      "predicted_archetype": "Generalist",
+      "confidence": 0.9999999999999929
+    },
+    {
+      "pokemon": "garchomp",
+      "ground_truth": "Mixed",
+      "predicted_role": "Mixed",
+      "predicted_archetype": "Generalist",
+      "confidence": 0.9999999891724283
+    },
+    {
+      "pokemon": "greninja",
+      "ground_truth": "Mixed",
+      "predicted_role": "Mixed",
+      "predicted_archetype": "Generalist",
+      "confidence": 0.9999999999999769
+    },
+    {
+      "pokemon": "iron-valiant",
+      "ground_truth": "Mixed",
+      "predicted_role": "Mixed",
+      "predicted_archetype": "Balanced All-Rounder",
+      "confidence": 0.9999887620658435
+    },
+    {
+      "pokemon": "ferrothorn",
+      "ground_truth": "Tank",
+      "predicted_role": "Pivot",
+      "predicted_archetype": "Defensive Pivot",
+      "confidence": 0.9999999982018402
+    },
+    {
+      "pokemon": "heatran",
+      "ground_truth": "Tank",
+      "predicted_role": "Sweeper",
+      "predicted_archetype": "Speed Sweeper",
+      "confidence": 0.9999998388392554
+    }
+  ],
+  "interpretation": {
+    "accuracy_rating": "\u2717 WEAK (<60%)",
+    "kappa_rating": "\u2717 POOR (<0.40)"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "arctozolt": [
+    "hydro-pump",
+    "ice-beam",
+    "protect",
+    "surf"
+  ],
+  "aurorus": [
+    "toxic",
+    "protect",
+    "dark-pulse",
+    "earthquake"
+  ],
+  "blissey": [
+    "stealth-rock",
+    "toxic",
+    "protect",
+    "soft-boiled"
+  ],
+  "camerupt": [
+    "body-press",
+    "earthquake",
+    "flare-blitz",
+    "heat-wave"
+  ],
+  "darmanitan-standard": [
+    "u-turn",
+    "taunt",
+    "body-press",
+    "earthquake"
+  ],
+  "darmanitan-zen": [
+    "u-turn",
+    "taunt",
+    "body-press",
+    "earthquake"
+  ],
+  "diggersby": [
+    "u-turn",
+    "knock-off",
+    "earthquake",
+    "protect"
+  ],
+  "dracozolt": [
+    "earthquake",
+    "dragon-claw",
+    "outrage",
+    "draco-meteor"
+  ],
+  "eelektross": [
+    "close-combat",
+    "knock-off",
+    "dragon-claw",
+    "outrage"
+  ],
+  "florges": [
+    "defog",
+    "wish",
+    "toxic",
+    "protect"
+  ],
+  "hydrapple": [
+    "recover",
+    "protect",
+    "unknown",
+    "unknown"
+  ],
+  "kingambit": [
+    "stealth-rock",
+    "protect",
+    "taunt",
+    "thunder-wave"
+  ],
+  "latias": [
+    "thunder-wave",
+    "defog",
+    "draco-meteor",
+    "dragon-claw"
+  ],
+  "manaphy": [
+    "u-turn",
+    "knock-off",
+    "ice-beam",
+    "flip-turn"
+  ],
+  "marshadow": [
+    "close-combat",
+    "knock-off",
+    "outrage",
+    "drain-punch"
+  ],
+  "meowstic-male": [
+    "dark-pulse",
+    "thunder-wave",
+    "protect",
+    "psychic"
+  ],
+  "miraidon": [
+    "draco-meteor",
+    "overheat",
+    "thunderbolt",
+    "dragon-claw"
+  ],
+  "oinkologne-female": [
+    "body-press",
+    "protect",
+    "unknown",
+    "unknown"
+  ],
+  "raging-bolt": [
+    "draco-meteor",
+    "thunderbolt",
+    "body-press",
+    "earthquake"
+  ],
+  "shuckle": [
+    "toxic",
+    "protect",
+    "earthquake",
+    "encore"
+  ],
+  "sneasler": [
+    "close-combat",
+    "protect",
+    "shadow-ball",
+    "taunt"
+  ],
+  "stakataka": [
+    "toxic",
+    "protect",
+    "body-press",
+    "earthquake"
+  ],
+  "stoutland": [
+    "thunderbolt",
+    "protect",
+    "shadow-ball",
+    "surf"
+  ],
+  "urshifu-single-strike": [
+    "wicked-blow",
+    "close-combat",
+    "body-press",
+    "dark-pulse"
+  ],
+  "urshifu-single-strike-gmax": [
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
+  ],
+  "victreebel": [
+    "knock-off",
+    "encore",
+    "giga-drain",
+    "protect"
+  ],
+  "xurkitree": [
+    "thunderbolt",
+    "protect",
+    "thunder-wave",
+    "toxic"
+  ],
+  "zekrom": [
+    "dragon-claw",
+    "outrage",
+    "body-press",
+    "defog"
+  ],
+  "zeraora": [
+    "close-combat",
+    "knock-off",
+    "outrage",
+    "drain-punch"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "arctozolt": [
+    "hydro-pump",
+    "ice-beam",
+    "protect",
+    "surf"
+  ],
+  "bellibolt": [
+    "thunderbolt",
+    "protect",
+    "thunder-wave",
+    "toxic"
+  ],
+  "blissey": [
+    "stealth-rock",
+    "toxic",
+    "protect",
+    "soft-boiled"
+  ],
+  "cobalion": [
+    "close-combat",
+    "body-press",
+    "protect",
+    "taunt"
+  ],
+  "eelektross": [
+    "close-combat",
+    "knock-off",
+    "dragon-claw",
+    "outrage"
+  ],
+  "electivire": [
+    "earthquake",
+    "knock-off",
+    "protect",
+    "psychic"
+  ],
+  "hitmonchan": [
+    "close-combat",
+    "earthquake",
+    "knock-off",
+    "drain-punch"
+  ],
+  "houndstone": [
+    "body-press",
+    "protect",
+    "shadow-ball",
+    "will-o-wisp"
+  ],
+  "kangaskhan": [
+    "earthquake",
+    "ice-beam",
+    "thunderbolt",
+    "drain-punch"
+  ],
+  "landorus-incarnate": [
+    "u-turn",
+    "taunt",
+    "knock-off",
+    "defog"
+  ],
+  "landorus-therian": [
+    "u-turn",
+    "taunt",
+    "knock-off",
+    "defog"
+  ],
+  "lucario": [
+    "close-combat",
+    "earthquake",
+    "dark-pulse",
+    "drain-punch"
+  ],
+  "mimikyu-busted": [
+    "toxic",
+    "protect",
+    "dark-pulse",
+    "drain-punch"
+  ],
+  "obstagoon": [
+    "ice-beam",
+    "thunderbolt",
+    "body-press",
+    "close-combat"
+  ],
+  "okidogi": [
+    "close-combat",
+    "knock-off",
+    "body-press",
+    "drain-punch"
+  ],
+  "porygon-z": [
+    "ice-beam",
+    "thunderbolt",
+    "recover",
+    "dark-pulse"
+  ],
+  "tapu-fini": [
+    "haze",
+    "toxic",
+    "protect",
+    "defog"
+  ],
+  "zamazenta": [
+    "close-combat",
+    "body-press",
+    "moonblast",
+    "protect"
+  ]
+}

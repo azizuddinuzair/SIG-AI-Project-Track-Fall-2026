@@ -1,0 +1,447 @@
+[
+  {
+    "rank": 1,
+    "fitness": 0.6994287542528644,
+    "breakdown": {
+      "total": 0.6994287542528644,
+      "base_strength": 0.5067656765676568,
+      "type_coverage": 0.9444444444444444,
+      "synergy": 0.811483224172012,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.05277777777777779,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.6077620875861978
+    },
+    "pokemon": [
+      {
+        "name": "shuckle",
+        "archetype": "Defensive Tank",
+        "type1": "bug",
+        "type2": "rock",
+        "hp": 20,
+        "attack": 10,
+        "defense": 230,
+        "special-attack": 10,
+        "special-defense": 230,
+        "speed": 5
+      },
+      {
+        "name": "victreebel",
+        "archetype": "Balanced All-Rounder",
+        "type1": "grass",
+        "type2": "poison",
+        "hp": 80,
+        "attack": 105,
+        "defense": 65,
+        "special-attack": 100,
+        "special-defense": 70,
+        "speed": 70
+      },
+      {
+        "name": "stoutland",
+        "archetype": "Generalist",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 85,
+        "attack": 110,
+        "defense": 90,
+        "special-attack": 45,
+        "special-defense": 90,
+        "speed": 80
+      },
+      {
+        "name": "marshadow",
+        "archetype": "Physical Attacker",
+        "type1": "fighting",
+        "type2": "ghost",
+        "hp": 90,
+        "attack": 125,
+        "defense": 80,
+        "special-attack": 90,
+        "special-defense": 90,
+        "speed": 125
+      },
+      {
+        "name": "raging-bolt",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": "dragon",
+        "hp": 125,
+        "attack": 73,
+        "defense": 91,
+        "special-attack": 137,
+        "special-defense": 89,
+        "speed": 75
+      },
+      {
+        "name": "darmanitan-zen",
+        "archetype": "Fast Attacker",
+        "type1": "fire",
+        "type2": "psychic",
+        "hp": 105,
+        "attack": 30,
+        "defense": 105,
+        "special-attack": 140,
+        "special-defense": 105,
+        "speed": 55
+      }
+    ]
+  },
+  {
+    "rank": 2,
+    "fitness": 0.6994287542528644,
+    "breakdown": {
+      "total": 0.6994287542528644,
+      "base_strength": 0.5067656765676568,
+      "type_coverage": 0.9444444444444444,
+      "synergy": 0.811483224172012,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.05277777777777779,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.6077620875861978
+    },
+    "pokemon": [
+      {
+        "name": "shuckle",
+        "archetype": "Defensive Tank",
+        "type1": "bug",
+        "type2": "rock",
+        "hp": 20,
+        "attack": 10,
+        "defense": 230,
+        "special-attack": 10,
+        "special-defense": 230,
+        "speed": 5
+      },
+      {
+        "name": "victreebel",
+        "archetype": "Balanced All-Rounder",
+        "type1": "grass",
+        "type2": "poison",
+        "hp": 80,
+        "attack": 105,
+        "defense": 65,
+        "special-attack": 100,
+        "special-defense": 70,
+        "speed": 70
+      },
+      {
+        "name": "stoutland",
+        "archetype": "Generalist",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 85,
+        "attack": 110,
+        "defense": 90,
+        "special-attack": 45,
+        "special-defense": 90,
+        "speed": 80
+      },
+      {
+        "name": "marshadow",
+        "archetype": "Physical Attacker",
+        "type1": "fighting",
+        "type2": "ghost",
+        "hp": 90,
+        "attack": 125,
+        "defense": 80,
+        "special-attack": 90,
+        "special-defense": 90,
+        "speed": 125
+      },
+      {
+        "name": "raging-bolt",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": "dragon",
+        "hp": 125,
+        "attack": 73,
+        "defense": 91,
+        "special-attack": 137,
+        "special-defense": 89,
+        "speed": 75
+      },
+      {
+        "name": "darmanitan-zen",
+        "archetype": "Fast Attacker",
+        "type1": "fire",
+        "type2": "psychic",
+        "hp": 105,
+        "attack": 30,
+        "defense": 105,
+        "special-attack": 140,
+        "special-defense": 105,
+        "speed": 55
+      }
+    ]
+  },
+  {
+    "rank": 3,
+    "fitness": 0.6994287542528644,
+    "breakdown": {
+      "total": 0.6994287542528644,
+      "base_strength": 0.5067656765676568,
+      "type_coverage": 0.9444444444444444,
+      "synergy": 0.811483224172012,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.05277777777777779,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.6077620875861978
+    },
+    "pokemon": [
+      {
+        "name": "shuckle",
+        "archetype": "Defensive Tank",
+        "type1": "bug",
+        "type2": "rock",
+        "hp": 20,
+        "attack": 10,
+        "defense": 230,
+        "special-attack": 10,
+        "special-defense": 230,
+        "speed": 5
+      },
+      {
+        "name": "victreebel",
+        "archetype": "Balanced All-Rounder",
+        "type1": "grass",
+        "type2": "poison",
+        "hp": 80,
+        "attack": 105,
+        "defense": 65,
+        "special-attack": 100,
+        "special-defense": 70,
+        "speed": 70
+      },
+      {
+        "name": "stoutland",
+        "archetype": "Generalist",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 85,
+        "attack": 110,
+        "defense": 90,
+        "special-attack": 45,
+        "special-defense": 90,
+        "speed": 80
+      },
+      {
+        "name": "marshadow",
+        "archetype": "Physical Attacker",
+        "type1": "fighting",
+        "type2": "ghost",
+        "hp": 90,
+        "attack": 125,
+        "defense": 80,
+        "special-attack": 90,
+        "special-defense": 90,
+        "speed": 125
+      },
+      {
+        "name": "raging-bolt",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": "dragon",
+        "hp": 125,
+        "attack": 73,
+        "defense": 91,
+        "special-attack": 137,
+        "special-defense": 89,
+        "speed": 75
+      },
+      {
+        "name": "darmanitan-zen",
+        "archetype": "Fast Attacker",
+        "type1": "fire",
+        "type2": "psychic",
+        "hp": 105,
+        "attack": 30,
+        "defense": 105,
+        "special-attack": 140,
+        "special-defense": 105,
+        "speed": 55
+      }
+    ]
+  },
+  {
+    "rank": 4,
+    "fitness": 0.6994287542528644,
+    "breakdown": {
+      "total": 0.6994287542528644,
+      "base_strength": 0.5067656765676568,
+      "type_coverage": 0.9444444444444444,
+      "synergy": 0.811483224172012,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.05277777777777779,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.6077620875861978
+    },
+    "pokemon": [
+      {
+        "name": "shuckle",
+        "archetype": "Defensive Tank",
+        "type1": "bug",
+        "type2": "rock",
+        "hp": 20,
+        "attack": 10,
+        "defense": 230,
+        "special-attack": 10,
+        "special-defense": 230,
+        "speed": 5
+      },
+      {
+        "name": "victreebel",
+        "archetype": "Balanced All-Rounder",
+        "type1": "grass",
+        "type2": "poison",
+        "hp": 80,
+        "attack": 105,
+        "defense": 65,
+        "special-attack": 100,
+        "special-defense": 70,
+        "speed": 70
+      },
+      {
+        "name": "stoutland",
+        "archetype": "Generalist",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 85,
+        "attack": 110,
+        "defense": 90,
+        "special-attack": 45,
+        "special-defense": 90,
+        "speed": 80
+      },
+      {
+        "name": "marshadow",
+        "archetype": "Physical Attacker",
+        "type1": "fighting",
+        "type2": "ghost",
+        "hp": 90,
+        "attack": 125,
+        "defense": 80,
+        "special-attack": 90,
+        "special-defense": 90,
+        "speed": 125
+      },
+      {
+        "name": "raging-bolt",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": "dragon",
+        "hp": 125,
+        "attack": 73,
+        "defense": 91,
+        "special-attack": 137,
+        "special-defense": 89,
+        "speed": 75
+      },
+      {
+        "name": "darmanitan-zen",
+        "archetype": "Fast Attacker",
+        "type1": "fire",
+        "type2": "psychic",
+        "hp": 105,
+        "attack": 30,
+        "defense": 105,
+        "special-attack": 140,
+        "special-defense": 105,
+        "speed": 55
+      }
+    ]
+  },
+  {
+    "rank": 5,
+    "fitness": 0.6994287542528644,
+    "breakdown": {
+      "total": 0.6994287542528644,
+      "base_strength": 0.5067656765676568,
+      "type_coverage": 0.9444444444444444,
+      "synergy": 0.811483224172012,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.05277777777777779,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.6077620875861978
+    },
+    "pokemon": [
+      {
+        "name": "shuckle",
+        "archetype": "Defensive Tank",
+        "type1": "bug",
+        "type2": "rock",
+        "hp": 20,
+        "attack": 10,
+        "defense": 230,
+        "special-attack": 10,
+        "special-defense": 230,
+        "speed": 5
+      },
+      {
+        "name": "victreebel",
+        "archetype": "Balanced All-Rounder",
+        "type1": "grass",
+        "type2": "poison",
+        "hp": 80,
+        "attack": 105,
+        "defense": 65,
+        "special-attack": 100,
+        "special-defense": 70,
+        "speed": 70
+      },
+      {
+        "name": "stoutland",
+        "archetype": "Generalist",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 85,
+        "attack": 110,
+        "defense": 90,
+        "special-attack": 45,
+        "special-defense": 90,
+        "speed": 80
+      },
+      {
+        "name": "marshadow",
+        "archetype": "Physical Attacker",
+        "type1": "fighting",
+        "type2": "ghost",
+        "hp": 90,
+        "attack": 125,
+        "defense": 80,
+        "special-attack": 90,
+        "special-defense": 90,
+        "speed": 125
+      },
+      {
+        "name": "raging-bolt",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": "dragon",
+        "hp": 125,
+        "attack": 73,
+        "defense": 91,
+        "special-attack": 137,
+        "special-defense": 89,
+        "speed": 75
+      },
+      {
+        "name": "darmanitan-zen",
+        "archetype": "Fast Attacker",
+        "type1": "fire",
+        "type2": "psychic",
+        "hp": 105,
+        "attack": 30,
+        "defense": 105,
+        "special-attack": 140,
+        "special-defense": 105,
+        "speed": 55
+      }
+    ]
+  }
+]

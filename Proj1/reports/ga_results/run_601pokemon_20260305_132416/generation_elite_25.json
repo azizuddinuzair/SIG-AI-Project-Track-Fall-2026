@@ -1,0 +1,447 @@
+[
+  {
+    "rank": 1,
+    "fitness": 0.649718103793963,
+    "breakdown": {
+      "total": 0.649718103793963,
+      "base_strength": 0.4798888888888889,
+      "type_coverage": 0.9444444444444444,
+      "synergy": 0.8480466178856787,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.09722222222222224,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.6024958815717407
+    },
+    "pokemon": [
+      {
+        "name": "golisopod",
+        "archetype": "Physical Attacker",
+        "type1": "bug",
+        "type2": "water",
+        "hp": 75,
+        "attack": 125,
+        "defense": 140,
+        "special-attack": 60,
+        "special-defense": 90,
+        "speed": 40
+      },
+      {
+        "name": "obstagoon",
+        "archetype": "Generalist",
+        "type1": "dark",
+        "type2": "normal",
+        "hp": 93,
+        "attack": 90,
+        "defense": 101,
+        "special-attack": 60,
+        "special-defense": 81,
+        "speed": 95
+      },
+      {
+        "name": "zygarde-50",
+        "archetype": "Fast Attacker",
+        "type1": "dragon",
+        "type2": "ground",
+        "hp": 108,
+        "attack": 100,
+        "defense": 121,
+        "special-attack": 81,
+        "special-defense": 95,
+        "speed": 95
+      },
+      {
+        "name": "thundurus-incarnate",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": "flying",
+        "hp": 79,
+        "attack": 115,
+        "defense": 70,
+        "special-attack": 125,
+        "special-defense": 80,
+        "speed": 111
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 255,
+        "attack": 10,
+        "defense": 10,
+        "special-attack": 75,
+        "special-defense": 135,
+        "speed": 55
+      },
+      {
+        "name": "bastiodon",
+        "archetype": "Defensive Tank",
+        "type1": "rock",
+        "type2": "steel",
+        "hp": 60,
+        "attack": 52,
+        "defense": 168,
+        "special-attack": 47,
+        "special-defense": 138,
+        "speed": 30
+      }
+    ]
+  },
+  {
+    "rank": 2,
+    "fitness": 0.6493765754766246,
+    "breakdown": {
+      "total": 0.6493765754766246,
+      "base_strength": 0.4811980198019802,
+      "type_coverage": 0.9444444444444444,
+      "synergy": 0.8422787466685131,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.09722222222222224,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.6021543532544024
+    },
+    "pokemon": [
+      {
+        "name": "golisopod",
+        "archetype": "Physical Attacker",
+        "type1": "bug",
+        "type2": "water",
+        "hp": 75,
+        "attack": 125,
+        "defense": 140,
+        "special-attack": 60,
+        "special-defense": 90,
+        "speed": 40
+      },
+      {
+        "name": "obstagoon",
+        "archetype": "Generalist",
+        "type1": "dark",
+        "type2": "normal",
+        "hp": 93,
+        "attack": 90,
+        "defense": 101,
+        "special-attack": 60,
+        "special-defense": 81,
+        "speed": 95
+      },
+      {
+        "name": "zygarde-50",
+        "archetype": "Fast Attacker",
+        "type1": "dragon",
+        "type2": "ground",
+        "hp": 108,
+        "attack": 100,
+        "defense": 121,
+        "special-attack": 81,
+        "special-defense": 95,
+        "speed": 95
+      },
+      {
+        "name": "thundurus-therian",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": "flying",
+        "hp": 79,
+        "attack": 105,
+        "defense": 70,
+        "special-attack": 145,
+        "special-defense": 80,
+        "speed": 101
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 255,
+        "attack": 10,
+        "defense": 10,
+        "special-attack": 75,
+        "special-defense": 135,
+        "speed": 55
+      },
+      {
+        "name": "bastiodon",
+        "archetype": "Defensive Tank",
+        "type1": "rock",
+        "type2": "steel",
+        "hp": 60,
+        "attack": 52,
+        "defense": 168,
+        "special-attack": 47,
+        "special-defense": 138,
+        "speed": 30
+      }
+    ]
+  },
+  {
+    "rank": 3,
+    "fitness": 0.6493765754766246,
+    "breakdown": {
+      "total": 0.6493765754766246,
+      "base_strength": 0.4811980198019802,
+      "type_coverage": 0.9444444444444444,
+      "synergy": 0.8422787466685131,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.09722222222222224,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.6021543532544024
+    },
+    "pokemon": [
+      {
+        "name": "golisopod",
+        "archetype": "Physical Attacker",
+        "type1": "bug",
+        "type2": "water",
+        "hp": 75,
+        "attack": 125,
+        "defense": 140,
+        "special-attack": 60,
+        "special-defense": 90,
+        "speed": 40
+      },
+      {
+        "name": "obstagoon",
+        "archetype": "Generalist",
+        "type1": "dark",
+        "type2": "normal",
+        "hp": 93,
+        "attack": 90,
+        "defense": 101,
+        "special-attack": 60,
+        "special-defense": 81,
+        "speed": 95
+      },
+      {
+        "name": "zygarde-50",
+        "archetype": "Fast Attacker",
+        "type1": "dragon",
+        "type2": "ground",
+        "hp": 108,
+        "attack": 100,
+        "defense": 121,
+        "special-attack": 81,
+        "special-defense": 95,
+        "speed": 95
+      },
+      {
+        "name": "thundurus-therian",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": "flying",
+        "hp": 79,
+        "attack": 105,
+        "defense": 70,
+        "special-attack": 145,
+        "special-defense": 80,
+        "speed": 101
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 255,
+        "attack": 10,
+        "defense": 10,
+        "special-attack": 75,
+        "special-defense": 135,
+        "speed": 55
+      },
+      {
+        "name": "bastiodon",
+        "archetype": "Defensive Tank",
+        "type1": "rock",
+        "type2": "steel",
+        "hp": 60,
+        "attack": 52,
+        "defense": 168,
+        "special-attack": 47,
+        "special-defense": 138,
+        "speed": 30
+      }
+    ]
+  },
+  {
+    "rank": 4,
+    "fitness": 0.6493765754766246,
+    "breakdown": {
+      "total": 0.6493765754766246,
+      "base_strength": 0.4811980198019802,
+      "type_coverage": 0.9444444444444444,
+      "synergy": 0.8422787466685131,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.09722222222222224,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.6021543532544024
+    },
+    "pokemon": [
+      {
+        "name": "golisopod",
+        "archetype": "Physical Attacker",
+        "type1": "bug",
+        "type2": "water",
+        "hp": 75,
+        "attack": 125,
+        "defense": 140,
+        "special-attack": 60,
+        "special-defense": 90,
+        "speed": 40
+      },
+      {
+        "name": "obstagoon",
+        "archetype": "Generalist",
+        "type1": "dark",
+        "type2": "normal",
+        "hp": 93,
+        "attack": 90,
+        "defense": 101,
+        "special-attack": 60,
+        "special-defense": 81,
+        "speed": 95
+      },
+      {
+        "name": "zygarde-50",
+        "archetype": "Fast Attacker",
+        "type1": "dragon",
+        "type2": "ground",
+        "hp": 108,
+        "attack": 100,
+        "defense": 121,
+        "special-attack": 81,
+        "special-defense": 95,
+        "speed": 95
+      },
+      {
+        "name": "thundurus-therian",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": "flying",
+        "hp": 79,
+        "attack": 105,
+        "defense": 70,
+        "special-attack": 145,
+        "special-defense": 80,
+        "speed": 101
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 255,
+        "attack": 10,
+        "defense": 10,
+        "special-attack": 75,
+        "special-defense": 135,
+        "speed": 55
+      },
+      {
+        "name": "bastiodon",
+        "archetype": "Defensive Tank",
+        "type1": "rock",
+        "type2": "steel",
+        "hp": 60,
+        "attack": 52,
+        "defense": 168,
+        "special-attack": 47,
+        "special-defense": 138,
+        "speed": 30
+      }
+    ]
+  },
+  {
+    "rank": 5,
+    "fitness": 0.6493765754766246,
+    "breakdown": {
+      "total": 0.6493765754766246,
+      "base_strength": 0.4811980198019802,
+      "type_coverage": 0.9444444444444444,
+      "synergy": 0.8422787466685131,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.09722222222222224,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.6021543532544024
+    },
+    "pokemon": [
+      {
+        "name": "golisopod",
+        "archetype": "Physical Attacker",
+        "type1": "bug",
+        "type2": "water",
+        "hp": 75,
+        "attack": 125,
+        "defense": 140,
+        "special-attack": 60,
+        "special-defense": 90,
+        "speed": 40
+      },
+      {
+        "name": "obstagoon",
+        "archetype": "Generalist",
+        "type1": "dark",
+        "type2": "normal",
+        "hp": 93,
+        "attack": 90,
+        "defense": 101,
+        "special-attack": 60,
+        "special-defense": 81,
+        "speed": 95
+      },
+      {
+        "name": "zygarde-50",
+        "archetype": "Fast Attacker",
+        "type1": "dragon",
+        "type2": "ground",
+        "hp": 108,
+        "attack": 100,
+        "defense": 121,
+        "special-attack": 81,
+        "special-defense": 95,
+        "speed": 95
+      },
+      {
+        "name": "thundurus-therian",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": "flying",
+        "hp": 79,
+        "attack": 105,
+        "defense": 70,
+        "special-attack": 145,
+        "special-defense": 80,
+        "speed": 101
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 255,
+        "attack": 10,
+        "defense": 10,
+        "special-attack": 75,
+        "special-defense": 135,
+        "speed": 55
+      },
+      {
+        "name": "bastiodon",
+        "archetype": "Defensive Tank",
+        "type1": "rock",
+        "type2": "steel",
+        "hp": 60,
+        "attack": 52,
+        "defense": 168,
+        "special-attack": 47,
+        "special-defense": 138,
+        "speed": 30
+      }
+    ]
+  }
+]

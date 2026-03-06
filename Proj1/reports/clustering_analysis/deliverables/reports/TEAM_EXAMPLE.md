@@ -5,20 +5,19 @@
 | Pokemon | Archetype | Type | ATK | DEF | SPD | Role |
 |---------|-----------|------|-----|-----|-----|------|
 | Koraidon | Generalist | fighting/dragon | 135 | 115 | 135 | Sweeper |
-| Miraidon | Speed Sweeper | electric/dragon | 85 | 100 | 135 | Sweeper |
+| Miraidon | Defensive Wall | electric/dragon | 85 | 100 | 135 | Sweeper |
 | Groudon | Generalist | ground | 150 | 140 | 90 | Pivot |
-| Stakataka | Defensive Wall | rock/steel | 131 | 211 | 13 | Wall |
-| Cresselia | Fast Attacker | psychic | 70 | 110 | 85 | Support |
+| Stakataka | Speed Sweeper | rock/steel | 131 | 211 | 13 | Wall |
+| Cresselia | Generalist | psychic | 70 | 110 | 85 | Support |
 | Gliscor | Generalist | ground/flying | 95 | 125 | 95 | Physical Attacker |
 
 
 ## Team Composition Analysis
 
 **Archetype Diversity**:
-- Generalist: 3 Pokemon
-- Speed Sweeper: 1 Pokemon
+- Generalist: 4 Pokemon
 - Defensive Wall: 1 Pokemon
-- Fast Attacker: 1 Pokemon
+- Speed Sweeper: 1 Pokemon
 
 
 **Strengths**:

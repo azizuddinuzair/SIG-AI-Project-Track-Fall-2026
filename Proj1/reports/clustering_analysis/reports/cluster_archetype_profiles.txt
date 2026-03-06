@@ -4,349 +4,349 @@ POKEMON ARCHETYPE CLUSTER PROFILES
 ==========================================================================================
 
 ──────────────────────────────────────────────────────────────────────────────────────────
-CLUSTER 0: Generalist (50 Pokemon, 9.3%)
+CLUSTER 0: Fast Attacker (63 Pokemon, 10.5%)
 ──────────────────────────────────────────────────────────────────────────────────────────
 
 Feature Profile (Centroid Values):
-   Offensive Index:      170.6
-   Defensive Index:      220.6
-   Speed Percentile:     0.443
-   Physical/Special Bias: 0.105
+   Offensive Index:      188.3
+   Defensive Index:      222.2
+   Speed Percentile:     0.586
+   Physical/Special Bias: -0.107
+
+Type Profile:
+   Resists (7): fire, water, electric, flying, psychic, dark, steel
+   Weak to (8): grass, ice, fighting, poison, bug, rock, dragon, fairy
+
+Interpretation:
+   Good speed (58.6% percentile) + solid offense (188)
+      Can outspeed many Pokemon while dealing good damage
+      Mixed physical/special capabilities
+      Type profile: 7 resistances, 8 weaknesses (defensive coverage)
+
+Top 5 Representative Pokemon:
+   1. Armarouge            (fire/psychic        ) HP: 85 ATK: 60 DEF:100 SPA:125 SPD: 75
+   2. Reuniclus            (psychic             ) HP:110 ATK: 65 DEF: 75 SPA:125 SPD: 30
+   3. Meowstic-mega        (psychic             ) HP: 74 ATK: 48 DEF: 76 SPA:143 SPD:124
+   4. Gardevoir            (psychic/fairy       ) HP: 68 ATK: 65 DEF: 65 SPA:125 SPD: 80
+   5. Deoxys-speed         (psychic             ) HP: 50 ATK: 95 DEF: 90 SPA: 95 SPD:180
+
+──────────────────────────────────────────────────────────────────────────────────────────
+CLUSTER 1: Physical Attacker (50 Pokemon, 8.3%)
+──────────────────────────────────────────────────────────────────────────────────────────
+
+Feature Profile (Centroid Values):
+   Offensive Index:      183.8
+   Defensive Index:      211.6
+   Speed Percentile:     0.515
+   Physical/Special Bias: 0.281
+
+Type Profile:
+   Resists (12): fire, water, electric, fighting, poison, flying, psychic, bug, ghost, dragon, steel, fairy
+   Weak to (6): normal, grass, ice, ground, rock, dark
+
+Interpretation:
+   Strong physical bias (0.28) with high offense (184)
+      Focuses on powerful physical attacks to overwhelm opponents
+      Leaning PHYSICAL attacker (bias=0.28)
+      Type profile: 12 resistances, 6 weaknesses (defensive coverage)
+
+Top 5 Representative Pokemon:
+   1. Grapploct            (fighting            ) HP: 80 ATK:118 DEF: 90 SPA: 70 SPD: 42
+   2. Scizor               (bug/steel           ) HP: 70 ATK:130 DEF:100 SPA: 55 SPD: 65
+   3. Gallade              (psychic/fighting    ) HP: 68 ATK:125 DEF: 65 SPA: 65 SPD: 80
+   4. Conkeldurr           (fighting            ) HP:105 ATK:140 DEF: 95 SPA: 55 SPD: 45
+   5. Machamp              (fighting            ) HP: 90 ATK:130 DEF: 80 SPA: 65 SPD: 55
+
+──────────────────────────────────────────────────────────────────────────────────────────
+CLUSTER 2: Generalist (78 Pokemon, 13.0%)
+──────────────────────────────────────────────────────────────────────────────────────────
+
+Feature Profile (Centroid Values):
+   Offensive Index:      174.3
+   Defensive Index:      214.9
+   Speed Percentile:     0.440
+   Physical/Special Bias: 0.076
 
 Type Profile:
    Resists (4): water, grass, dragon, dark
-   Weak to (12): fire, electric, ice, fighting, poison, ground, psychic, bug, rock, ghost, steel, fairy
+   Weak to (14): normal, fire, electric, ice, fighting, poison, ground, flying, psychic, bug, rock, ghost, steel, fairy
 
 Interpretation:
-   Varied stat profile: OFF=171, DEF=221, SPD=44.3%
+   Varied stat profile: OFF=174, DEF=215, SPD=44.0%
       Flexible but not specialized in any area
       Mixed physical/special capabilities
-      Type profile: 4 resistances, 12 weaknesses (defensive coverage)
+      Type profile: 4 resistances, 14 weaknesses (defensive coverage)
 
 Top 5 Representative Pokemon:
-   1. Nidoqueen            (poison/ground       ) HP: 90 ATK: 92 DEF: 87 SPA: 75 SPD: 76
-   2. Sandaconda           (ground              ) HP: 72 ATK:107 DEF:125 SPA: 65 SPD: 71
-   3. Palossand            (ghost/ground        ) HP: 85 ATK: 75 DEF:110 SPA:100 SPD: 35
-   4. Donphan              (ground              ) HP: 90 ATK:120 DEF:120 SPA: 60 SPD: 50
-   5. Dracovish            (water/dragon        ) HP: 90 ATK: 90 DEF:100 SPA: 70 SPD: 75
+   1. Vaporeon             (water               ) HP:130 ATK: 65 DEF: 60 SPA:110 SPD: 65
+   2. Nidoqueen            (poison/ground       ) HP: 90 ATK: 92 DEF: 87 SPA: 75 SPD: 76
+   3. Politoed             (water               ) HP: 90 ATK: 75 DEF: 75 SPA: 90 SPD: 70
+   4. Palossand            (ghost/ground        ) HP: 85 ATK: 75 DEF:110 SPA:100 SPD: 35
+   5. Donphan              (ground              ) HP: 90 ATK:120 DEF:120 SPA: 60 SPD: 50
 
 ──────────────────────────────────────────────────────────────────────────────────────────
-CLUSTER 1: Defensive Pivot (43 Pokemon, 8.0%)
+CLUSTER 3: Balanced All-Rounder (65 Pokemon, 10.8%)
 ──────────────────────────────────────────────────────────────────────────────────────────
 
 Feature Profile (Centroid Values):
-   Offensive Index:      192.1
-   Defensive Index:      220.4
-   Speed Percentile:     0.527
-   Physical/Special Bias: -0.026
+   Offensive Index:      179.6
+   Defensive Index:      212.1
+   Speed Percentile:     0.438
+   Physical/Special Bias: 0.029
 
 Type Profile:
-   Resists (5): fire, water, electric, poison, steel
-   Weak to (12): normal, grass, ice, fighting, ground, psychic, bug, rock, ghost, dragon, dark, fairy
+   Resists (10): normal, fire, grass, electric, poison, flying, bug, dragon, steel, fairy
+   Weak to (8): water, ice, fighting, ground, psychic, rock, ghost, dark
 
 Interpretation:
-   Good defense (220) + moderate speed (52.7% percentile)
-      Balances defensiveness with mobility for pivoting and support
-      Mixed physical/special capabilities
-      Type profile: 5 resistances, 12 weaknesses (defensive coverage)
-
-Top 5 Representative Pokemon:
-   1. Flutter-mane         (ghost/fairy         ) HP: 55 ATK: 55 DEF: 55 SPA:135 SPD:135
-   2. Drampa               (normal/dragon       ) HP: 78 ATK: 60 DEF: 85 SPA:135 SPD: 36
-   3. Roaring-moon         (dragon/dark         ) HP:105 ATK:139 DEF: 71 SPA: 55 SPD:119
-   4. Guzzlord             (dark/dragon         ) HP:223 ATK:101 DEF: 53 SPA: 97 SPD: 43
-   5. Druddigon            (dragon              ) HP: 77 ATK:120 DEF: 90 SPA: 60 SPD: 48
-
-──────────────────────────────────────────────────────────────────────────────────────────
-CLUSTER 2: Generalist (68 Pokemon, 12.7%)
-──────────────────────────────────────────────────────────────────────────────────────────
-
-Feature Profile (Centroid Values):
-   Offensive Index:      169.6
-   Defensive Index:      197.1
-   Speed Percentile:     0.516
-   Physical/Special Bias: 0.178
-
-Type Profile:
-   Resists (11): fire, water, electric, fighting, poison, ground, flying, bug, ghost, steel, fairy
-   Weak to (7): normal, grass, ice, psychic, rock, dragon, dark
-
-Interpretation:
-   Varied stat profile: OFF=170, DEF=197, SPD=51.6%
-      Flexible but not specialized in any area
-      Mixed physical/special capabilities
-      Type profile: 11 resistances, 7 weaknesses (defensive coverage)
-
-Top 5 Representative Pokemon:
-   1. Falinks              (fighting            ) HP: 65 ATK:100 DEF:100 SPA: 70 SPD: 75
-   2. Passimian            (fighting            ) HP:100 ATK:120 DEF: 90 SPA: 40 SPD: 80
-   3. Bewear               (normal/fighting     ) HP:120 ATK:125 DEF: 80 SPA: 55 SPD: 60
-   4. Pinsir               (bug                 ) HP: 65 ATK:125 DEF:100 SPA: 55 SPD: 85
-   5. Hariyama             (fighting            ) HP:144 ATK:120 DEF: 60 SPA: 40 SPD: 50
-
-──────────────────────────────────────────────────────────────────────────────────────────
-CLUSTER 3: Generalist (105 Pokemon, 19.6%)
-──────────────────────────────────────────────────────────────────────────────────────────
-
-Feature Profile (Centroid Values):
-   Offensive Index:      166.0
-   Defensive Index:      207.6
-   Speed Percentile:     0.503
-   Physical/Special Bias: 0.107
-
-Type Profile:
-   Resists (8): fire, water, electric, poison, ground, rock, dark, steel
-   Weak to (8): normal, grass, ice, fighting, psychic, bug, ghost, fairy
-
-Interpretation:
-   Varied stat profile: OFF=166, DEF=208, SPD=50.3%
-      Flexible but not specialized in any area
-      Mixed physical/special capabilities
-      Type profile: 8 resistances, 8 weaknesses (defensive coverage)
-
-Top 5 Representative Pokemon:
-   1. Bombirdier           (flying/dark         ) HP: 70 ATK:103 DEF: 85 SPA: 60 SPD: 82
-   2. Mismagius            (ghost               ) HP: 60 ATK: 60 DEF: 60 SPA:105 SPD:105
-   3. Garbodor             (poison              ) HP: 80 ATK: 95 DEF: 82 SPA: 60 SPD: 75
-   4. Crobat               (poison/flying       ) HP: 85 ATK: 90 DEF: 80 SPA: 70 SPD:130
-   5. Overqwil             (dark/poison         ) HP: 85 ATK:115 DEF: 95 SPA: 65 SPD: 85
-
-──────────────────────────────────────────────────────────────────────────────────────────
-CLUSTER 4: Balanced All-Rounder (37 Pokemon, 6.9%)
-──────────────────────────────────────────────────────────────────────────────────────────
-
-Feature Profile (Centroid Values):
-   Offensive Index:      176.4
-   Defensive Index:      208.5
-   Speed Percentile:     0.454
-   Physical/Special Bias: 0.044
-
-Type Profile:
-   Resists (6): water, grass, flying, psychic, dragon, fairy
-   Weak to (10): normal, fire, electric, ice, poison, ground, bug, rock, dark, steel
-
-Interpretation:
-   Balanced stats: OFF=176, DEF=209, SPD=45.4%
+   Balanced stats: OFF=180, DEF=212, SPD=43.8%
       No glaring weaknesses; adaptable to multiple roles
       Mixed physical/special capabilities
-      Type profile: 6 resistances, 10 weaknesses (defensive coverage)
+      Type profile: 10 resistances, 8 weaknesses (defensive coverage)
 
 Top 5 Representative Pokemon:
-   1. Gastrodon            (water/ground        ) HP:111 ATK: 83 DEF: 68 SPA: 92 SPD: 39
-   2. Golduck              (water               ) HP: 80 ATK: 82 DEF: 78 SPA: 95 SPD: 85
-   3. Vaporeon             (water               ) HP:130 ATK: 65 DEF: 60 SPA:110 SPD: 65
-   4. Seismitoad           (water/ground        ) HP:105 ATK: 95 DEF: 75 SPA: 85 SPD: 74
-   5. Kingler              (water               ) HP: 55 ATK:130 DEF:115 SPA: 50 SPD: 75
+   1. Rillaboom            (grass               ) HP:100 ATK:125 DEF: 90 SPA: 60 SPD: 85
+   2. Lurantis             (grass               ) HP: 70 ATK:105 DEF: 90 SPA: 80 SPD: 45
+   3. Ogerpon              (grass               ) HP: 80 ATK:120 DEF: 84 SPA: 60 SPD:110
+   4. Appletun             (grass/dragon        ) HP:110 ATK: 85 DEF: 80 SPA:100 SPD: 30
+   5. Sinistcha            (grass/ghost         ) HP: 71 ATK: 60 DEF:106 SPA:121 SPD: 70
 
 ──────────────────────────────────────────────────────────────────────────────────────────
-CLUSTER 5: Defensive Wall (8 Pokemon, 1.5%)
+CLUSTER 4: Defensive Tank (33 Pokemon, 5.5%)
 ──────────────────────────────────────────────────────────────────────────────────────────
 
 Feature Profile (Centroid Values):
-   Offensive Index:      171.6
-   Defensive Index:      229.1
-   Speed Percentile:     0.264
-   Physical/Special Bias: 0.246
+   Offensive Index:      174.2
+   Defensive Index:      219.8
+   Speed Percentile:     0.389
+   Physical/Special Bias: 0.236
 
 Type Profile:
-   Resists (5): water, grass, fighting, ground, dragon
-   Weak to (7): fire, electric, ice, poison, flying, bug, rock
+   Resists (7): normal, water, fighting, ground, ghost, dragon, steel
+   Weak to (9): fire, grass, ice, poison, flying, psychic, bug, rock, dark
 
 Interpretation:
-   High defense (229) + low speed (26.4% percentile)
-      Built to absorb hits and stall opponents; uses priority moves or setup
-      Leaning PHYSICAL attacker (bias=0.25)
-      Type profile: 5 resistances, 7 weaknesses (defensive coverage)
+   Good defense (220) + low speed (38.9% percentile)
+      Tanky Pokemon designed to absorb damage and switch strategically
+      Leaning PHYSICAL attacker (bias=0.24)
+      Type profile: 7 resistances, 9 weaknesses (defensive coverage)
 
 Top 5 Representative Pokemon:
-   1. Omastar              (rock/water          ) HP: 70 ATK: 60 DEF:125 SPA:115 SPD: 55
-   2. Golem                (rock/ground         ) HP: 80 ATK:120 DEF:130 SPA: 55 SPD: 45
-   3. Barbaracle           (rock/water          ) HP: 72 ATK:105 DEF:115 SPA: 54 SPD: 68
-   4. Carracosta           (water/rock          ) HP: 74 ATK:108 DEF:133 SPA: 83 SPD: 32
-   5. Kabutops             (rock/water          ) HP: 60 ATK:115 DEF:105 SPA: 65 SPD: 80
+   1. Aurorus              (rock/ice            ) HP:123 ATK: 77 DEF: 72 SPA: 99 SPD: 58
+   2. Omastar              (rock/water          ) HP: 70 ATK: 60 DEF:125 SPA:115 SPD: 55
+   3. Tyrantrum            (rock/dragon         ) HP: 82 ATK:121 DEF:119 SPA: 69 SPD: 71
+   4. Golem                (rock/ground         ) HP: 80 ATK:120 DEF:130 SPA: 55 SPD: 45
+   5. Glimmora             (rock/poison         ) HP: 83 ATK: 55 DEF: 90 SPA:130 SPD: 86
 
 ──────────────────────────────────────────────────────────────────────────────────────────
-CLUSTER 6: Fast Attacker (30 Pokemon, 5.6%)
+CLUSTER 5: Speed Sweeper (36 Pokemon, 6.0%)
 ──────────────────────────────────────────────────────────────────────────────────────────
 
 Feature Profile (Centroid Values):
-   Offensive Index:      202.5
-   Defensive Index:      203.7
-   Speed Percentile:     0.630
-   Physical/Special Bias: -0.039
+   Offensive Index:      187.4
+   Defensive Index:      188.8
+   Speed Percentile:     0.674
+   Physical/Special Bias: -0.090
+
+Type Profile:
+   Resists (8): fire, grass, electric, poison, ground, rock, dragon, steel
+   Weak to (9): water, ice, fighting, flying, psychic, bug, ghost, dark, fairy
+
+Interpretation:
+   High speed (67.4% percentile) + good offense (187)
+      Designed to outspeed and KO opponents before they move
+      Mixed physical/special capabilities
+      Type profile: 8 resistances, 9 weaknesses (defensive coverage)
+
+Top 5 Representative Pokemon:
+   1. Jolteon              (electric            ) HP: 65 ATK: 65 DEF: 60 SPA:110 SPD:130
+   2. Pincurchin           (electric            ) HP: 48 ATK:101 DEF: 95 SPA: 91 SPD: 15
+   3. Dracozolt            (electric/dragon     ) HP: 90 ATK:100 DEF: 90 SPA: 80 SPD: 75
+   4. Tapu-koko            (electric/fairy      ) HP: 70 ATK:115 DEF: 85 SPA: 95 SPD:130
+   5. Raichu               (electric            ) HP: 60 ATK: 90 DEF: 55 SPA: 90 SPD:110
+
+──────────────────────────────────────────────────────────────────────────────────────────
+CLUSTER 6: Fast Attacker (34 Pokemon, 5.7%)
+──────────────────────────────────────────────────────────────────────────────────────────
+
+Feature Profile (Centroid Values):
+   Offensive Index:      201.9
+   Defensive Index:      207.6
+   Speed Percentile:     0.597
+   Physical/Special Bias: -0.013
 
 Type Profile:
    Resists (9): fire, water, electric, poison, ground, flying, rock, dragon, fairy
    Weak to (9): normal, grass, ice, fighting, psychic, bug, ghost, dark, steel
 
 Interpretation:
-   Good speed (63.0% percentile) + solid offense (203)
+   Good speed (59.7% percentile) + solid offense (202)
       Can outspeed many Pokemon while dealing good damage
       Mixed physical/special capabilities
       Type profile: 9 resistances, 9 weaknesses (defensive coverage)
 
 Top 5 Representative Pokemon:
-   1. Arcanine             (fire                ) HP: 90 ATK:110 DEF: 80 SPA:100 SPD: 95
-   2. Centiskorch          (fire/bug            ) HP:100 ATK:115 DEF: 65 SPA: 90 SPD: 65
-   3. Chandelure           (ghost/fire          ) HP: 60 ATK: 55 DEF: 90 SPA:145 SPD: 80
-   4. Typhlosion           (fire                ) HP: 78 ATK: 84 DEF: 78 SPA:109 SPD:100
-   5. Charizard            (fire/flying         ) HP: 78 ATK: 84 DEF: 78 SPA:109 SPD:100
+   1. Chandelure           (ghost/fire          ) HP: 60 ATK: 55 DEF: 90 SPA:145 SPD: 80
+   2. Arcanine             (fire                ) HP: 90 ATK:110 DEF: 80 SPA:100 SPD: 95
+   3. Centiskorch          (fire/bug            ) HP:100 ATK:115 DEF: 65 SPA: 90 SPD: 65
+   4. Entei                (fire                ) HP:115 ATK:115 DEF: 85 SPA: 90 SPD:100
+   5. Iron-moth            (fire/poison         ) HP: 80 ATK: 70 DEF: 60 SPA:140 SPD:110
 
 ──────────────────────────────────────────────────────────────────────────────────────────
-CLUSTER 7: Balanced All-Rounder (63 Pokemon, 11.8%)
+CLUSTER 7: Generalist (113 Pokemon, 18.8%)
 ──────────────────────────────────────────────────────────────────────────────────────────
 
 Feature Profile (Centroid Values):
-   Offensive Index:      181.5
-   Defensive Index:      211.0
-   Speed Percentile:     0.448
-   Physical/Special Bias: 0.041
+   Offensive Index:      162.4
+   Defensive Index:      191.1
+   Speed Percentile:     0.522
+   Physical/Special Bias: 0.089
 
 Type Profile:
-   Resists (9): fire, grass, electric, poison, flying, bug, dragon, steel, fairy
-   Weak to (9): normal, water, ice, fighting, ground, psychic, rock, ghost, dark
+   Resists (9): normal, fire, electric, poison, ground, flying, rock, steel, fairy
+   Weak to (6): grass, fighting, psychic, bug, ghost, dark
 
 Interpretation:
-   Balanced stats: OFF=182, DEF=211, SPD=44.8%
-      No glaring weaknesses; adaptable to multiple roles
+   Varied stat profile: OFF=162, DEF=191, SPD=52.2%
+      Flexible but not specialized in any area
+      Mixed physical/special capabilities
+      Type profile: 9 resistances, 6 weaknesses (defensive coverage)
+
+Top 5 Representative Pokemon:
+   1. Mismagius            (ghost               ) HP: 60 ATK: 60 DEF: 60 SPA:105 SPD:105
+   2. Skuntank             (poison/dark         ) HP:103 ATK: 93 DEF: 67 SPA: 71 SPD: 84
+   3. Bombirdier           (flying/dark         ) HP: 70 ATK:103 DEF: 85 SPA: 60 SPD: 82
+   4. Scolipede            (bug/poison          ) HP: 60 ATK:100 DEF: 89 SPA: 55 SPD:112
+   5. Arbok                (poison              ) HP: 60 ATK: 95 DEF: 69 SPA: 65 SPD: 80
+
+──────────────────────────────────────────────────────────────────────────────────────────
+CLUSTER 8: Fast Attacker (6 Pokemon, 1.0%)
+──────────────────────────────────────────────────────────────────────────────────────────
+
+Feature Profile (Centroid Values):
+   Offensive Index:      205.5
+   Defensive Index:      216.8
+   Speed Percentile:     0.594
+   Physical/Special Bias: 0.003
+
+Type Profile:
+   Resists (8): water, grass, poison, flying, psychic, ghost, dragon, fairy
+   Weak to (8): normal, fire, electric, ice, ground, rock, dark, steel
+
+Interpretation:
+   Good speed (59.4% percentile) + solid offense (206)
+      Can outspeed many Pokemon while dealing good damage
+      Mixed physical/special capabilities
+      Type profile: 8 resistances, 8 weaknesses (defensive coverage)
+
+Top 5 Representative Pokemon:
+   1. Keldeo-ordinary      (water/fighting      ) HP: 91 ATK: 72 DEF: 90 SPA:129 SPD:108
+   2. Keldeo-resolute      (water/fighting      ) HP: 91 ATK: 72 DEF: 90 SPA:129 SPD:108
+   3. Urshifu-rapid-strike (fighting/water      ) HP:100 ATK:130 DEF:100 SPA: 63 SPD: 97
+   4. Urshifu-rapid-strike-gmax (fighting/water      ) HP:100 ATK:130 DEF:100 SPA: 63 SPD: 97
+   5. Camerupt             (fire/ground         ) HP: 70 ATK:100 DEF: 70 SPA:105 SPD: 40
+
+──────────────────────────────────────────────────────────────────────────────────────────
+CLUSTER 9: Defensive Tank (5 Pokemon, 0.8%)
+──────────────────────────────────────────────────────────────────────────────────────────
+
+Feature Profile (Centroid Values):
+   Offensive Index:      170.8
+   Defensive Index:      206.9
+   Speed Percentile:     0.219
+   Physical/Special Bias: 0.056
+
+Type Profile:
+   Resists (3): water, grass, dragon
+   Weak to (6): fire, electric, poison, ground, rock, steel
+
+Interpretation:
+   Good defense (207) + low speed (21.9% percentile)
+      Tanky Pokemon designed to absorb damage and switch strategically
+      Mixed physical/special capabilities
+      Type profile: 3 resistances, 6 weaknesses (defensive coverage)
+
+Top 5 Representative Pokemon:
+   1. Gastrodon            (water/ground        ) HP:111 ATK: 83 DEF: 68 SPA: 92 SPD: 39
+   2. Seismitoad           (water/ground        ) HP:105 ATK: 95 DEF: 75 SPA: 85 SPD: 74
+   3. Whiscash             (water/ground        ) HP:110 ATK: 78 DEF: 73 SPA: 76 SPD: 60
+   4. Quagsire             (water/ground        ) HP: 95 ATK: 85 DEF: 85 SPA: 65 SPD: 35
+   5. Swampert             (water/ground        ) HP:100 ATK:110 DEF: 90 SPA: 85 SPD: 60
+
+──────────────────────────────────────────────────────────────────────────────────────────
+CLUSTER 10: Defensive Tank (35 Pokemon, 5.8%)
+──────────────────────────────────────────────────────────────────────────────────────────
+
+Feature Profile (Centroid Values):
+   Offensive Index:      165.7
+   Defensive Index:      247.6
+   Speed Percentile:     0.354
+   Physical/Special Bias: -0.003
+
+Type Profile:
+   Resists (9): normal, fire, water, grass, electric, poison, ghost, dragon, steel
+   Weak to (9): ice, fighting, ground, flying, psychic, bug, rock, dark, fairy
+
+Interpretation:
+   Good defense (248) + low speed (35.4% percentile)
+      Tanky Pokemon designed to absorb damage and switch strategically
       Mixed physical/special capabilities
       Type profile: 9 resistances, 9 weaknesses (defensive coverage)
 
 Top 5 Representative Pokemon:
-   1. Rillaboom            (grass               ) HP:100 ATK:125 DEF: 90 SPA: 60 SPD: 85
-   2. Lurantis             (grass               ) HP: 70 ATK:105 DEF: 90 SPA: 80 SPD: 45
-   3. Appletun             (grass/dragon        ) HP:110 ATK: 85 DEF: 80 SPA:100 SPD: 30
-   4. Ogerpon              (grass               ) HP: 80 ATK:120 DEF: 84 SPA: 60 SPD:110
-   5. Sinistcha            (grass/ghost         ) HP: 71 ATK: 60 DEF:106 SPA:121 SPD: 70
+   1. Lapras               (water/ice           ) HP:130 ATK: 85 DEF: 80 SPA: 85 SPD: 60
+   2. Cloyster             (water/ice           ) HP: 50 ATK: 95 DEF:180 SPA: 85 SPD: 70
+   3. Arctovish            (water/ice           ) HP: 90 ATK: 90 DEF:100 SPA: 80 SPD: 55
+   4. Walrein              (ice/water           ) HP:110 ATK: 80 DEF: 90 SPA: 95 SPD: 65
+   5. Coalossal            (rock/fire           ) HP:110 ATK: 80 DEF:120 SPA: 80 SPD: 30
 
 ──────────────────────────────────────────────────────────────────────────────────────────
-CLUSTER 8: Speed Sweeper (35 Pokemon, 6.5%)
-──────────────────────────────────────────────────────────────────────────────────────────
-
-Feature Profile (Centroid Values):
-   Offensive Index:      181.2
-   Defensive Index:      193.5
-   Speed Percentile:     0.666
-   Physical/Special Bias: -0.095
-
-Type Profile:
-   Resists (4): grass, electric, dragon, steel
-   Weak to (13): fire, water, ice, fighting, poison, ground, flying, psychic, bug, rock, ghost, dark, fairy
-
-Interpretation:
-   High speed (66.6% percentile) + good offense (181)
-      Designed to outspeed and KO opponents before they move
-      Mixed physical/special capabilities
-      Type profile: 4 resistances, 13 weaknesses (defensive coverage)
-
-Top 5 Representative Pokemon:
-   1. Jolteon              (electric            ) HP: 65 ATK: 65 DEF: 60 SPA:110 SPD:130
-   2. Dracozolt            (electric/dragon     ) HP: 90 ATK:100 DEF: 90 SPA: 80 SPD: 75
-   3. Pincurchin           (electric            ) HP: 48 ATK:101 DEF: 95 SPA: 91 SPD: 15
-   4. Raichu               (electric            ) HP: 60 ATK: 90 DEF: 55 SPA: 90 SPD:110
-   5. Zebstrika            (electric            ) HP: 75 ATK:100 DEF: 63 SPA: 80 SPD:116
-
-──────────────────────────────────────────────────────────────────────────────────────────
-CLUSTER 9: Defensive Wall (25 Pokemon, 4.7%)
+CLUSTER 11: Balanced All-Rounder (83 Pokemon, 13.8%)
 ──────────────────────────────────────────────────────────────────────────────────────────
 
 Feature Profile (Centroid Values):
-   Offensive Index:      168.2
-   Defensive Index:      248.3
-   Speed Percentile:     0.337
-   Physical/Special Bias: 0.168
+   Offensive Index:      183.3
+   Defensive Index:      222.3
+   Speed Percentile:     0.492
+   Physical/Special Bias: 0.016
 
 Type Profile:
-   Resists (6): water, electric, fighting, ground, psychic, steel
-   Weak to (10): fire, grass, ice, poison, flying, bug, rock, dragon, dark, fairy
+   Resists (6): normal, fire, water, electric, poison, steel
+   Weak to (12): grass, ice, fighting, ground, flying, psychic, bug, rock, ghost, dragon, dark, fairy
 
 Interpretation:
-   High defense (248) + low speed (33.7% percentile)
-      Built to absorb hits and stall opponents; uses priority moves or setup
-      Mixed physical/special capabilities
-      Type profile: 6 resistances, 10 weaknesses (defensive coverage)
-
-Top 5 Representative Pokemon:
-   1. Coalossal            (rock/fire           ) HP:110 ATK: 80 DEF:120 SPA: 80 SPD: 30
-   2. Nihilego             (rock/poison         ) HP:109 ATK: 53 DEF: 47 SPA:127 SPD:103
-   3. Gigalith             (rock                ) HP: 85 ATK:135 DEF:130 SPA: 60 SPD: 25
-   4. Aggron               (steel/rock          ) HP: 70 ATK:110 DEF:180 SPA: 60 SPD: 50
-   5. Iron-boulder         (rock/psychic        ) HP: 90 ATK:120 DEF: 80 SPA: 68 SPD:124
-
-──────────────────────────────────────────────────────────────────────────────────────────
-CLUSTER 10: Balanced All-Rounder (27 Pokemon, 5.0%)
-──────────────────────────────────────────────────────────────────────────────────────────
-
-Feature Profile (Centroid Values):
-   Offensive Index:      180.0
-   Defensive Index:      222.2
-   Speed Percentile:     0.479
-   Physical/Special Bias: 0.029
-
-Type Profile:
-   Resists (7): fire, water, electric, ice, dark, steel, fairy
-   Weak to (10): grass, fighting, poison, ground, flying, psychic, bug, rock, ghost, dragon
-
-Interpretation:
-   Balanced stats: OFF=180, DEF=222, SPD=47.9%
+   Balanced stats: OFF=183, DEF=222, SPD=49.2%
       No glaring weaknesses; adaptable to multiple roles
       Mixed physical/special capabilities
-      Type profile: 7 resistances, 10 weaknesses (defensive coverage)
+      Type profile: 6 resistances, 12 weaknesses (defensive coverage)
 
 Top 5 Representative Pokemon:
-   1. Aurorus              (rock/ice            ) HP:123 ATK: 77 DEF: 72 SPA: 99 SPD: 58
-   2. Arctozolt            (electric/ice        ) HP: 90 ATK:100 DEF: 90 SPA: 90 SPD: 55
-   3. Walrein              (ice/water           ) HP:110 ATK: 80 DEF: 90 SPA: 95 SPD: 65
-   4. Mr-rime              (ice/psychic         ) HP: 80 ATK: 85 DEF: 75 SPA:110 SPD: 70
-   5. Glaceon              (ice                 ) HP: 65 ATK: 60 DEF:110 SPA:130 SPD: 65
-
-──────────────────────────────────────────────────────────────────────────────────────────
-CLUSTER 11: Fast Attacker (44 Pokemon, 8.2%)
-──────────────────────────────────────────────────────────────────────────────────────────
-
-Feature Profile (Centroid Values):
-   Offensive Index:      186.2
-   Defensive Index:      225.6
-   Speed Percentile:     0.560
-   Physical/Special Bias: -0.135
-
-Type Profile:
-   Resists (7): fire, water, electric, ground, psychic, rock, steel
-   Weak to (9): grass, ice, fighting, poison, bug, ghost, dragon, dark, fairy
-
-Interpretation:
-   Good speed (56.0% percentile) + solid offense (186)
-      Can outspeed many Pokemon while dealing good damage
-      Mixed physical/special capabilities
-      Type profile: 7 resistances, 9 weaknesses (defensive coverage)
-
-Top 5 Representative Pokemon:
-   1. Armarouge            (fire/psychic        ) HP: 85 ATK: 60 DEF:100 SPA:125 SPD: 75
-   2. Reuniclus            (psychic             ) HP:110 ATK: 65 DEF: 75 SPA:125 SPD: 30
-   3. Gardevoir            (psychic/fairy       ) HP: 68 ATK: 65 DEF: 65 SPA:125 SPD: 80
-   4. Delphox              (fire/psychic        ) HP: 75 ATK: 69 DEF: 72 SPA:114 SPD:104
-   5. Beheeyem             (psychic             ) HP: 75 ATK: 75 DEF: 75 SPA:125 SPD: 40
+   1. Druddigon            (dragon              ) HP: 77 ATK:120 DEF: 90 SPA: 60 SPD: 48
+   2. Flutter-mane         (ghost/fairy         ) HP: 55 ATK: 55 DEF: 55 SPA:135 SPD:135
+   3. Roaring-moon         (dragon/dark         ) HP:105 ATK:139 DEF: 71 SPA: 55 SPD:119
+   4. Drampa               (normal/dragon       ) HP: 78 ATK: 60 DEF: 85 SPA:135 SPD: 36
+   5. Alcremie             (fairy               ) HP: 65 ATK: 60 DEF: 75 SPA:110 SPD: 64
 
 ==========================================================================================
 ARCHETYPE SUMMARY
 ==========================================================================================
 
 Cluster → Archetype Mapping:
-   Cluster 0: Generalist                     (50 Pokemon)
-   Cluster 1: Defensive Pivot                (43 Pokemon)
-   Cluster 2: Generalist                     (68 Pokemon)
-   Cluster 3: Generalist                     (105 Pokemon)
-   Cluster 4: Balanced All-Rounder           (37 Pokemon)
-   Cluster 5: Defensive Wall                 (8 Pokemon)
-   Cluster 6: Fast Attacker                  (30 Pokemon)
-   Cluster 7: Balanced All-Rounder           (63 Pokemon)
-   Cluster 8: Speed Sweeper                  (35 Pokemon)
-   Cluster 9: Defensive Wall                 (25 Pokemon)
-   Cluster 10: Balanced All-Rounder           (27 Pokemon)
-   Cluster 11: Fast Attacker                  (44 Pokemon)
+   Cluster 0: Fast Attacker                  (63 Pokemon)
+   Cluster 1: Physical Attacker              (50 Pokemon)
+   Cluster 2: Generalist                     (78 Pokemon)
+   Cluster 3: Balanced All-Rounder           (65 Pokemon)
+   Cluster 4: Defensive Tank                 (33 Pokemon)
+   Cluster 5: Speed Sweeper                  (36 Pokemon)
+   Cluster 6: Fast Attacker                  (34 Pokemon)
+   Cluster 7: Generalist                     (113 Pokemon)
+   Cluster 8: Fast Attacker                  (6 Pokemon)
+   Cluster 9: Defensive Tank                 (5 Pokemon)
+   Cluster 10: Defensive Tank                 (35 Pokemon)
+   Cluster 11: Balanced All-Rounder           (83 Pokemon)
 
 Diversity Check:
    Unique archetypes: 6
-   Archetypes: Balanced All-Rounder, Defensive Pivot, Defensive Wall, Fast Attacker, Generalist, Speed Sweeper
+   Archetypes: Balanced All-Rounder, Defensive Tank, Fast Attacker, Generalist, Physical Attacker, Speed Sweeper
 
 ==========================================================================================

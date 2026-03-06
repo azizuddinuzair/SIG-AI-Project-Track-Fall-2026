@@ -1,0 +1,16 @@
+name,role_prior,archetype,allowed_move_count,canonical_move_count,canonical_moves,fetch_status
+golisopod,breaker,Physical Attacker,8,4,close-combat;knock-off;dark-pulse;ice-beam,ok
+okidogi,breaker,Physical Attacker,8,4,close-combat;knock-off;body-press;drain-punch,ok
+blissey,bulky_pivot,Balanced All-Rounder,5,4,stealth-rock;toxic;protect;soft-boiled,ok
+enamorus-incarnate,bulky_wincon,Defensive Tank,5,4,moonblast;outrage;protect;psychic,ok
+oricorio-baile,bulky_wincon,Defensive Tank,5,4,roost;toxic;defog;protect,ok
+bastiodon,defensive_wall,Defensive Tank,9,4,toxic;protect;body-press;earthquake,ok
+zygarde-50,fast_pivot,Fast Attacker,6,4,draco-meteor;earthquake;haze;outrage,ok
+obstagoon,mixed_balanced,Generalist,9,4,ice-beam;thunderbolt;body-press;close-combat,ok
+arctozolt,physical_sweeper,Speed Sweeper,7,4,hydro-pump;ice-beam;protect;surf,ok
+eelektross,physical_sweeper,Speed Sweeper,13,4,close-combat;knock-off;dragon-claw;outrage,ok
+sneasler,physical_sweeper,Physical Attacker,6,4,close-combat;protect;shadow-ball;taunt,ok
+raging-bolt,special_sweeper,Speed Sweeper,9,4,draco-meteor;thunderbolt;body-press;earthquake,ok
+thundurus-incarnate,special_sweeper,Speed Sweeper,11,4,dark-pulse;thunderbolt;psychic;defog,ok
+thundurus-therian,special_sweeper,Speed Sweeper,11,4,dark-pulse;thunderbolt;psychic;defog,ok
+zapdos,special_sweeper,Speed Sweeper,9,4,thunderbolt;brave-bird;defog;heat-wave,ok

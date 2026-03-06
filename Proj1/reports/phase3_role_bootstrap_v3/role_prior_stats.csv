@@ -1,0 +1,13 @@
+role_prior,archetype,pokemon_count
+mixed_balanced,Generalist,9
+defensive_wall,Defensive Tank,6
+fast_pivot,Fast Attacker,6
+special_sweeper,Speed Sweeper,5
+bulky_wincon,Defensive Tank,4
+physical_sweeper,Physical Attacker,4
+bulky_pivot,Balanced All-Rounder,3
+physical_sweeper,Speed Sweeper,3
+breaker,Physical Attacker,2
+physical_sweeper,Balanced All-Rounder,2
+fast_pivot,Generalist,1
+mixed_balanced,Balanced All-Rounder,1

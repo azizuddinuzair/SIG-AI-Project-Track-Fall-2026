@@ -1,0 +1,73 @@
+pokemon,archetype,move,move_class,weighted_frequency,raw_count,unique_team_occurrences,normalized_weighted_frequency
+arctozolt,Speed Sweeper,hydro-pump,offense,2.914430883620767,5,5,0.5828861767241534
+arctozolt,Speed Sweeper,ice-beam,offense,2.914430883620767,5,5,0.5828861767241534
+arctozolt,Speed Sweeper,protect,utility,2.914430883620767,5,5,0.5828861767241534
+arctozolt,Speed Sweeper,surf,offense,2.914430883620767,5,5,0.5828861767241534
+bellibolt,Speed Sweeper,protect,utility,0.5953336614516792,1,1,0.5953336614516792
+bellibolt,Speed Sweeper,thunder-wave,utility,0.5953336614516792,1,1,0.5953336614516792
+bellibolt,Speed Sweeper,thunderbolt,offense,0.5953336614516792,1,1,0.5953336614516792
+bellibolt,Speed Sweeper,toxic,utility,0.5953336614516792,1,1,0.5953336614516792
+blissey,Balanced All-Rounder,protect,utility,5.919274686540978,10,10,0.5919274686540978
+blissey,Balanced All-Rounder,soft-boiled,recovery,5.919274686540978,10,10,0.5919274686540978
+blissey,Balanced All-Rounder,stealth-rock,hazard,5.919274686540978,10,10,0.5919274686540978
+blissey,Balanced All-Rounder,toxic,utility,5.919274686540978,10,10,0.5919274686540978
+cobalion,Physical Attacker,body-press,offense,0.5870852648878905,1,1,0.5870852648878905
+cobalion,Physical Attacker,close-combat,offense,0.5870852648878905,1,1,0.5870852648878905
+cobalion,Physical Attacker,protect,utility,0.5870852648878905,1,1,0.5870852648878905
+cobalion,Physical Attacker,taunt,utility,0.5870852648878905,1,1,0.5870852648878905
+eelektross,Speed Sweeper,close-combat,offense,1.2019368852284793,2,2,0.6009684426142397
+eelektross,Speed Sweeper,dragon-claw,offense,1.2019368852284793,2,2,0.6009684426142397
+eelektross,Speed Sweeper,knock-off,offense,1.2019368852284793,2,2,0.6009684426142397
+eelektross,Speed Sweeper,outrage,offense,1.2019368852284793,2,2,0.6009684426142397
+electivire,Speed Sweeper,earthquake,offense,1.2075732562400525,2,2,0.6037866281200263
+electivire,Speed Sweeper,knock-off,offense,1.2075732562400525,2,2,0.6037866281200263
+electivire,Speed Sweeper,protect,utility,1.2075732562400525,2,2,0.6037866281200263
+electivire,Speed Sweeper,psychic,offense,1.2075732562400525,2,2,0.6037866281200263
+hitmonchan,Physical Attacker,close-combat,offense,0.5710500747777052,1,1,0.5710500747777052
+hitmonchan,Physical Attacker,drain-punch,offense,0.5710500747777052,1,1,0.5710500747777052
+hitmonchan,Physical Attacker,earthquake,offense,0.5710500747777052,1,1,0.5710500747777052
+hitmonchan,Physical Attacker,knock-off,offense,0.5710500747777052,1,1,0.5710500747777052
+houndstone,Generalist,body-press,offense,1.8086688091365961,3,3,0.6028896030455321
+houndstone,Generalist,protect,utility,1.8086688091365961,3,3,0.6028896030455321
+houndstone,Generalist,shadow-ball,offense,1.8086688091365961,3,3,0.6028896030455321
+houndstone,Generalist,will-o-wisp,utility,1.8086688091365961,3,3,0.6028896030455321
+kangaskhan,Generalist,drain-punch,offense,0.589802910408922,1,1,0.589802910408922
+kangaskhan,Generalist,earthquake,offense,0.589802910408922,1,1,0.589802910408922
+kangaskhan,Generalist,ice-beam,offense,0.589802910408922,1,1,0.589802910408922
+kangaskhan,Generalist,thunderbolt,offense,0.589802910408922,1,1,0.589802910408922
+landorus-incarnate,Fast Attacker,defog,utility,0.604283389889854,1,1,0.604283389889854
+landorus-incarnate,Fast Attacker,knock-off,offense,0.604283389889854,1,1,0.604283389889854
+landorus-incarnate,Fast Attacker,taunt,utility,0.604283389889854,1,1,0.604283389889854
+landorus-incarnate,Fast Attacker,u-turn,pivot,0.604283389889854,1,1,0.604283389889854
+landorus-therian,Fast Attacker,defog,utility,5.314991296651124,9,9,0.5905545885167915
+landorus-therian,Fast Attacker,knock-off,offense,5.314991296651124,9,9,0.5905545885167915
+landorus-therian,Fast Attacker,taunt,utility,5.314991296651124,9,9,0.5905545885167915
+landorus-therian,Fast Attacker,u-turn,pivot,5.314991296651124,9,9,0.5905545885167915
+lucario,Physical Attacker,close-combat,offense,0.5725681856505055,1,1,0.5725681856505055
+lucario,Physical Attacker,dark-pulse,offense,0.5725681856505055,1,1,0.5725681856505055
+lucario,Physical Attacker,drain-punch,offense,0.5725681856505055,1,1,0.5725681856505055
+lucario,Physical Attacker,earthquake,offense,0.5725681856505055,1,1,0.5725681856505055
+mimikyu-busted,Defensive Tank,dark-pulse,offense,2.320506435725023,4,4,0.5801266089312558
+mimikyu-busted,Defensive Tank,drain-punch,offense,2.320506435725023,4,4,0.5801266089312558
+mimikyu-busted,Defensive Tank,protect,utility,2.320506435725023,4,4,0.5801266089312558
+mimikyu-busted,Defensive Tank,toxic,utility,2.320506435725023,4,4,0.5801266089312558
+obstagoon,Generalist,body-press,offense,1.790099441679359,3,3,0.5966998138931197
+obstagoon,Generalist,close-combat,offense,1.790099441679359,3,3,0.5966998138931197
+obstagoon,Generalist,ice-beam,offense,1.790099441679359,3,3,0.5966998138931197
+obstagoon,Generalist,thunderbolt,offense,1.790099441679359,3,3,0.5966998138931197
+okidogi,Physical Attacker,body-press,offense,3.598768250815955,6,6,0.5997947084693258
+okidogi,Physical Attacker,close-combat,offense,3.598768250815955,6,6,0.5997947084693258
+okidogi,Physical Attacker,drain-punch,offense,3.598768250815955,6,6,0.5997947084693258
+okidogi,Physical Attacker,knock-off,offense,3.598768250815955,6,6,0.5997947084693258
+porygon-z,Generalist,dark-pulse,offense,1.7307035253161012,3,3,0.5769011751053671
+porygon-z,Generalist,ice-beam,offense,1.7307035253161012,3,3,0.5769011751053671
+porygon-z,Generalist,recover,recovery,1.7307035253161012,3,3,0.5769011751053671
+porygon-z,Generalist,thunderbolt,offense,1.7307035253161012,3,3,0.5769011751053671
+tapu-fini,Defensive Tank,defog,utility,3.598768250815955,6,6,0.5997947084693258
+tapu-fini,Defensive Tank,haze,utility,3.598768250815955,6,6,0.5997947084693258
+tapu-fini,Defensive Tank,protect,utility,3.598768250815955,6,6,0.5997947084693258
+tapu-fini,Defensive Tank,toxic,utility,3.598768250815955,6,6,0.5997947084693258
+zamazenta,Physical Attacker,body-press,offense,0.589802910408922,1,1,0.589802910408922
+zamazenta,Physical Attacker,close-combat,offense,0.589802910408922,1,1,0.589802910408922
+zamazenta,Physical Attacker,moonblast,offense,0.589802910408922,1,1,0.589802910408922
+zamazenta,Physical Attacker,protect,utility,0.589802910408922,1,1,0.589802910408922

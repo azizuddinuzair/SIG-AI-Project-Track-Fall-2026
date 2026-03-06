@@ -1,0 +1,892 @@
+[
+  {
+    "rank": 1,
+    "fitness": 0.604283389889854,
+    "breakdown": {
+      "total": 0.604283389889854,
+      "base_strength": 0.458038503850385,
+      "type_coverage": 1.0,
+      "synergy": 0.8811939964054072,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.05555555555555556,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.5153945010009651
+    },
+    "pokemon": [
+      {
+        "name": "landorus-incarnate",
+        "archetype": "Fast Attacker",
+        "type1": "ground",
+        "type2": "flying",
+        "hp": 89,
+        "attack": 125,
+        "defense": 90,
+        "special-attack": 115,
+        "special-defense": 80,
+        "speed": 101
+      },
+      {
+        "name": "houndstone",
+        "archetype": "Generalist",
+        "type1": "ghost",
+        "type2": NaN,
+        "hp": 72,
+        "attack": 101,
+        "defense": 100,
+        "special-attack": 50,
+        "special-defense": 97,
+        "speed": 68
+      },
+      {
+        "name": "okidogi",
+        "archetype": "Physical Attacker",
+        "type1": "poison",
+        "type2": "fighting",
+        "hp": 88,
+        "attack": 128,
+        "defense": 115,
+        "special-attack": 58,
+        "special-defense": 86,
+        "speed": 80
+      },
+      {
+        "name": "tapu-fini",
+        "archetype": "Defensive Tank",
+        "type1": "water",
+        "type2": "fairy",
+        "hp": 70,
+        "attack": 75,
+        "defense": 115,
+        "special-attack": 95,
+        "special-defense": 130,
+        "speed": 85
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 255,
+        "attack": 10,
+        "defense": 10,
+        "special-attack": 75,
+        "special-defense": 135,
+        "speed": 55
+      },
+      {
+        "name": "electivire",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": NaN,
+        "hp": 75,
+        "attack": 123,
+        "defense": 67,
+        "special-attack": 95,
+        "special-defense": 85,
+        "speed": 95
+      }
+    ]
+  },
+  {
+    "rank": 2,
+    "fitness": 0.604283389889854,
+    "breakdown": {
+      "total": 0.604283389889854,
+      "base_strength": 0.458038503850385,
+      "type_coverage": 1.0,
+      "synergy": 0.8811939964054072,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.05555555555555556,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.5153945010009651
+    },
+    "pokemon": [
+      {
+        "name": "landorus-incarnate",
+        "archetype": "Fast Attacker",
+        "type1": "ground",
+        "type2": "flying",
+        "hp": 89,
+        "attack": 125,
+        "defense": 90,
+        "special-attack": 115,
+        "special-defense": 80,
+        "speed": 101
+      },
+      {
+        "name": "houndstone",
+        "archetype": "Generalist",
+        "type1": "ghost",
+        "type2": NaN,
+        "hp": 72,
+        "attack": 101,
+        "defense": 100,
+        "special-attack": 50,
+        "special-defense": 97,
+        "speed": 68
+      },
+      {
+        "name": "okidogi",
+        "archetype": "Physical Attacker",
+        "type1": "poison",
+        "type2": "fighting",
+        "hp": 88,
+        "attack": 128,
+        "defense": 115,
+        "special-attack": 58,
+        "special-defense": 86,
+        "speed": 80
+      },
+      {
+        "name": "tapu-fini",
+        "archetype": "Defensive Tank",
+        "type1": "water",
+        "type2": "fairy",
+        "hp": 70,
+        "attack": 75,
+        "defense": 115,
+        "special-attack": 95,
+        "special-defense": 130,
+        "speed": 85
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 255,
+        "attack": 10,
+        "defense": 10,
+        "special-attack": 75,
+        "special-defense": 135,
+        "speed": 55
+      },
+      {
+        "name": "electivire",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": NaN,
+        "hp": 75,
+        "attack": 123,
+        "defense": 67,
+        "special-attack": 95,
+        "special-defense": 85,
+        "speed": 95
+      }
+    ]
+  },
+  {
+    "rank": 3,
+    "fitness": 0.604283389889854,
+    "breakdown": {
+      "total": 0.604283389889854,
+      "base_strength": 0.458038503850385,
+      "type_coverage": 1.0,
+      "synergy": 0.8811939964054072,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.05555555555555556,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.5153945010009651
+    },
+    "pokemon": [
+      {
+        "name": "landorus-incarnate",
+        "archetype": "Fast Attacker",
+        "type1": "ground",
+        "type2": "flying",
+        "hp": 89,
+        "attack": 125,
+        "defense": 90,
+        "special-attack": 115,
+        "special-defense": 80,
+        "speed": 101
+      },
+      {
+        "name": "houndstone",
+        "archetype": "Generalist",
+        "type1": "ghost",
+        "type2": NaN,
+        "hp": 72,
+        "attack": 101,
+        "defense": 100,
+        "special-attack": 50,
+        "special-defense": 97,
+        "speed": 68
+      },
+      {
+        "name": "okidogi",
+        "archetype": "Physical Attacker",
+        "type1": "poison",
+        "type2": "fighting",
+        "hp": 88,
+        "attack": 128,
+        "defense": 115,
+        "special-attack": 58,
+        "special-defense": 86,
+        "speed": 80
+      },
+      {
+        "name": "tapu-fini",
+        "archetype": "Defensive Tank",
+        "type1": "water",
+        "type2": "fairy",
+        "hp": 70,
+        "attack": 75,
+        "defense": 115,
+        "special-attack": 95,
+        "special-defense": 130,
+        "speed": 85
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 255,
+        "attack": 10,
+        "defense": 10,
+        "special-attack": 75,
+        "special-defense": 135,
+        "speed": 55
+      },
+      {
+        "name": "electivire",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": NaN,
+        "hp": 75,
+        "attack": 123,
+        "defense": 67,
+        "special-attack": 95,
+        "special-defense": 85,
+        "speed": 95
+      }
+    ]
+  },
+  {
+    "rank": 4,
+    "fitness": 0.604283389889854,
+    "breakdown": {
+      "total": 0.604283389889854,
+      "base_strength": 0.458038503850385,
+      "type_coverage": 1.0,
+      "synergy": 0.8811939964054072,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.05555555555555556,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.5153945010009651
+    },
+    "pokemon": [
+      {
+        "name": "landorus-incarnate",
+        "archetype": "Fast Attacker",
+        "type1": "ground",
+        "type2": "flying",
+        "hp": 89,
+        "attack": 125,
+        "defense": 90,
+        "special-attack": 115,
+        "special-defense": 80,
+        "speed": 101
+      },
+      {
+        "name": "houndstone",
+        "archetype": "Generalist",
+        "type1": "ghost",
+        "type2": NaN,
+        "hp": 72,
+        "attack": 101,
+        "defense": 100,
+        "special-attack": 50,
+        "special-defense": 97,
+        "speed": 68
+      },
+      {
+        "name": "okidogi",
+        "archetype": "Physical Attacker",
+        "type1": "poison",
+        "type2": "fighting",
+        "hp": 88,
+        "attack": 128,
+        "defense": 115,
+        "special-attack": 58,
+        "special-defense": 86,
+        "speed": 80
+      },
+      {
+        "name": "tapu-fini",
+        "archetype": "Defensive Tank",
+        "type1": "water",
+        "type2": "fairy",
+        "hp": 70,
+        "attack": 75,
+        "defense": 115,
+        "special-attack": 95,
+        "special-defense": 130,
+        "speed": 85
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 255,
+        "attack": 10,
+        "defense": 10,
+        "special-attack": 75,
+        "special-defense": 135,
+        "speed": 55
+      },
+      {
+        "name": "electivire",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": NaN,
+        "hp": 75,
+        "attack": 123,
+        "defense": 67,
+        "special-attack": 95,
+        "special-defense": 85,
+        "speed": 95
+      }
+    ]
+  },
+  {
+    "rank": 5,
+    "fitness": 0.604283389889854,
+    "breakdown": {
+      "total": 0.604283389889854,
+      "base_strength": 0.458038503850385,
+      "type_coverage": 1.0,
+      "synergy": 0.8811939964054072,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.05555555555555556,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.5153945010009651
+    },
+    "pokemon": [
+      {
+        "name": "landorus-incarnate",
+        "archetype": "Fast Attacker",
+        "type1": "ground",
+        "type2": "flying",
+        "hp": 89,
+        "attack": 125,
+        "defense": 90,
+        "special-attack": 115,
+        "special-defense": 80,
+        "speed": 101
+      },
+      {
+        "name": "houndstone",
+        "archetype": "Generalist",
+        "type1": "ghost",
+        "type2": NaN,
+        "hp": 72,
+        "attack": 101,
+        "defense": 100,
+        "special-attack": 50,
+        "special-defense": 97,
+        "speed": 68
+      },
+      {
+        "name": "okidogi",
+        "archetype": "Physical Attacker",
+        "type1": "poison",
+        "type2": "fighting",
+        "hp": 88,
+        "attack": 128,
+        "defense": 115,
+        "special-attack": 58,
+        "special-defense": 86,
+        "speed": 80
+      },
+      {
+        "name": "tapu-fini",
+        "archetype": "Defensive Tank",
+        "type1": "water",
+        "type2": "fairy",
+        "hp": 70,
+        "attack": 75,
+        "defense": 115,
+        "special-attack": 95,
+        "special-defense": 130,
+        "speed": 85
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 255,
+        "attack": 10,
+        "defense": 10,
+        "special-attack": 75,
+        "special-defense": 135,
+        "speed": 55
+      },
+      {
+        "name": "electivire",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": NaN,
+        "hp": 75,
+        "attack": 123,
+        "defense": 67,
+        "special-attack": 95,
+        "special-defense": 85,
+        "speed": 95
+      }
+    ]
+  },
+  {
+    "rank": 6,
+    "fitness": 0.604283389889854,
+    "breakdown": {
+      "total": 0.604283389889854,
+      "base_strength": 0.458038503850385,
+      "type_coverage": 1.0,
+      "synergy": 0.8811939964054072,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.05555555555555556,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.5153945010009651
+    },
+    "pokemon": [
+      {
+        "name": "landorus-incarnate",
+        "archetype": "Fast Attacker",
+        "type1": "ground",
+        "type2": "flying",
+        "hp": 89,
+        "attack": 125,
+        "defense": 90,
+        "special-attack": 115,
+        "special-defense": 80,
+        "speed": 101
+      },
+      {
+        "name": "houndstone",
+        "archetype": "Generalist",
+        "type1": "ghost",
+        "type2": NaN,
+        "hp": 72,
+        "attack": 101,
+        "defense": 100,
+        "special-attack": 50,
+        "special-defense": 97,
+        "speed": 68
+      },
+      {
+        "name": "okidogi",
+        "archetype": "Physical Attacker",
+        "type1": "poison",
+        "type2": "fighting",
+        "hp": 88,
+        "attack": 128,
+        "defense": 115,
+        "special-attack": 58,
+        "special-defense": 86,
+        "speed": 80
+      },
+      {
+        "name": "tapu-fini",
+        "archetype": "Defensive Tank",
+        "type1": "water",
+        "type2": "fairy",
+        "hp": 70,
+        "attack": 75,
+        "defense": 115,
+        "special-attack": 95,
+        "special-defense": 130,
+        "speed": 85
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 255,
+        "attack": 10,
+        "defense": 10,
+        "special-attack": 75,
+        "special-defense": 135,
+        "speed": 55
+      },
+      {
+        "name": "electivire",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": NaN,
+        "hp": 75,
+        "attack": 123,
+        "defense": 67,
+        "special-attack": 95,
+        "special-defense": 85,
+        "speed": 95
+      }
+    ]
+  },
+  {
+    "rank": 7,
+    "fitness": 0.604283389889854,
+    "breakdown": {
+      "total": 0.604283389889854,
+      "base_strength": 0.458038503850385,
+      "type_coverage": 1.0,
+      "synergy": 0.8811939964054072,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.05555555555555556,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.5153945010009651
+    },
+    "pokemon": [
+      {
+        "name": "landorus-incarnate",
+        "archetype": "Fast Attacker",
+        "type1": "ground",
+        "type2": "flying",
+        "hp": 89,
+        "attack": 125,
+        "defense": 90,
+        "special-attack": 115,
+        "special-defense": 80,
+        "speed": 101
+      },
+      {
+        "name": "houndstone",
+        "archetype": "Generalist",
+        "type1": "ghost",
+        "type2": NaN,
+        "hp": 72,
+        "attack": 101,
+        "defense": 100,
+        "special-attack": 50,
+        "special-defense": 97,
+        "speed": 68
+      },
+      {
+        "name": "okidogi",
+        "archetype": "Physical Attacker",
+        "type1": "poison",
+        "type2": "fighting",
+        "hp": 88,
+        "attack": 128,
+        "defense": 115,
+        "special-attack": 58,
+        "special-defense": 86,
+        "speed": 80
+      },
+      {
+        "name": "tapu-fini",
+        "archetype": "Defensive Tank",
+        "type1": "water",
+        "type2": "fairy",
+        "hp": 70,
+        "attack": 75,
+        "defense": 115,
+        "special-attack": 95,
+        "special-defense": 130,
+        "speed": 85
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 255,
+        "attack": 10,
+        "defense": 10,
+        "special-attack": 75,
+        "special-defense": 135,
+        "speed": 55
+      },
+      {
+        "name": "electivire",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": NaN,
+        "hp": 75,
+        "attack": 123,
+        "defense": 67,
+        "special-attack": 95,
+        "special-defense": 85,
+        "speed": 95
+      }
+    ]
+  },
+  {
+    "rank": 8,
+    "fitness": 0.604283389889854,
+    "breakdown": {
+      "total": 0.604283389889854,
+      "base_strength": 0.458038503850385,
+      "type_coverage": 1.0,
+      "synergy": 0.8811939964054072,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.05555555555555556,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.5153945010009651
+    },
+    "pokemon": [
+      {
+        "name": "landorus-incarnate",
+        "archetype": "Fast Attacker",
+        "type1": "ground",
+        "type2": "flying",
+        "hp": 89,
+        "attack": 125,
+        "defense": 90,
+        "special-attack": 115,
+        "special-defense": 80,
+        "speed": 101
+      },
+      {
+        "name": "houndstone",
+        "archetype": "Generalist",
+        "type1": "ghost",
+        "type2": NaN,
+        "hp": 72,
+        "attack": 101,
+        "defense": 100,
+        "special-attack": 50,
+        "special-defense": 97,
+        "speed": 68
+      },
+      {
+        "name": "okidogi",
+        "archetype": "Physical Attacker",
+        "type1": "poison",
+        "type2": "fighting",
+        "hp": 88,
+        "attack": 128,
+        "defense": 115,
+        "special-attack": 58,
+        "special-defense": 86,
+        "speed": 80
+      },
+      {
+        "name": "tapu-fini",
+        "archetype": "Defensive Tank",
+        "type1": "water",
+        "type2": "fairy",
+        "hp": 70,
+        "attack": 75,
+        "defense": 115,
+        "special-attack": 95,
+        "special-defense": 130,
+        "speed": 85
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 255,
+        "attack": 10,
+        "defense": 10,
+        "special-attack": 75,
+        "special-defense": 135,
+        "speed": 55
+      },
+      {
+        "name": "electivire",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": NaN,
+        "hp": 75,
+        "attack": 123,
+        "defense": 67,
+        "special-attack": 95,
+        "special-defense": 85,
+        "speed": 95
+      }
+    ]
+  },
+  {
+    "rank": 9,
+    "fitness": 0.604283389889854,
+    "breakdown": {
+      "total": 0.604283389889854,
+      "base_strength": 0.458038503850385,
+      "type_coverage": 1.0,
+      "synergy": 0.8811939964054072,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.05555555555555556,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.5153945010009651
+    },
+    "pokemon": [
+      {
+        "name": "landorus-incarnate",
+        "archetype": "Fast Attacker",
+        "type1": "ground",
+        "type2": "flying",
+        "hp": 89,
+        "attack": 125,
+        "defense": 90,
+        "special-attack": 115,
+        "special-defense": 80,
+        "speed": 101
+      },
+      {
+        "name": "houndstone",
+        "archetype": "Generalist",
+        "type1": "ghost",
+        "type2": NaN,
+        "hp": 72,
+        "attack": 101,
+        "defense": 100,
+        "special-attack": 50,
+        "special-defense": 97,
+        "speed": 68
+      },
+      {
+        "name": "okidogi",
+        "archetype": "Physical Attacker",
+        "type1": "poison",
+        "type2": "fighting",
+        "hp": 88,
+        "attack": 128,
+        "defense": 115,
+        "special-attack": 58,
+        "special-defense": 86,
+        "speed": 80
+      },
+      {
+        "name": "tapu-fini",
+        "archetype": "Defensive Tank",
+        "type1": "water",
+        "type2": "fairy",
+        "hp": 70,
+        "attack": 75,
+        "defense": 115,
+        "special-attack": 95,
+        "special-defense": 130,
+        "speed": 85
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 255,
+        "attack": 10,
+        "defense": 10,
+        "special-attack": 75,
+        "special-defense": 135,
+        "speed": 55
+      },
+      {
+        "name": "electivire",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": NaN,
+        "hp": 75,
+        "attack": 123,
+        "defense": 67,
+        "special-attack": 95,
+        "special-defense": 85,
+        "speed": 95
+      }
+    ]
+  },
+  {
+    "rank": 10,
+    "fitness": 0.604283389889854,
+    "breakdown": {
+      "total": 0.604283389889854,
+      "base_strength": 0.458038503850385,
+      "type_coverage": 1.0,
+      "synergy": 0.8811939964054072,
+      "entropy_bonus": 0.15,
+      "imbalance_penalty": -0.005555555555555556,
+      "weakness_penalty": -0.05555555555555556,
+      "bst_penalty": 0.0,
+      "base_fitness": 0.5153945010009651
+    },
+    "pokemon": [
+      {
+        "name": "landorus-incarnate",
+        "archetype": "Fast Attacker",
+        "type1": "ground",
+        "type2": "flying",
+        "hp": 89,
+        "attack": 125,
+        "defense": 90,
+        "special-attack": 115,
+        "special-defense": 80,
+        "speed": 101
+      },
+      {
+        "name": "houndstone",
+        "archetype": "Generalist",
+        "type1": "ghost",
+        "type2": NaN,
+        "hp": 72,
+        "attack": 101,
+        "defense": 100,
+        "special-attack": 50,
+        "special-defense": 97,
+        "speed": 68
+      },
+      {
+        "name": "okidogi",
+        "archetype": "Physical Attacker",
+        "type1": "poison",
+        "type2": "fighting",
+        "hp": 88,
+        "attack": 128,
+        "defense": 115,
+        "special-attack": 58,
+        "special-defense": 86,
+        "speed": 80
+      },
+      {
+        "name": "tapu-fini",
+        "archetype": "Defensive Tank",
+        "type1": "water",
+        "type2": "fairy",
+        "hp": 70,
+        "attack": 75,
+        "defense": 115,
+        "special-attack": 95,
+        "special-defense": 130,
+        "speed": 85
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal",
+        "type2": NaN,
+        "hp": 255,
+        "attack": 10,
+        "defense": 10,
+        "special-attack": 75,
+        "special-defense": 135,
+        "speed": 55
+      },
+      {
+        "name": "electivire",
+        "archetype": "Speed Sweeper",
+        "type1": "electric",
+        "type2": NaN,
+        "hp": 75,
+        "attack": 123,
+        "defense": 67,
+        "special-attack": 95,
+        "special-defense": 85,
+        "speed": 95
+      }
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+name,role_prior,archetype,allowed_move_count,canonical_move_count,canonical_moves,fetch_status
+hitmonchan,breaker,Physical Attacker,10,4,close-combat;earthquake;knock-off;drain-punch,ok
+lucario,breaker,Physical Attacker,8,4,close-combat;earthquake;dark-pulse;drain-punch,ok
+okidogi,breaker,Physical Attacker,8,4,close-combat;knock-off;body-press;drain-punch,ok
+blissey,bulky_pivot,Balanced All-Rounder,5,4,stealth-rock;toxic;protect;soft-boiled,ok
+mimikyu-busted,defensive_wall,Defensive Tank,12,4,toxic;protect;dark-pulse;drain-punch,ok
+tapu-fini,defensive_wall,Defensive Tank,11,4,haze;toxic;protect;defog,ok
+landorus-incarnate,fast_pivot,Fast Attacker,9,4,u-turn;taunt;knock-off;defog,ok
+landorus-therian,fast_pivot,Fast Attacker,9,4,u-turn;taunt;knock-off;defog,ok
+houndstone,mixed_balanced,Generalist,4,4,body-press;protect;shadow-ball;will-o-wisp,ok
+kangaskhan,mixed_balanced,Generalist,11,4,earthquake;ice-beam;thunderbolt;drain-punch,ok
+obstagoon,mixed_balanced,Generalist,9,4,ice-beam;thunderbolt;body-press;close-combat,ok
+porygon-z,mixed_balanced,Generalist,10,4,ice-beam;thunderbolt;recover;dark-pulse,ok
+arctozolt,physical_sweeper,Speed Sweeper,7,4,hydro-pump;ice-beam;protect;surf,ok
+cobalion,physical_sweeper,Physical Attacker,7,4,close-combat;body-press;protect;taunt,ok
+eelektross,physical_sweeper,Speed Sweeper,13,4,close-combat;knock-off;dragon-claw;outrage,ok
+electivire,physical_sweeper,Speed Sweeper,9,4,earthquake;knock-off;protect;psychic,ok
+zamazenta,physical_sweeper,Physical Attacker,4,4,close-combat;body-press;moonblast;protect,ok
+bellibolt,special_sweeper,Speed Sweeper,5,4,thunderbolt;protect;thunder-wave;toxic,ok

@@ -1,0 +1,50 @@
+{
+  "absol": [
+    "knock-off",
+    "ice-beam",
+    "thunderbolt",
+    "close-combat"
+  ],
+  "arboliva": [
+    "encore",
+    "protect",
+    "unknown",
+    "unknown"
+  ],
+  "bastiodon": [
+    "toxic",
+    "protect",
+    "body-press",
+    "earthquake"
+  ],
+  "gothitelle": [
+    "taunt",
+    "dark-pulse",
+    "thunder-wave",
+    "protect"
+  ],
+  "indeedee-female": [
+    "drain-punch",
+    "protect",
+    "psychic",
+    "psyshock"
+  ],
+  "kommo-o": [
+    "close-combat",
+    "earthquake",
+    "draco-meteor",
+    "body-press"
+  ],
+  "miraidon": [
+    "draco-meteor",
+    "overheat",
+    "thunderbolt",
+    "dragon-claw"
+  ],
+  "scolipede": [
+    "earthquake",
+    "protect",
+    "toxic",
+    "unknown"
+  ]
+}

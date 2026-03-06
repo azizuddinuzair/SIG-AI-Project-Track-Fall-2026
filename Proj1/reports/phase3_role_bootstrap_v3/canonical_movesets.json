@@ -1,0 +1,278 @@
+{
+  "arboliva": [
+    "encore",
+    "protect",
+    "unknown",
+    "unknown"
+  ],
+  "arceus": [
+    "earthquake",
+    "ice-beam",
+    "thunderbolt",
+    "recover"
+  ],
+  "arctozolt": [
+    "hydro-pump",
+    "ice-beam",
+    "protect",
+    "surf"
+  ],
+  "bellibolt": [
+    "thunderbolt",
+    "protect",
+    "thunder-wave",
+    "toxic"
+  ],
+  "blissey": [
+    "stealth-rock",
+    "toxic",
+    "protect",
+    "soft-boiled"
+  ],
+  "bouffalant": [
+    "earthquake",
+    "close-combat",
+    "outrage",
+    "protect"
+  ],
+  "darmanitan-zen": [
+    "u-turn",
+    "taunt",
+    "body-press",
+    "earthquake"
+  ],
+  "diancie": [
+    "toxic",
+    "protect",
+    "body-press",
+    "encore"
+  ],
+  "diggersby": [
+    "u-turn",
+    "knock-off",
+    "earthquake",
+    "protect"
+  ],
+  "dragapult": [
+    "dragon-claw",
+    "outrage",
+    "draco-meteor",
+    "hydro-pump"
+  ],
+  "enamorus-therian": [
+    "moonblast",
+    "outrage",
+    "protect",
+    "psychic"
+  ],
+  "gengar": [
+    "taunt",
+    "knock-off",
+    "dark-pulse",
+    "thunder-wave"
+  ],
+  "giratina-origin": [
+    "defog",
+    "toxic",
+    "protect",
+    "thunder-wave"
+  ],
+  "greedent": [
+    "knock-off",
+    "earthquake",
+    "body-press",
+    "protect"
+  ],
+  "gyarados": [
+    "earthquake",
+    "ice-beam",
+    "thunderbolt",
+    "dark-pulse"
+  ],
+  "heliolisk": [
+    "dark-pulse",
+    "thunderbolt",
+    "protect",
+    "surf"
+  ],
+  "hypno": [
+    "taunt",
+    "knock-off",
+    "thunder-wave",
+    "body-press"
+  ],
+  "landorus-therian": [
+    "u-turn",
+    "taunt",
+    "knock-off",
+    "defog"
+  ],
+  "lugia": [
+    "thunder-wave",
+    "brave-bird",
+    "defog",
+    "earthquake"
+  ],
+  "lycanroc-midnight": [
+    "toxic",
+    "close-combat",
+    "knock-off",
+    "outrage"
+  ],
+  "machamp": [
+    "close-combat",
+    "earthquake",
+    "knock-off",
+    "drain-punch"
+  ],
+  "meowscarada": [
+    "u-turn",
+    "knock-off",
+    "dark-pulse",
+    "giga-drain"
+  ],
+  "mimikyu-busted": [
+    "toxic",
+    "protect",
+    "dark-pulse",
+    "drain-punch"
+  ],
+  "miraidon": [
+    "draco-meteor",
+    "overheat",
+    "thunderbolt",
+    "dragon-claw"
+  ],
+  "obstagoon": [
+    "ice-beam",
+    "thunderbolt",
+    "body-press",
+    "close-combat"
+  ],
+  "okidogi": [
+    "close-combat",
+    "knock-off",
+    "body-press",
+    "drain-punch"
+  ],
+  "oricorio-baile": [
+    "roost",
+    "toxic",
+    "defog",
+    "protect"
+  ],
+  "pyroar-mega": [
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
+  ],
+  "raging-bolt": [
+    "draco-meteor",
+    "thunderbolt",
+    "body-press",
+    "earthquake"
+  ],
+  "raikou": [
+    "shadow-ball",
+    "thunderbolt",
+    "protect",
+    "thunder-wave"
+  ],
+  "rhyperior": [
+    "toxic",
+    "protect",
+    "body-press",
+    "earthquake"
+  ],
+  "shuckle": [
+    "toxic",
+    "protect",
+    "earthquake",
+    "encore"
+  ],
+  "sneasler": [
+    "close-combat",
+    "protect",
+    "shadow-ball",
+    "taunt"
+  ],
+  "stakataka": [
+    "toxic",
+    "protect",
+    "body-press",
+    "earthquake"
+  ],
+  "stoutland": [
+    "thunderbolt",
+    "protect",
+    "shadow-ball",
+    "surf"
+  ],
+  "tapu-fini": [
+    "haze",
+    "toxic",
+    "protect",
+    "defog"
+  ],
+  "ting-lu": [
+    "earthquake",
+    "body-press",
+    "dark-pulse",
+    "protect"
+  ],
+  "toxapex": [
+    "knock-off",
+    "ice-beam",
+    "recover",
+    "baneful-bunker"
+  ],
+  "urshifu-single-strike": [
+    "wicked-blow",
+    "close-combat",
+    "body-press",
+    "dark-pulse"
+  ],
+  "urshifu-single-strike-gmax": [
+    "unknown",
+    "unknown",
+    "unknown",
+    "unknown"
+  ],
+  "victreebel": [
+    "knock-off",
+    "encore",
+    "giga-drain",
+    "protect"
+  ],
+  "wyrdeer": [
+    "thunder-wave",
+    "earthquake",
+    "protect",
+    "psychic"
+  ],
+  "zamazenta": [
+    "close-combat",
+    "body-press",
+    "moonblast",
+    "protect"
+  ],
+  "zekrom": [
+    "dragon-claw",
+    "outrage",
+    "body-press",
+    "defog"
+  ],
+  "zeraora": [
+    "close-combat",
+    "knock-off",
+    "outrage",
+    "drain-punch"
+  ],
+  "zygarde-50": [
+    "draco-meteor",
+    "earthquake",
+    "haze",
+    "outrage"
+  ]
+}

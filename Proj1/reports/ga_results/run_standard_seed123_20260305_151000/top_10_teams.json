@@ -1,0 +1,362 @@
+[
+  {
+    "rank": 1,
+    "fitness": 0.7148023038812987,
+    "pokemon": [
+      {
+        "name": "arctozolt",
+        "archetype": "Speed Sweeper",
+        "type1": "electric"
+      },
+      {
+        "name": "landorus-therian",
+        "archetype": "Fast Attacker",
+        "type1": "ground"
+      },
+      {
+        "name": "pyroar-mega",
+        "archetype": "Defensive Tank",
+        "type1": "fire"
+      },
+      {
+        "name": "urshifu-single-strike-gmax",
+        "archetype": "Physical Attacker",
+        "type1": "fighting"
+      },
+      {
+        "name": "toxapex",
+        "archetype": "Generalist",
+        "type1": "poison"
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal"
+      }
+    ]
+  },
+  {
+    "rank": 2,
+    "fitness": 0.7148023038812987,
+    "pokemon": [
+      {
+        "name": "arctozolt",
+        "archetype": "Speed Sweeper",
+        "type1": "electric"
+      },
+      {
+        "name": "landorus-therian",
+        "archetype": "Fast Attacker",
+        "type1": "ground"
+      },
+      {
+        "name": "pyroar-mega",
+        "archetype": "Defensive Tank",
+        "type1": "fire"
+      },
+      {
+        "name": "urshifu-single-strike-gmax",
+        "archetype": "Physical Attacker",
+        "type1": "fighting"
+      },
+      {
+        "name": "toxapex",
+        "archetype": "Generalist",
+        "type1": "poison"
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal"
+      }
+    ]
+  },
+  {
+    "rank": 3,
+    "fitness": 0.7148023038812987,
+    "pokemon": [
+      {
+        "name": "arctozolt",
+        "archetype": "Speed Sweeper",
+        "type1": "electric"
+      },
+      {
+        "name": "landorus-therian",
+        "archetype": "Fast Attacker",
+        "type1": "ground"
+      },
+      {
+        "name": "pyroar-mega",
+        "archetype": "Defensive Tank",
+        "type1": "fire"
+      },
+      {
+        "name": "urshifu-single-strike-gmax",
+        "archetype": "Physical Attacker",
+        "type1": "fighting"
+      },
+      {
+        "name": "toxapex",
+        "archetype": "Generalist",
+        "type1": "poison"
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal"
+      }
+    ]
+  },
+  {
+    "rank": 4,
+    "fitness": 0.7148023038812987,
+    "pokemon": [
+      {
+        "name": "arctozolt",
+        "archetype": "Speed Sweeper",
+        "type1": "electric"
+      },
+      {
+        "name": "landorus-therian",
+        "archetype": "Fast Attacker",
+        "type1": "ground"
+      },
+      {
+        "name": "pyroar-mega",
+        "archetype": "Defensive Tank",
+        "type1": "fire"
+      },
+      {
+        "name": "urshifu-single-strike-gmax",
+        "archetype": "Physical Attacker",
+        "type1": "fighting"
+      },
+      {
+        "name": "toxapex",
+        "archetype": "Generalist",
+        "type1": "poison"
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal"
+      }
+    ]
+  },
+  {
+    "rank": 5,
+    "fitness": 0.7148023038812987,
+    "pokemon": [
+      {
+        "name": "arctozolt",
+        "archetype": "Speed Sweeper",
+        "type1": "electric"
+      },
+      {
+        "name": "landorus-therian",
+        "archetype": "Fast Attacker",
+        "type1": "ground"
+      },
+      {
+        "name": "pyroar-mega",
+        "archetype": "Defensive Tank",
+        "type1": "fire"
+      },
+      {
+        "name": "urshifu-single-strike-gmax",
+        "archetype": "Physical Attacker",
+        "type1": "fighting"
+      },
+      {
+        "name": "toxapex",
+        "archetype": "Generalist",
+        "type1": "poison"
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal"
+      }
+    ]
+  },
+  {
+    "rank": 6,
+    "fitness": 0.7148023038812987,
+    "pokemon": [
+      {
+        "name": "arctozolt",
+        "archetype": "Speed Sweeper",
+        "type1": "electric"
+      },
+      {
+        "name": "landorus-therian",
+        "archetype": "Fast Attacker",
+        "type1": "ground"
+      },
+      {
+        "name": "pyroar-mega",
+        "archetype": "Defensive Tank",
+        "type1": "fire"
+      },
+      {
+        "name": "urshifu-single-strike-gmax",
+        "archetype": "Physical Attacker",
+        "type1": "fighting"
+      },
+      {
+        "name": "toxapex",
+        "archetype": "Generalist",
+        "type1": "poison"
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal"
+      }
+    ]
+  },
+  {
+    "rank": 7,
+    "fitness": 0.7148023038812987,
+    "pokemon": [
+      {
+        "name": "arctozolt",
+        "archetype": "Speed Sweeper",
+        "type1": "electric"
+      },
+      {
+        "name": "landorus-therian",
+        "archetype": "Fast Attacker",
+        "type1": "ground"
+      },
+      {
+        "name": "pyroar-mega",
+        "archetype": "Defensive Tank",
+        "type1": "fire"
+      },
+      {
+        "name": "urshifu-single-strike-gmax",
+        "archetype": "Physical Attacker",
+        "type1": "fighting"
+      },
+      {
+        "name": "toxapex",
+        "archetype": "Generalist",
+        "type1": "poison"
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal"
+      }
+    ]
+  },
+  {
+    "rank": 8,
+    "fitness": 0.7148023038812987,
+    "pokemon": [
+      {
+        "name": "arctozolt",
+        "archetype": "Speed Sweeper",
+        "type1": "electric"
+      },
+      {
+        "name": "landorus-therian",
+        "archetype": "Fast Attacker",
+        "type1": "ground"
+      },
+      {
+        "name": "pyroar-mega",
+        "archetype": "Defensive Tank",
+        "type1": "fire"
+      },
+      {
+        "name": "urshifu-single-strike-gmax",
+        "archetype": "Physical Attacker",
+        "type1": "fighting"
+      },
+      {
+        "name": "toxapex",
+        "archetype": "Generalist",
+        "type1": "poison"
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal"
+      }
+    ]
+  },
+  {
+    "rank": 9,
+    "fitness": 0.7148023038812987,
+    "pokemon": [
+      {
+        "name": "arctozolt",
+        "archetype": "Speed Sweeper",
+        "type1": "electric"
+      },
+      {
+        "name": "landorus-therian",
+        "archetype": "Fast Attacker",
+        "type1": "ground"
+      },
+      {
+        "name": "pyroar-mega",
+        "archetype": "Defensive Tank",
+        "type1": "fire"
+      },
+      {
+        "name": "urshifu-single-strike-gmax",
+        "archetype": "Physical Attacker",
+        "type1": "fighting"
+      },
+      {
+        "name": "toxapex",
+        "archetype": "Generalist",
+        "type1": "poison"
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal"
+      }
+    ]
+  },
+  {
+    "rank": 10,
+    "fitness": 0.7148023038812987,
+    "pokemon": [
+      {
+        "name": "arctozolt",
+        "archetype": "Speed Sweeper",
+        "type1": "electric"
+      },
+      {
+        "name": "landorus-therian",
+        "archetype": "Fast Attacker",
+        "type1": "ground"
+      },
+      {
+        "name": "pyroar-mega",
+        "archetype": "Defensive Tank",
+        "type1": "fire"
+      },
+      {
+        "name": "urshifu-single-strike-gmax",
+        "archetype": "Physical Attacker",
+        "type1": "fighting"
+      },
+      {
+        "name": "toxapex",
+        "archetype": "Generalist",
+        "type1": "poison"
+      },
+      {
+        "name": "blissey",
+        "archetype": "Balanced All-Rounder",
+        "type1": "normal"
+      }
+    ]
+  }
+]
