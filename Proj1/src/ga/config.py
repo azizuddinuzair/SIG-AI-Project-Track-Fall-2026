@@ -110,12 +110,49 @@ def get_config_c():
     return config
 
 
+def get_config_random():
+    """
+    Config Random: Fun, inclusive team generation
+    - Loosened fitness constraints to include underrepresented Pokemon
+    - Disables BST penalty (allows weak Pokemon like Magikarp)
+    - Reduces base_stats emphasis (0.05 instead of 0.40)
+    - Reduces archetype imbalance penalty
+    - Keeps type coverage and synergy for team quality
+    - Keeps entropy diversity bonus
+    - **Enables rarity bonus** to reward underused Pokemon
+    
+    Purpose: Generate creative, diverse teams without strict optimization
+    """
+    config = get_base_config()
+    config["name"] = "ConfigRandom_Inclusive"
+    config["initialization"]["method"] = "sqrt_weighted"
+    config["mutation"]["weighted"] = True
+    
+    # Loosen fitness constraints
+    config["fitness"]["base_stats_weight"] = 0.05      # Way down from 0.40
+    config["fitness"]["bst_penalty_weight"] = 0.0      # Disable BST cap entirely
+    
+    # Keep type coverage and synergy for team coherence
+    config["fitness"]["type_coverage_weight"] = 0.30   # Keep for quality
+    config["fitness"]["synergy_weight"] = 0.15         # Keep for quality
+    
+    # Soften penalties
+    config["fitness"]["imbalance_lambda"] = 0.10       # Down from 0.20
+    config["fitness"]["weakness_lambda"] = 0.05        # Down from 0.10
+    
+    # Enable rarity bonus to promote underused Pokemon
+    config["fitness"]["rarity_bonus_weight"] = 0.15    # New! Rewards rare Pokemon
+    
+    return config
+
+
 def get_all_configs():
     """Return all three ablation configurations."""
     return {
         "A": get_config_a(),
         "B": get_config_b(),
-        "C": get_config_c()
+        "C": get_config_c(),
+        "Random": get_config_random()
     }
 
 

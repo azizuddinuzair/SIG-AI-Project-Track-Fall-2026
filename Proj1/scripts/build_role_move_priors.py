@@ -479,7 +479,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--teams-json",
         type=Path,
-        default=Path("reports/ga_results/run_601pokemon_20260305_065531/top_10_teams.json"),
+        default=Path("reports/ga_results/run_601pokemon_20260305_171543/top_10_teams.json"),
         help="Path to fallback GA top teams JSON (used if no globs are provided)",
     )
     parser.add_argument(
@@ -521,7 +521,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=Path("reports/ga_results/run_601pokemon_20260305_065531/phase3_role_bootstrap"),
+        default=Path("reports/ga_results/run_601pokemon_20260305_171543/phase3_role_bootstrap"),
         help="Output directory for role priors artifacts",
     )
     return parser.parse_args()
@@ -652,7 +652,14 @@ def main() -> int:
     print(f"Unique Pokemon analyzed: {len(seen_pokemon)}")
     print(f"Move fetch success: {ok_count}/{len(priors_df)}")
     print(f"Setup whitelist enabled: {args.include_setup_whitelist}")
-    print(f"Output directory: {args.output_dir}")
+    
+    # Print relative path from project root
+    proj_root = Path(__file__).resolve().parents[1]
+    try:
+        rel_path = args.output_dir.resolve().relative_to(proj_root)
+        print(f"Output directory: {rel_path}")
+    except ValueError:
+        print(f"Output directory: {args.output_dir}")
 
     if args.top_n > 0 and len(teams) < args.top_n:
         print(f"Note: Requested top_n={args.top_n}, but only found {len(teams)} teams in JSON.")

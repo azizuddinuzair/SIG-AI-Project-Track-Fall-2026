@@ -187,7 +187,13 @@ if __name__ == "__main__":
     df_with_features.to_csv(output_path, index=False)
     
     print(f"\n✅ Feature engineering complete!")
-    print(f"💾 Saved to: {output_path}\n")
+    # Print relative path from project root
+    proj_root = pathlib.Path(__file__).resolve().parents[2]
+    try:
+        rel_path = output_path.relative_to(proj_root)
+        print(f"💾 Saved to: {rel_path}\n")
+    except ValueError:
+        print(f"💾 Saved to: {output_path}\n")
     
     print(f"Dataset shape: {df_with_features.shape}")
     print(f"Rows: {len(df_with_features)} Pokemon")

@@ -392,7 +392,14 @@ def main():
         f.write(report)
     print(f"   ✓ reports/clustering_comparison_report.txt")
     
-    print(f"\n✅ Pipeline complete! Outputs saved to: {output_dir}\n")
+    # Print relative path from project root
+    proj_root = pathlib.Path(__file__).resolve().parents[2]
+    try:
+        rel_path = output_dir.relative_to(proj_root)
+        print(f"\n✅ Pipeline complete! Outputs saved to: {rel_path}\n")
+    except ValueError:
+        # Fallback if output_dir is outside project
+        print(f"\n✅ Pipeline complete! Outputs saved to: {output_dir}\n")
 
 
 if __name__ == "__main__":

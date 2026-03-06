@@ -377,6 +377,61 @@ def compute_bst_penalty(team: pd.DataFrame, config: Dict) -> float:
     return 0.0
 
 
+def compute_rarity_bonus(team: pd.DataFrame, config: Dict) -> float:
+    """
+    Reward teams with underrepresented Pokemon based on population usage.
+    
+    For each Pokemon in team, checks how many times it appears across
+    the current population. Less frequent = higher bonus.
+    
+    Formula:
+        For each Pokemon:
+            usage_rate = count_in_population / population_size
+            rarity_score = 1.0 - usage_rate  # [0, 1], higher = rarer
+        
+        team_rarity = average(rarity_scores)
+        bonus = team_rarity * rarity_weight
+    
+    Example with population_size=100, rarity_weight=0.10:
+        - Pokemon appears 1 time → usage=0.01 → rarity=0.99 → bonus contribution=0.099
+        - Pokemon appears 50 times → usage=0.50 → rarity=0.50 → bonus contribution=0.050
+        - Pokemon appears 100 times → usage=1.00 → rarity=0.00 → bonus contribution=0.000
+    
+    Args:
+        team: DataFrame with 'name' column
+        config: Config dict with optional 'pokemon_usage_counts' and 'fitness.rarity_bonus_weight'
+        
+    Returns:
+        Rarity bonus (0.0 if disabled or no usage data, positive otherwise)
+    """
+    rarity_weight = config['fitness'].get('rarity_bonus_weight', 0.0)
+    
+    if rarity_weight == 0:
+        return 0.0
+    
+    usage_counts = config.get('pokemon_usage_counts', {})
+    population_size = config.get('population_size_tracker', 1)
+    
+    if not usage_counts or population_size == 0:
+        return 0.0
+    
+    # Calculate rarity score for each team member
+    rarity_scores = []
+    for pokemon_name in team['name']:
+        count = usage_counts.get(pokemon_name, 0)
+        usage_rate = count / population_size
+        rarity_score = 1.0 - usage_rate  # Higher = rarer
+        rarity_scores.append(rarity_score)
+    
+    # Average rarity across team
+    team_rarity = np.mean(rarity_scores) if rarity_scores else 0.0
+    bonus = team_rarity * rarity_weight
+    
+    return float(bonus)
+    
+    return 0.0
+
+
 # ============================================================================
 # MAIN FITNESS FUNCTION
 # ============================================================================
@@ -411,6 +466,7 @@ def evaluate_fitness(team: pd.DataFrame, config: Dict) -> Tuple[float, Dict]:
     imbalance_penalty = compute_imbalance_penalty(team, config)
     weakness_penalty = compute_weakness_penalty(team, config)
     bst_penalty = compute_bst_penalty(team, config)
+    rarity_bonus = compute_rarity_bonus(team, config)
     
     # Weighted combination
     base_fitness = (
@@ -424,7 +480,8 @@ def evaluate_fitness(team: pd.DataFrame, config: Dict) -> Tuple[float, Dict]:
         entropy_bonus + 
         imbalance_penalty + 
         weakness_penalty +
-        bst_penalty
+        bst_penalty +
+        rarity_bonus
     )
     
     # Detailed breakdown for analysis
@@ -437,6 +494,7 @@ def evaluate_fitness(team: pd.DataFrame, config: Dict) -> Tuple[float, Dict]:
         'imbalance_penalty': imbalance_penalty,
         'weakness_penalty': weakness_penalty,
         'bst_penalty': bst_penalty,
+        'rarity_bonus': rarity_bonus,
         'base_fitness': base_fitness
     }
     

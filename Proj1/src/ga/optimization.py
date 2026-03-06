@@ -37,7 +37,13 @@ class PokemonGA:
         fitness_history: Per-generation statistics
     """
     
-    def __init__(self, pokemon_df: pd.DataFrame, config: Dict, output_dir: Optional[Path] = None):
+    def __init__(
+        self,
+        pokemon_df: pd.DataFrame,
+        config: Dict,
+        output_dir: Optional[Path] = None,
+        locked_pokemon: Optional[List[str]] = None,
+    ):
         """
         Initialize GA with Pokémon dataset and configuration.
         
@@ -45,12 +51,18 @@ class PokemonGA:
             pokemon_df: DataFrame with all Pokémon (must include 'archetype' column)
             config: Configuration dict from ga_config.py
             output_dir: Optional directory to save generation snapshots
+            locked_pokemon: Optional list of Pokemon names that must remain in every team
         """
         self.pokemon_df = pokemon_df
         self.config = config
         self.output_dir = output_dir
         self.rng = np.random.default_rng(config['random_seed'])
         random.seed(config['random_seed'])
+
+        self._pokemon_by_name = {
+            row['name']: row for _, row in self.pokemon_df.iterrows()
+        }
+        self.locked_pokemon = self._validate_locked_pokemon(locked_pokemon or [])
         
         # Compute archetype weights based on initialization method
         self.archetype_weights = self._compute_archetype_weights()
@@ -66,6 +78,82 @@ class PokemonGA:
         print(f"   Generations: {config['population']['generations']}")
         print(f"   Initialization: {config['initialization']['method']}")
         print(f"   Random seed: {config['random_seed']}")
+        if self.locked_pokemon:
+            print(f"   Locked Pokémon: {', '.join(self.locked_pokemon)}")
+
+
+    def _validate_locked_pokemon(self, locked_pokemon: List[str]) -> List[str]:
+        """Validate locked pokemon names against dataset and duplicate entries."""
+        normalized = [str(name).strip() for name in locked_pokemon if str(name).strip()]
+
+        unique = []
+        seen = set()
+        for name in normalized:
+            if name in seen:
+                continue
+            seen.add(name)
+            unique.append(name)
+
+        if len(unique) > 5:
+            raise ValueError("At most 5 locked Pokémon are supported.")
+
+        missing = [name for name in unique if name not in self._pokemon_by_name]
+        if missing:
+            raise ValueError(f"Locked Pokémon not found in dataset: {missing}")
+
+        return unique
+
+
+    def _build_locked_rows(self) -> List[pd.Series]:
+        return [self._pokemon_by_name[name] for name in self.locked_pokemon]
+
+
+    def _enforce_locked_pokemon(self, team_df: pd.DataFrame) -> pd.DataFrame:
+        """Ensure all locked pokemon are included in the team exactly once."""
+        if not self.locked_pokemon:
+            return team_df.reset_index(drop=True)
+
+        team = team_df.copy().reset_index(drop=True)
+        current_names = team['name'].tolist()
+
+        # Remove duplicate rows first while preserving order.
+        dedup_rows = []
+        seen = set()
+        for _, row in team.iterrows():
+            if row['name'] in seen:
+                continue
+            seen.add(row['name'])
+            dedup_rows.append(row.to_dict())
+        team = pd.DataFrame(dedup_rows).reset_index(drop=True)
+        current_names = team['name'].tolist()
+
+        missing_locked = [name for name in self.locked_pokemon if name not in current_names]
+        for locked_name in missing_locked:
+            replace_idx = None
+            for idx, name in enumerate(current_names):
+                if name not in self.locked_pokemon:
+                    replace_idx = idx
+                    break
+
+            locked_row = self._pokemon_by_name[locked_name]
+            if replace_idx is not None:
+                team.iloc[replace_idx] = locked_row
+                current_names[replace_idx] = locked_name
+            elif len(team) < 6:
+                team = pd.concat([team, pd.DataFrame([locked_row.to_dict()])], ignore_index=True)
+                current_names.append(locked_name)
+            else:
+                # Should only happen if 6 locked pokemon are forced, which is prevented by validation.
+                raise ValueError("No available slot to enforce locked Pokémon")
+
+        # Fill missing slots if team dropped below 6 after deduplication.
+        while len(team) < 6:
+            archetype = self._sample_archetype()
+            pokemon = self._sample_pokemon_from_archetype(archetype, exclude=current_names)
+            team = pd.concat([team, pd.DataFrame([pokemon.to_dict()])], ignore_index=True)
+            current_names.append(pokemon['name'])
+
+        return team.iloc[:6].reset_index(drop=True)
     
     
     def _compute_archetype_weights(self) -> Dict[str, float]:
@@ -105,7 +193,7 @@ class PokemonGA:
         print(f"\n   Archetype weights ({method}):")
         for arch, weight in sorted(weights.items(), key=lambda x: -x[1]):
             count = archetype_counts[arch]
-            print(f"      {arch:25s} ({count:3d} Pokémon) → {weight:.4f}")
+            print(f"      {arch:25s} ({count:3d} Pokemon) -> {weight:.4f}")
         
         return weights
     
@@ -147,22 +235,22 @@ class PokemonGA:
         Returns:
             DataFrame with 6 unique Pokémon
         """
-        team_members = []
-        team_names = []
+        team_members = [row.to_dict() for row in self._build_locked_rows()]
+        team_names = [row['name'] for row in self._build_locked_rows()]
         
-        for _ in range(6):
+        for _ in range(6 - len(team_names)):
             archetype = self._sample_archetype()
             pokemon = self._sample_pokemon_from_archetype(archetype, exclude=team_names)
             team_members.append(pokemon)
             team_names.append(pokemon['name'])
-        
-        return pd.DataFrame(team_members).reset_index(drop=True)
+
+        return self._enforce_locked_pokemon(pd.DataFrame(team_members))
     
     
     def initialize_population(self):
         """Create initial population of random teams."""
         pop_size = self.config['population']['size']
-        print(f"\n🌱 Initializing population of {pop_size} teams...")
+        print(f"\n[*] Initializing population of {pop_size} teams...")
         
         self.population = []
         for i in range(pop_size):
@@ -172,7 +260,7 @@ class PokemonGA:
             if (i + 1) % 50 == 0:
                 print(f"   Generated {i + 1}/{pop_size} teams...")
         
-        print(f"   ✓ Population initialized")
+        print(f"   [OK] Population initialized")
     
     
     def evaluate_population(self) -> List[Tuple[float, Dict]]:
@@ -182,6 +270,17 @@ class PokemonGA:
         Returns:
             List of (fitness_score, breakdown_dict) tuples
         """
+        # Track Pokemon usage for rarity bonus
+        if self.config['fitness'].get('rarity_bonus_weight', 0.0) > 0:
+            pokemon_usage = {}
+            for team in self.population:
+                for pokemon_name in team['name']:
+                    pokemon_usage[pokemon_name] = pokemon_usage.get(pokemon_name, 0) + 1
+            
+            # Inject usage data into config for this evaluation
+            self.config['pokemon_usage_counts'] = pokemon_usage
+            self.config['population_size_tracker'] = len(self.population)
+        
         fitness_scores = []
         for team in self.population:
             score, breakdown = evaluate_fitness(team, self.config)
@@ -252,7 +351,8 @@ class PokemonGA:
             unique_child.append(pokemon.to_dict())
             seen_names.add(pokemon['name'])
         
-        return pd.DataFrame(unique_child).reset_index(drop=True)
+        child_df = pd.DataFrame(unique_child).reset_index(drop=True)
+        return self._enforce_locked_pokemon(child_df)
     
     
     def mutate(self, team: pd.DataFrame) -> pd.DataFrame:
@@ -272,8 +372,15 @@ class PokemonGA:
         if self.rng.random() >= mutation_rate:
             return team  # No mutation
         
-        # Select random position to mutate
-        mut_idx = self.rng.integers(0, 6)
+        # Select random non-locked position to mutate
+        mutable_indices = [
+            idx for idx, name in enumerate(team['name'].tolist())
+            if name not in self.locked_pokemon
+        ]
+        if not mutable_indices:
+            return self._enforce_locked_pokemon(team)
+
+        mut_idx = int(self.rng.choice(mutable_indices))
         current_names = team['name'].tolist()
         
         # Select replacement Pokémon
@@ -289,7 +396,7 @@ class PokemonGA:
         team_mutated = team.copy()
         team_mutated.iloc[mut_idx] = new_pokemon
         
-        return team_mutated.reset_index(drop=True)
+        return self._enforce_locked_pokemon(team_mutated.reset_index(drop=True))
     
     
     def evolve_one_generation(self, generation: int):
@@ -441,7 +548,7 @@ class PokemonGA:
         Returns:
             DataFrame of fitness history
         """
-        print(f"\n🚀 Starting evolution...")
+        print(f"\n[*] Starting evolution...")
         
         # Initialize population
         self.initialize_population()
@@ -458,7 +565,7 @@ class PokemonGA:
             if gen % 5 == 0:
                 self._export_generation_snapshot(gen)
         
-        print(f"\n✅ Evolution complete!")
+        print(f"\n[OK] Evolution complete!")
         
         # Return fitness history
         return pd.DataFrame(self.fitness_history)
@@ -505,7 +612,7 @@ class PokemonGA:
         history_df = pd.DataFrame(self.fitness_history)
         history_path = output_dir / f"{config_name}_fitness_history.csv"
         history_df.to_csv(history_path, index=False)
-        print(f"   ✓ Saved fitness history: {history_path}")
+        print(f"   [OK] Saved fitness history: {history_path}")
         
         # Save best teams
         best_teams = self.get_best_teams(10)
@@ -524,7 +631,7 @@ class PokemonGA:
         best_teams_df = pd.DataFrame(best_teams_data)
         best_teams_path = output_dir / f"{config_name}_best_teams.csv"
         best_teams_df.to_csv(best_teams_path, index=False)
-        print(f"   ✓ Saved best teams: {best_teams_path}")
+        print(f"   [OK] Saved best teams: {best_teams_path}")
         
         # Save config
         config_path = output_dir / f"{config_name}_config.txt"
@@ -539,7 +646,7 @@ class PokemonGA:
                     f.write("\n")
                 else:
                     f.write(f"{section}: {params}\n")
-        print(f"   ✓ Saved config: {config_path}")
+        print(f"   [OK] Saved config: {config_path}")
 
 
 def load_pokemon_data() -> pd.DataFrame:
