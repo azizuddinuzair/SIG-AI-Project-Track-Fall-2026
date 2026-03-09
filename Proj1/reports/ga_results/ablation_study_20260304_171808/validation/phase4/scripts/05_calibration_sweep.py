@@ -28,13 +28,27 @@ if sys.stderr.encoding != "utf-8":
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
 
 # Import project modules
-PROJ_ROOT = Path(__file__).parent.parent.parent
-sys.path.append(str(PROJ_ROOT))
-sys.path.append(str(PROJ_ROOT / "src" / "models"))
+def _find_proj_root(start: Path) -> Path:
+    """Walk upward until we find the Proj1 root (contains src/ga)."""
+    for candidate in [start] + list(start.parents):
+        if (candidate / "src" / "ga").exists():
+            return candidate
+    raise RuntimeError("Could not locate project root containing src/ga")
 
-from src.models.ga_optimization import PokemonGA, load_pokemon_data
-from src.models.ga_config import get_config_c
-from src.models.ga_fitness import evaluate_fitness
+
+PROJ_ROOT = _find_proj_root(Path(__file__).resolve().parent)
+sys.path.append(str(PROJ_ROOT))
+
+try:
+    # Current module layout
+    from src.ga.optimization import PokemonGA, load_pokemon_data
+    from src.ga.config import get_config_c
+    from src.ga.fitness import evaluate_fitness
+except ModuleNotFoundError:
+    # Backward compatibility with older ablation package layout
+    from src.models.ga_optimization import PokemonGA, load_pokemon_data
+    from src.models.ga_config import get_config_c
+    from src.models.ga_fitness import evaluate_fitness
 
 
 FITNESS_CONSISTENCY_TOL = 1e-6
