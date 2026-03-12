@@ -1,21 +1,8 @@
-# Scripts Layout
+# Scripts (Active)
 
-This directory is organized by workflow area:
+This folder is reserved for active app entrypoints.
 
-- `cli.py`: User-facing menu CLI (team generator, team analyzer, TBD menu slots)
-- `ga/`: GA run/orchestration scripts
-- `validation/`: validation and quality-check scripts
-- `analysis/`: analysis utilities for clustering/ablation outputs
-- `utils/`: maintenance helpers
-- `creating_csv/`: dataset generation and feature prep scripts
-- `test/`: clustering-focused script tests
-- `build_role_move_priors.py`: role-prior builder (kept at top-level for compatibility)
+Legacy CLI and workflow scripts were moved to `Proj1/legacy/scripts/` as part of the Streamlit-first transition.
 
-## Common Commands
-
-```bash
-py scripts/cli.py
-py scripts/ga/run_ga_601.py
-py scripts/validation/validate_601_clustering.py
-py scripts/analysis/cluster_analyzer.py
-```
+For now, use the Streamlit app entrypoint at:
+- `Proj1/app/streamlit_app.py`

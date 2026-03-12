@@ -21,8 +21,8 @@ from typing import Dict, List, Tuple
 
 import pandas as pd
 
-# Ensure imports from Proj1/src work when running as `py scripts/cli.py ...`
-PROJ_ROOT = Path(__file__).resolve().parents[1]
+# Ensure imports from Proj1/src work when running from legacy/scripts.
+PROJ_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJ_ROOT) not in sys.path:
     sys.path.append(str(PROJ_ROOT))
 
@@ -1160,7 +1160,7 @@ def run_cluster(args: argparse.Namespace) -> int:
         / "scripts"
         / "01_generate_phase1_deliverables.py"
     )
-    validation_script = PROJ_ROOT / "scripts" / "validation" / "validate_601_clustering.py"
+    validation_script = PROJ_ROOT / "legacy" / "scripts" / "validation" / "validate_601_clustering.py"
 
     print("[1/3] Running clustering pipeline...")
     rc = _run_python_script(clustering_script)
