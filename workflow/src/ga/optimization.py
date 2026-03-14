@@ -580,25 +580,86 @@ class PokemonGA:
         return pd.DataFrame(self.fitness_history)
     
     
+    def _team_shared_weakness_counts(self, team_df: pd.DataFrame) -> Dict[str, int]:
+        """Count team members weak to each attacking type (effectiveness > 1.0)."""
+        counts: Dict[str, int] = {}
+        for type_name in TYPE_NAMES:
+            weak_count = 0
+            for _, row in team_df.iterrows():
+                defending_types = [row['type1']]
+                if pd.notna(row.get('type2')) and row.get('type2'):
+                    defending_types.append(row['type2'])
+
+                effectiveness = get_type_effectiveness(type_name, defending_types)
+                if effectiveness > 1.0:
+                    weak_count += 1
+
+            if weak_count > 0:
+                counts[type_name] = weak_count
+        return counts
+
+
+    def _team_max_shared_weakness(self, team_df: pd.DataFrame) -> int:
+        """Maximum number of team members weak to the same attacking type."""
+        counts = self._team_shared_weakness_counts(team_df)
+        return int(max(counts.values(), default=0))
+
+
+    def _team_total_shared_weakness(self, team_df: pd.DataFrame) -> int:
+        """Aggregate count across all team type weaknesses."""
+        counts = self._team_shared_weakness_counts(team_df)
+        return int(sum(counts.values()))
+
+
+    def _passes_shared_weakness_filter(self, team_df: pd.DataFrame) -> bool:
+        """Apply optional weakness guardrails from config['fitness']."""
+        fitness_cfg = self.config.get('fitness', {})
+        max_shared_members = int(fitness_cfg.get('max_shared_weakness_members', 0) or 0)
+        max_total_shared = int(fitness_cfg.get('max_total_shared_weakness', 0) or 0)
+
+        if max_shared_members <= 0 and max_total_shared <= 0:
+            return True
+
+        max_shared = self._team_max_shared_weakness(team_df)
+        total_shared = self._team_total_shared_weakness(team_df)
+
+        if max_shared_members > 0 and max_shared > max_shared_members:
+            return False
+        if max_total_shared > 0 and total_shared > max_total_shared:
+            return False
+        return True
+
+
     def get_best_teams(self, n: int = 10) -> List[Tuple[pd.DataFrame, float, Dict]]:
         """
         Get top N teams from current population.
-        
+
+        Applies optional post-filter guardrails from config['fitness'].
+
         Args:
             n: Number of teams to return
-            
+
         Returns:
             List of (team, fitness, breakdown) tuples, sorted by fitness
         """
-        # Sort by fitness
         sorted_indices = np.argsort([score for score, _ in self.fitness_scores])[::-1]
-        
+
         best_teams = []
-        for i in sorted_indices[:n]:
+        for i in sorted_indices:
             team = self.population[i]
+            if not self._passes_shared_weakness_filter(team):
+                continue
             fitness, breakdown = self.fitness_scores[i]
             best_teams.append((team, fitness, breakdown))
-        
+            if len(best_teams) >= n:
+                break
+
+        if len(best_teams) < n:
+            print(
+                f"   [WARN] Weakness post-filter returned {len(best_teams)}/{n} teams. "
+                "Relax max_shared_weakness_members or max_total_shared_weakness if needed."
+            )
+
         return best_teams
     
     
@@ -633,6 +694,8 @@ class PokemonGA:
                 'fitness': fitness,
                 'team': ', '.join(team['name'].tolist()),
                 'archetypes': ', '.join(team['archetype'].tolist()),
+                'max_shared_weakness_members': self._team_max_shared_weakness(team),
+                'total_shared_weakness': self._team_total_shared_weakness(team),
                 **breakdown
             }
             best_teams_data.append(team_entry)

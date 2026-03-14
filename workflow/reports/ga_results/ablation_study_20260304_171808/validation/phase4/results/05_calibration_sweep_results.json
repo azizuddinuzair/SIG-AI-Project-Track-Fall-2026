@@ -1,0 +1,4014 @@
+{
+  "phase": "Phase 4 - Calibration Sweep",
+  "date": "2026-03-14T05:07:24.145792",
+  "population": 150,
+  "generations": 250,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "diversity_grid": [
+    0.15,
+    0.2,
+    0.25,
+    0.3
+  ],
+  "weakness_grid": [
+    0.0,
+    0.01,
+    0.02,
+    0.03,
+    0.05
+  ],
+  "results": [
+    {
+      "config_name": "d0.15_w0.00",
+      "diversity_weight": 0.15,
+      "weakness_lambda": 0.0,
+      "population_size": 150,
+      "generations": 250,
+      "n_seeds": 10,
+      "mean_best_fitness": 0.7584032637827992,
+      "std_best_fitness": 0.0076471811001559385,
+      "cv_best_fitness": 0.010083265019210192,
+      "mean_base_strength": 0.5043452578493574,
+      "mean_unique_archetypes": 6.0,
+      "max_best_fitness": 0.7663075390513171,
+      "min_best_fitness": 0.742521421618493,
+      "pass_target": false,
+      "seed_runs": [
+        {
+          "seed": 42,
+          "best_fitness": 0.7462743340430137,
+          "base_strength": 0.49754953635919963,
+          "base_fitness": 0.6018298895985692,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "dragalge",
+            "omastar",
+            "diancie",
+            "zygarde-10-power-construct",
+            "zamazenta-crowned",
+            "shiftry"
+          ]
+        },
+        {
+          "seed": 43,
+          "best_fitness": 0.7663075390513171,
+          "base_strength": 0.5126201399056451,
+          "base_fitness": 0.6218630946068726,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "exeggutor",
+            "landorus-therian",
+            "sneasler",
+            "flutter-mane",
+            "shuckle"
+          ]
+        },
+        {
+          "seed": 44,
+          "best_fitness": 0.7629256406261385,
+          "base_strength": 0.4907190499430617,
+          "base_fitness": 0.6184811961816941,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "flutter-mane",
+            "rhyperior",
+            "ferrothorn",
+            "slither-wing",
+            "nihilego",
+            "fezandipiti"
+          ]
+        },
+        {
+          "seed": 45,
+          "best_fitness": 0.7594552766129333,
+          "base_strength": 0.49720693020985846,
+          "base_fitness": 0.6150108321684888,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "steelix",
+            "omastar",
+            "palafin-hero",
+            "flutter-mane",
+            "chesnaught",
+            "gyarados"
+          ]
+        },
+        {
+          "seed": 46,
+          "best_fitness": 0.7628693150362605,
+          "base_strength": 0.55767252318204,
+          "base_fitness": 0.6184248705918161,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "omastar",
+            "hitmontop",
+            "miraidon-aquatic-mode",
+            "hoopa-unbound",
+            "shuckle",
+            "grafaiai"
+          ]
+        },
+        {
+          "seed": 47,
+          "best_fitness": 0.7649795107471548,
+          "base_strength": 0.5033486253456971,
+          "base_fitness": 0.6205350663027103,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "gouging-fire",
+            "carbink",
+            "flutter-mane",
+            "roserade",
+            "virizion",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 48,
+          "best_fitness": 0.7615710982285699,
+          "base_strength": 0.49606832601268913,
+          "base_fitness": 0.6171266537841255,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "tapu-lele",
+            "sneasler",
+            "miraidon",
+            "runerigus",
+            "tapu-bulu",
+            "omastar"
+          ]
+        },
+        {
+          "seed": 49,
+          "best_fitness": 0.7623148577534774,
+          "base_strength": 0.5027917683422808,
+          "base_fitness": 0.6178704133090329,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "thundurus-therian",
+            "sirfetchd",
+            "bastiodon",
+            "miraidon-glide-mode",
+            "rhyperior",
+            "sinistcha"
+          ]
+        },
+        {
+          "seed": 50,
+          "best_fitness": 0.7548136441106341,
+          "base_strength": 0.48695851634943876,
+          "base_fitness": 0.6103691996661896,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "zamazenta-crowned",
+            "omastar",
+            "togekiss",
+            "toedscruel",
+            "meowscarada",
+            "gliscor"
+          ]
+        },
+        {
+          "seed": 51,
+          "best_fitness": 0.742521421618493,
+          "base_strength": 0.49851716284366365,
+          "base_fitness": 0.5980769771740485,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "carracosta",
+            "flutter-mane",
+            "buzzwole",
+            "bronzong",
+            "raichu",
+            "dialga-origin"
+          ]
+        }
+      ],
+      "elapsed_seconds": 650.8601138591766
+    },
+    {
+      "config_name": "d0.15_w0.01",
+      "diversity_weight": 0.15,
+      "weakness_lambda": 0.01,
+      "population_size": 150,
+      "generations": 250,
+      "n_seeds": 10,
+      "mean_best_fitness": 0.7470472747323986,
+      "std_best_fitness": 0.009893099550262179,
+      "cv_best_fitness": 0.013242936404267061,
+      "mean_base_strength": 0.5023483325199284,
+      "mean_unique_archetypes": 6.0,
+      "max_best_fitness": 0.7612752250364958,
+      "min_best_fitness": 0.7342532879483632,
+      "pass_target": false,
+      "seed_runs": [
+        {
+          "seed": 42,
+          "best_fitness": 0.7466871734935602,
+          "base_strength": 0.48964372864812106,
+          "base_fitness": 0.6125205068268935,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.010277777777777776,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "carracosta",
+            "pecharunt",
+            "claydol",
+            "espeon",
+            "tauros-paldea-combat-breed",
+            "miraidon-low-power-mode"
+          ]
+        },
+        {
+          "seed": 43,
+          "best_fitness": 0.740272155560838,
+          "base_strength": 0.46569855213925493,
+          "base_fitness": 0.6061054888941714,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.010277777777777776,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rabsca",
+            "miraidon-aquatic-mode",
+            "relicanth",
+            "gengar",
+            "okidogi",
+            "zygarde-50"
+          ]
+        },
+        {
+          "seed": 44,
+          "best_fitness": 0.7499779972595776,
+          "base_strength": 0.4994675451439727,
+          "base_fitness": 0.621922441704022,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.016388888888888887,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "flutter-mane",
+            "omastar",
+            "registeel",
+            "buzzwole",
+            "golurk",
+            "shaymin-land"
+          ]
+        },
+        {
+          "seed": 45,
+          "best_fitness": 0.7392708644754729,
+          "base_strength": 0.5516190011387669,
+          "base_fitness": 0.6120486422532506,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.017222222222222222,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "leafeon",
+            "zygarde-50-power-construct",
+            "flutter-mane",
+            "iron-valiant",
+            "shuckle",
+            "omastar"
+          ]
+        },
+        {
+          "seed": 46,
+          "best_fitness": 0.7412894473589248,
+          "base_strength": 0.4777507727346674,
+          "base_fitness": 0.6071227806922581,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.01027777777777778,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "manectric",
+            "tauros-paldea-blaze-breed",
+            "eternatus",
+            "hoopa",
+            "rhyperior",
+            "toxapex"
+          ]
+        },
+        {
+          "seed": 47,
+          "best_fitness": 0.7609090070967637,
+          "base_strength": 0.516366682934765,
+          "base_fitness": 0.6322978959856526,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.01583333333333333,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "poliwrath",
+            "flutter-mane",
+            "latias",
+            "stakataka",
+            "vikavolt-totem"
+          ]
+        },
+        {
+          "seed": 48,
+          "best_fitness": 0.7612752250364958,
+          "base_strength": 0.5293346347811941,
+          "base_fitness": 0.6348863361476069,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.01805555555555555,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "slither-wing",
+            "flutter-mane",
+            "kartana",
+            "shuckle",
+            "mantine"
+          ]
+        },
+        {
+          "seed": 49,
+          "best_fitness": 0.7366663057147931,
+          "base_strength": 0.49887229542866446,
+          "base_fitness": 0.6033329723814597,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.01111111111111111,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "bombirdier",
+            "toxapex",
+            "shaymin-land",
+            "koraidon-gliding-build",
+            "vikavolt",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 50,
+          "best_fitness": 0.7598712833791967,
+          "base_strength": 0.4949705547421506,
+          "base_fitness": 0.6301490611569744,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.014722222222222222,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "zamazenta-crowned",
+            "mew",
+            "rhyperior",
+            "shiinotic",
+            "darmanitan-zen",
+            "houndstone"
+          ]
+        },
+        {
+          "seed": 51,
+          "best_fitness": 0.7342532879483632,
+          "base_strength": 0.4997595575077274,
+          "base_fitness": 0.6061977323928076,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.016388888888888883,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "zarude-dada",
+            "hitmonchan",
+            "golem",
+            "bronzong",
+            "miraidon-low-power-mode",
+            "articuno-galar"
+          ]
+        }
+      ],
+      "elapsed_seconds": 786.7194497585297
+    },
+    {
+      "config_name": "d0.15_w0.02",
+      "diversity_weight": 0.15,
+      "weakness_lambda": 0.02,
+      "population_size": 150,
+      "generations": 250,
+      "n_seeds": 10,
+      "mean_best_fitness": 0.7344132268333211,
+      "std_best_fitness": 0.009257272943129013,
+      "cv_best_fitness": 0.012604992128266773,
+      "mean_base_strength": 0.48917759882869694,
+      "mean_unique_archetypes": 6.0,
+      "max_best_fitness": 0.7497991242247364,
+      "min_best_fitness": 0.716542552068656,
+      "pass_target": false,
+      "seed_runs": [
+        {
+          "seed": 42,
+          "best_fitness": 0.7335666640177912,
+          "base_strength": 0.5198047828208883,
+          "base_fitness": 0.6202333306844579,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.031111111111111107,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "eternatus",
+            "shuckle",
+            "zapdos",
+            "rhyperior",
+            "shiftry",
+            "tauros-paldea-combat-breed"
+          ]
+        },
+        {
+          "seed": 43,
+          "best_fitness": 0.7349031812368991,
+          "base_strength": 0.4663692858304864,
+          "base_fitness": 0.6082365145702324,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.01777777777777778,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "orbeetle",
+            "miraidon-low-power-mode",
+            "omastar",
+            "mabosstiff",
+            "sneasler",
+            "zygarde-50"
+          ]
+        },
+        {
+          "seed": 44,
+          "best_fitness": 0.7322343561670293,
+          "base_strength": 0.483077598828697,
+          "base_fitness": 0.6155676895003626,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.027777777777777773,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "flutter-mane",
+            "exeggutor-alola",
+            "naganadel",
+            "regice",
+            "buzzwole",
+            "golem"
+          ]
+        },
+        {
+          "seed": 45,
+          "best_fitness": 0.7331774796891046,
+          "base_strength": 0.48306165609240287,
+          "base_fitness": 0.6137330352446602,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.024999999999999994,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "steelix",
+            "sceptile",
+            "omastar",
+            "flutter-mane",
+            "hoopa-unbound",
+            "heracross"
+          ]
+        },
+        {
+          "seed": 46,
+          "best_fitness": 0.7276191430912882,
+          "base_strength": 0.457896046852123,
+          "base_fitness": 0.6053969208690659,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.022222222222222223,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rabsca",
+            "gallade",
+            "eternatus",
+            "zarude-dada",
+            "indeedee-male",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 47,
+          "best_fitness": 0.7497991242247364,
+          "base_strength": 0.4930640963071417,
+          "base_fitness": 0.6270213464469585,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.02166666666666666,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "tauros-paldea-aqua-breed",
+            "eternatus",
+            "cofagrigus",
+            "vikavolt-totem",
+            "latias"
+          ]
+        },
+        {
+          "seed": 48,
+          "best_fitness": 0.7354917463502839,
+          "base_strength": 0.47549877989263056,
+          "base_fitness": 0.6138250796836172,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.022777777777777772,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "sneasler",
+            "rhyperior",
+            "regice",
+            "sigilyph",
+            "houndstone",
+            "miraidon-low-power-mode"
+          ]
+        },
+        {
+          "seed": 49,
+          "best_fitness": 0.7310536669896481,
+          "base_strength": 0.4946190011387669,
+          "base_fitness": 0.6171647781007592,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.030555555555555555,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "miraidon-drive-mode",
+            "tauros-paldea-combat-breed",
+            "aegislash-shield",
+            "vikavolt",
+            "celebi",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 50,
+          "best_fitness": 0.716542552068656,
+          "base_strength": 0.48373694485114693,
+          "base_fitness": 0.5948758854019893,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.02277777777777778,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "zamazenta-crowned",
+            "celebi",
+            "rhyperior",
+            "florges",
+            "dustox",
+            "houndstone"
+          ]
+        },
+        {
+          "seed": 51,
+          "best_fitness": 0.749744354497774,
+          "base_strength": 0.5346477956726858,
+          "base_fitness": 0.6364110211644406,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.031111111111111107,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "flutter-mane",
+            "lilligant-hisui",
+            "iron-moth",
+            "goodra",
+            "shuckle"
+          ]
+        }
+      ],
+      "elapsed_seconds": 751.068252325058
+    },
+    {
+      "config_name": "d0.15_w0.03",
+      "diversity_weight": 0.15,
+      "weakness_lambda": 0.03,
+      "population_size": 150,
+      "generations": 250,
+      "n_seeds": 10,
+      "mean_best_fitness": 0.7209536996465882,
+      "std_best_fitness": 0.006862912854069404,
+      "cv_best_fitness": 0.009519214420334631,
+      "mean_base_strength": 0.4830881893606637,
+      "mean_unique_archetypes": 6.0,
+      "max_best_fitness": 0.7293572412410126,
+      "min_best_fitness": 0.7096367016039363,
+      "pass_target": false,
+      "seed_runs": [
+        {
+          "seed": 42,
+          "best_fitness": 0.7157669219675495,
+          "base_strength": 0.47907157963234104,
+          "base_fitness": 0.6029891441897717,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.03166666666666666,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "muk",
+            "raichu",
+            "wishiwashi-school",
+            "flutter-mane",
+            "buzzwole",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 43,
+          "best_fitness": 0.7293572412410126,
+          "base_strength": 0.4458044574589231,
+          "base_fitness": 0.6165794634632348,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.03166666666666666,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "roserade",
+            "miraidon-drive-mode",
+            "darmanitan-zen",
+            "mabosstiff",
+            "sneasler",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 44,
+          "best_fitness": 0.7229556480068905,
+          "base_strength": 0.5087574426549537,
+          "base_fitness": 0.621011203562446,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.042499999999999996,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "leafeon",
+            "shuckle",
+            "terrakion",
+            "slowking-galar",
+            "rhyperior",
+            "flutter-mane"
+          ]
+        },
+        {
+          "seed": 45,
+          "best_fitness": 0.7125296408693463,
+          "base_strength": 0.47219163819749477,
+          "base_fitness": 0.6014185297582352,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.03333333333333332,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "steelix",
+            "mew",
+            "calyrex-shadow",
+            "omastar",
+            "crabominable",
+            "luxray"
+          ]
+        },
+        {
+          "seed": 46,
+          "best_fitness": 0.7290817125502495,
+          "base_strength": 0.5011418578168212,
+          "base_fitness": 0.6129706014391383,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.02833333333333334,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "ribombee",
+            "hitmontop",
+            "miraidon-aquatic-mode",
+            "rhyperior",
+            "toxapex",
+            "hoopa-unbound"
+          ]
+        },
+        {
+          "seed": 47,
+          "best_fitness": 0.7096367016039363,
+          "base_strength": 0.46439580283064913,
+          "base_fitness": 0.5943589238261585,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.029166666666666667,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "omastar",
+            "registeel",
+            "cyclizar",
+            "cursola",
+            "shaymin-sky",
+            "great-tusk"
+          ]
+        },
+        {
+          "seed": 48,
+          "best_fitness": 0.7156298597719782,
+          "base_strength": 0.45747519115015456,
+          "base_fitness": 0.6095187486608671,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.03833333333333333,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "miraidon-low-power-mode",
+            "rhyperior",
+            "gengar",
+            "passimian",
+            "enamorus-therian",
+            "sinistcha"
+          ]
+        },
+        {
+          "seed": 49,
+          "best_fitness": 0.726324706786056,
+          "base_strength": 0.5345033349601431,
+          "base_fitness": 0.6210469290082782,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.03916666666666667,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "carracosta",
+            "polteageist",
+            "flamigo",
+            "shuckle",
+            "miraidon-glide-mode",
+            "iron-treads"
+          ]
+        },
+        {
+          "seed": 50,
+          "best_fitness": 0.7204511618747048,
+          "base_strength": 0.46194631527574426,
+          "base_fitness": 0.6068400507635937,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.03083333333333333,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "regice",
+            "celebi",
+            "hitmonlee",
+            "spectrier",
+            "muk",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 51,
+          "best_fitness": 0.7278034017941587,
+          "base_strength": 0.5055942736294128,
+          "base_fitness": 0.6158589573497142,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.03249999999999999,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "dusknoir",
+            "rhyperior",
+            "tauros-paldea-aqua-breed",
+            "dragalge",
+            "miraidon-low-power-mode",
+            "articuno-galar"
+          ]
+        }
+      ],
+      "elapsed_seconds": 746.2501504421234
+    },
+    {
+      "config_name": "d0.15_w0.05",
+      "diversity_weight": 0.15,
+      "weakness_lambda": 0.05,
+      "population_size": 150,
+      "generations": 250,
+      "n_seeds": 10,
+      "mean_best_fitness": 0.6961933014739113,
+      "std_best_fitness": 0.011502308162026204,
+      "cv_best_fitness": 0.01652171622116251,
+      "mean_base_strength": 0.4621971368147064,
+      "mean_unique_archetypes": 6.0,
+      "max_best_fitness": 0.7156223745289533,
+      "min_best_fitness": 0.6790944758575602,
+      "pass_target": false,
+      "seed_runs": [
+        {
+          "seed": 42,
+          "best_fitness": 0.6958755033851646,
+          "base_strength": 0.47064795835366846,
+          "base_fitness": 0.6042088367184979,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.05277777777777777,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "muk",
+            "manectric",
+            "wishiwashi-school",
+            "rhyperior",
+            "buzzwole",
+            "flutter-mane"
+          ]
+        },
+        {
+          "seed": 43,
+          "best_fitness": 0.7156223745289533,
+          "base_strength": 0.40855132585000814,
+          "base_fitness": 0.6086779300845088,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.037500000000000006,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "blissey",
+            "miraidon-drive-mode",
+            "mabosstiff",
+            "rhyperior",
+            "sneasler",
+            "mantine"
+          ]
+        },
+        {
+          "seed": 44,
+          "best_fitness": 0.6895059547141836,
+          "base_strength": 0.47302977061981455,
+          "base_fitness": 0.6075615102697391,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.0625,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "miraidon",
+            "froslass",
+            "florges",
+            "rhyperior",
+            "slowking-galar",
+            "okidogi"
+          ]
+        },
+        {
+          "seed": 45,
+          "best_fitness": 0.6790944758575602,
+          "base_strength": 0.41551634943875065,
+          "base_fitness": 0.5735389203020046,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.03888888888888889,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "dusknoir",
+            "omastar",
+            "alakazam",
+            "skuntank",
+            "miraidon",
+            "heracross"
+          ]
+        },
+        {
+          "seed": 46,
+          "best_fitness": 0.6943300731616237,
+          "base_strength": 0.46544672197820075,
+          "base_fitness": 0.6165522953838458,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.06666666666666664,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "darmanitan-zen",
+            "garbodor",
+            "koraidon-gliding-build",
+            "zarude-dada",
+            "heliolisk",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 47,
+          "best_fitness": 0.6825600762812106,
+          "base_strength": 0.472592158776639,
+          "base_fitness": 0.590893409614544,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.052777777777777785,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "omastar",
+            "garchomp",
+            "miraidon-glide-mode",
+            "raticate-alola",
+            "florges",
+            "buzzwole"
+          ]
+        },
+        {
+          "seed": 48,
+          "best_fitness": 0.7073047010406124,
+          "base_strength": 0.4648475679193102,
+          "base_fitness": 0.6100824788183902,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.04722222222222223,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "leafeon",
+            "sneasler",
+            "darkrai",
+            "rhyperior",
+            "musharna",
+            "regice"
+          ]
+        },
+        {
+          "seed": 49,
+          "best_fitness": 0.6898932223679827,
+          "base_strength": 0.49675809337888405,
+          "base_fitness": 0.610726555701316,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.06527777777777777,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "zamazenta-crowned",
+            "polteageist",
+            "ribombee",
+            "ferrothorn",
+            "rhyperior",
+            "landorus-therian"
+          ]
+        },
+        {
+          "seed": 50,
+          "best_fitness": 0.6955698626831174,
+          "base_strength": 0.462985196030584,
+          "base_fitness": 0.6150143071275618,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.06388888888888887,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "miraidon",
+            "relicanth",
+            "hippowdon",
+            "dragalge",
+            "darmanitan-zen",
+            "annihilape"
+          ]
+        },
+        {
+          "seed": 51,
+          "best_fitness": 0.7121767707187043,
+          "base_strength": 0.4915962258012039,
+          "base_fitness": 0.6191212151631488,
+          "entropy_bonus": 0.15,
+          "weakness_penalty": -0.05138888888888889,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "hitmonchan",
+            "landorus-incarnate",
+            "cofagrigus",
+            "eternatus",
+            "rotom-mow"
+          ]
+        }
+      ],
+      "elapsed_seconds": 753.4224202632904
+    },
+    {
+      "config_name": "d0.20_w0.00",
+      "diversity_weight": 0.2,
+      "weakness_lambda": 0.0,
+      "population_size": 150,
+      "generations": 250,
+      "n_seeds": 10,
+      "mean_best_fitness": 0.8139236541264276,
+      "std_best_fitness": 0.00948814152945764,
+      "cv_best_fitness": 0.011657286873719284,
+      "mean_base_strength": 0.5060221896860259,
+      "mean_unique_archetypes": 6.0,
+      "max_best_fitness": 0.8289335166620526,
+      "min_best_fitness": 0.7973170490714998,
+      "pass_target": false,
+      "seed_runs": [
+        {
+          "seed": 42,
+          "best_fitness": 0.8234216502512723,
+          "base_strength": 0.5334797462176671,
+          "base_fitness": 0.6289772058068278,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "sneasler",
+            "shuckle",
+            "rhyperior",
+            "beheeyem",
+            "tapu-bulu",
+            "calyrex-shadow"
+          ]
+        },
+        {
+          "seed": 43,
+          "best_fitness": 0.824760660384674,
+          "base_strength": 0.5419102000976086,
+          "base_fitness": 0.6303162159402295,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "flutter-mane",
+            "moltres",
+            "ogerpon-hearthflame-mask",
+            "okidogi",
+            "shuckle",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 44,
+          "best_fitness": 0.7973170490714998,
+          "base_strength": 0.4898386204652677,
+          "base_fitness": 0.6028726046270554,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "hariyama",
+            "rhyperior",
+            "probopass",
+            "miraidon-drive-mode",
+            "victini",
+            "gourgeist-large"
+          ]
+        },
+        {
+          "seed": 45,
+          "best_fitness": 0.8072693666285777,
+          "base_strength": 0.4884579469659997,
+          "base_fitness": 0.6128249221841333,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "steelix",
+            "iron-boulder",
+            "omastar",
+            "miraidon",
+            "skeledirge",
+            "heracross"
+          ]
+        },
+        {
+          "seed": 46,
+          "best_fitness": 0.8084316796023496,
+          "base_strength": 0.49659573775825616,
+          "base_fitness": 0.6139872351579052,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "hitmontop",
+            "miraidon-aquatic-mode",
+            "hoopa",
+            "jolteon",
+            "toxapex"
+          ]
+        },
+        {
+          "seed": 47,
+          "best_fitness": 0.8086943387940315,
+          "base_strength": 0.48003871807385723,
+          "base_fitness": 0.6142498943495871,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "bouffalant",
+            "flutter-mane",
+            "celebi",
+            "magnezone",
+            "buzzwole"
+          ]
+        },
+        {
+          "seed": 48,
+          "best_fitness": 0.8194395392184717,
+          "base_strength": 0.4868067349926794,
+          "base_fitness": 0.6249950947740271,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "sneasler",
+            "chandelure",
+            "miraidon",
+            "bombirdier",
+            "rhyperior",
+            "regice"
+          ]
+        },
+        {
+          "seed": 49,
+          "best_fitness": 0.8147063933844068,
+          "base_strength": 0.48395607613469993,
+          "base_fitness": 0.6202619489399623,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "walking-wake",
+            "tauros-paldea-combat-breed",
+            "bastiodon",
+            "vikavolt",
+            "rhyperior",
+            "calyrex-shadow"
+          ]
+        },
+        {
+          "seed": 50,
+          "best_fitness": 0.8062623472669403,
+          "base_strength": 0.5184594110948431,
+          "base_fitness": 0.6118179028224958,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "celebi",
+            "regice",
+            "rhyperior",
+            "dustox",
+            "gourgeist-large",
+            "zamazenta-crowned"
+          ]
+        },
+        {
+          "seed": 51,
+          "best_fitness": 0.8289335166620526,
+          "base_strength": 0.5406787050593787,
+          "base_fitness": 0.6344890722176081,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "flutter-mane",
+            "okidogi",
+            "shuckle",
+            "zapdos",
+            "exeggutor-alola"
+          ]
+        }
+      ],
+      "elapsed_seconds": 587.0067570209503
+    },
+    {
+      "config_name": "d0.20_w0.01",
+      "diversity_weight": 0.2,
+      "weakness_lambda": 0.01,
+      "population_size": 150,
+      "generations": 250,
+      "n_seeds": 10,
+      "mean_best_fitness": 0.791406366214585,
+      "std_best_fitness": 0.005636356826489657,
+      "cv_best_fitness": 0.007121950324267916,
+      "mean_base_strength": 0.49370296079388326,
+      "mean_unique_archetypes": 6.0,
+      "max_best_fitness": 0.8028640988052497,
+      "min_best_fitness": 0.7846712025481106,
+      "pass_target": false,
+      "seed_runs": [
+        {
+          "seed": 42,
+          "best_fitness": 0.7940768260028925,
+          "base_strength": 0.48103188547258835,
+          "base_fitness": 0.6149101593362258,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.015277777777777776,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "muk",
+            "omastar",
+            "probopass",
+            "iron-leaves",
+            "great-tusk",
+            "flutter-mane"
+          ]
+        },
+        {
+          "seed": 43,
+          "best_fitness": 0.7986731441171072,
+          "base_strength": 0.5318077110785749,
+          "base_fitness": 0.6208953663393295,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.016666666666666666,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "veluza",
+            "miraidon-drive-mode",
+            "shuckle",
+            "chi-yu",
+            "okidogi",
+            "golem"
+          ]
+        },
+        {
+          "seed": 44,
+          "best_fitness": 0.788253164168176,
+          "base_strength": 0.44559102000976086,
+          "base_fitness": 0.6068642752792872,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.013055555555555551,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "urshifu-single-strike",
+            "blastoise",
+            "naganadel",
+            "zeraora",
+            "rhyperior",
+            "darmanitan-zen"
+          ]
+        },
+        {
+          "seed": 45,
+          "best_fitness": 0.7861933970161028,
+          "base_strength": 0.4986822840409956,
+          "base_fitness": 0.6075822859049917,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.01583333333333333,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "mantine",
+            "flutter-mane",
+            "togedemaru",
+            "shuckle",
+            "latias"
+          ]
+        },
+        {
+          "seed": 46,
+          "best_fitness": 0.7873788881262492,
+          "base_strength": 0.48629803156011064,
+          "base_fitness": 0.6004344436818048,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.0075000000000000015,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "kangaskhan",
+            "miraidon-aquatic-mode",
+            "hoopa",
+            "sneasler",
+            "toxapex"
+          ]
+        },
+        {
+          "seed": 47,
+          "best_fitness": 0.7846712025481106,
+          "base_strength": 0.47158321132259634,
+          "base_fitness": 0.6018934247703328,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.011666666666666667,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "zamazenta-crowned",
+            "morpeko-hangry",
+            "ampharos",
+            "walking-wake",
+            "orbeetle",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 48,
+          "best_fitness": 0.7942955809063751,
+          "base_strength": 0.5138509842199447,
+          "base_fitness": 0.6159622475730416,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.01611111111111111,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "omastar",
+            "koraidon",
+            "gengar",
+            "necrozma-dusk",
+            "steelix",
+            "pincurchin"
+          ]
+        },
+        {
+          "seed": 49,
+          "best_fitness": 0.7905795226059301,
+          "base_strength": 0.4867668781519441,
+          "base_fitness": 0.6128017448281523,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.016666666666666666,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "chi-yu",
+            "klinklang",
+            "comfey",
+            "koraidon-swimming-build",
+            "sinistcha",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 50,
+          "best_fitness": 0.7870778378496576,
+          "base_strength": 0.4884987798926306,
+          "base_fitness": 0.6059667267385465,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.01333333333333333,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "regice",
+            "urshifu-single-strike",
+            "hippowdon",
+            "dragalge",
+            "shaymin-sky",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 51,
+          "best_fitness": 0.8028640988052497,
+          "base_strength": 0.5329188221896861,
+          "base_fitness": 0.625086321027472,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.016666666666666666,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "vanilluxe",
+            "breloom",
+            "iron-jugulis",
+            "shuckle",
+            "eternatus",
+            "rhyperior"
+          ]
+        }
+      ],
+      "elapsed_seconds": 728.7896444797516
+    },
+    {
+      "config_name": "d0.20_w0.02",
+      "diversity_weight": 0.2,
+      "weakness_lambda": 0.02,
+      "population_size": 150,
+      "generations": 250,
+      "n_seeds": 10,
+      "mean_best_fitness": 0.7813422406612249,
+      "std_best_fitness": 0.008272185867842343,
+      "cv_best_fitness": 0.010587147906968216,
+      "mean_base_strength": 0.4794252968927932,
+      "mean_unique_archetypes": 6.0,
+      "max_best_fitness": 0.7901944895742766,
+      "min_best_fitness": 0.764403488738537,
+      "pass_target": false,
+      "seed_runs": [
+        {
+          "seed": 42,
+          "best_fitness": 0.764403488738537,
+          "base_strength": 0.4612617537009923,
+          "base_fitness": 0.5921812665163149,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.022222222222222223,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "muk",
+            "meowscarada",
+            "miraidon-glide-mode",
+            "slither-wing",
+            "alcremie",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 43,
+          "best_fitness": 0.7809277727614156,
+          "base_strength": 0.4667958353668456,
+          "base_fitness": 0.6042611060947488,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.01777777777777778,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "eternatus",
+            "exeggutor",
+            "raichu",
+            "okidogi",
+            "rhyperior",
+            "cofagrigus"
+          ]
+        },
+        {
+          "seed": 44,
+          "best_fitness": 0.78071969649696,
+          "base_strength": 0.5454795835366846,
+          "base_fitness": 0.6134974742747379,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.027222222222222224,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "flutter-mane",
+            "necrozma",
+            "shuckle",
+            "rhyperior",
+            "iron-leaves",
+            "scolipede"
+          ]
+        },
+        {
+          "seed": 45,
+          "best_fitness": 0.7794922774283212,
+          "base_strength": 0.5248848218643241,
+          "base_fitness": 0.6139367218727656,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.028888888888888895,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "shuckle",
+            "cobalion",
+            "calyrex-shadow",
+            "dracozolt",
+            "brambleghast",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 46,
+          "best_fitness": 0.7893033692999326,
+          "base_strength": 0.4646835854888564,
+          "base_fitness": 0.6254144804110436,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.030555555555555544,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "darmanitan-zen",
+            "rhyperior",
+            "flutter-mane",
+            "leafeon",
+            "sneasler",
+            "volcanion"
+          ]
+        },
+        {
+          "seed": 47,
+          "best_fitness": 0.7872802241386069,
+          "base_strength": 0.4701913128355295,
+          "base_fitness": 0.6095024463608292,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.016666666666666666,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "espeon",
+            "houndstone",
+            "roserade",
+            "rhyperior",
+            "florges",
+            "zamazenta"
+          ]
+        },
+        {
+          "seed": 48,
+          "best_fitness": 0.7901944895742766,
+          "base_strength": 0.42655945989913785,
+          "base_fitness": 0.6163056006853876,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.020555555555555553,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "sneasler",
+            "rhyperior",
+            "miraidon-aquatic-mode",
+            "urshifu-single-strike",
+            "mantine",
+            "blissey"
+          ]
+        },
+        {
+          "seed": 49,
+          "best_fitness": 0.7684748602336787,
+          "base_strength": 0.4339435496990402,
+          "base_fitness": 0.6001415269003453,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.02611111111111111,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "miraidon-drive-mode",
+            "polteageist",
+            "ribombee",
+            "rhyperior",
+            "celesteela",
+            "tauros-paldea-aqua-breed"
+          ]
+        },
+        {
+          "seed": 50,
+          "best_fitness": 0.7854772326961186,
+          "base_strength": 0.5177040832926632,
+          "base_fitness": 0.6154772326961186,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.024444444444444442,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "zamazenta-crowned",
+            "rhyperior",
+            "raichu-alola",
+            "regice",
+            "turtonator",
+            "houndstone"
+          ]
+        },
+        {
+          "seed": 51,
+          "best_fitness": 0.7871489952444016,
+          "base_strength": 0.48274898324385884,
+          "base_fitness": 0.6160378841332905,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.023333333333333327,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "omastar",
+            "sawk",
+            "iron-jugulis",
+            "steelix",
+            "miraidon-low-power-mode",
+            "articuno-galar"
+          ]
+        }
+      ],
+      "elapsed_seconds": 732.6372404098511
+    },
+    {
+      "config_name": "d0.20_w0.03",
+      "diversity_weight": 0.2,
+      "weakness_lambda": 0.03,
+      "population_size": 150,
+      "generations": 250,
+      "n_seeds": 10,
+      "mean_best_fitness": 0.7735743296337324,
+      "std_best_fitness": 0.010296043553360239,
+      "cv_best_fitness": 0.013309701678228066,
+      "mean_base_strength": 0.48430030909386695,
+      "mean_unique_archetypes": 6.0,
+      "max_best_fitness": 0.7960139719593513,
+      "min_best_fitness": 0.7626102764751356,
+      "pass_target": false,
+      "seed_runs": [
+        {
+          "seed": 42,
+          "best_fitness": 0.7646172157800896,
+          "base_strength": 0.4777606962746055,
+          "base_fitness": 0.6018394380023117,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.03166666666666666,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "omastar",
+            "iron-jugulis",
+            "oinkologne-male",
+            "hydrapple",
+            "koraidon-limited-build",
+            "steelix"
+          ]
+        },
+        {
+          "seed": 43,
+          "best_fitness": 0.7960139719593513,
+          "base_strength": 0.5497855864649424,
+          "base_fitness": 0.6340695275149069,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.032499999999999994,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "roserade",
+            "okidogi",
+            "shuckle",
+            "latios",
+            "darkrai",
+            "golem"
+          ]
+        },
+        {
+          "seed": 44,
+          "best_fitness": 0.7644535729843522,
+          "base_strength": 0.4678802667968115,
+          "base_fitness": 0.6000091285399078,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.03,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "darkrai",
+            "scrafty",
+            "leafeon",
+            "latios",
+            "slowking-galar",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 45,
+          "best_fitness": 0.7713468303402333,
+          "base_strength": 0.47944704734016597,
+          "base_fitness": 0.6135690525624554,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.03666666666666666,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "klinklang",
+            "cobalion",
+            "flutter-mane",
+            "xurkitree",
+            "avalugg",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 46,
+          "best_fitness": 0.768440910956356,
+          "base_strength": 0.4768890515698715,
+          "base_fitness": 0.6014964665119116,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.0275,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "drampa",
+            "hitmonchan",
+            "miraidon-low-power-mode",
+            "frosmoth",
+            "hoopa-unbound",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 47,
+          "best_fitness": 0.7762508656365368,
+          "base_strength": 0.4542189686025703,
+          "base_fitness": 0.6143064211920923,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.032499999999999994,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "marshadow",
+            "stoutland",
+            "roserade",
+            "darmanitan-zen",
+            "walking-wake",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 48,
+          "best_fitness": 0.7626102764751356,
+          "base_strength": 0.4734031234748658,
+          "base_fitness": 0.5989991653640245,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.030833333333333338,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "omastar",
+            "calyrex-ice",
+            "nidoking",
+            "annihilape",
+            "raichu",
+            "darkrai"
+          ]
+        },
+        {
+          "seed": 49,
+          "best_fitness": 0.7832499035837921,
+          "base_strength": 0.49499560761347,
+          "base_fitness": 0.6154721258060143,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.026666666666666665,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "zamazenta-crowned",
+            "glaceon",
+            "roserade",
+            "absol",
+            "latias",
+            "golem"
+          ]
+        },
+        {
+          "seed": 50,
+          "best_fitness": 0.7660274223472169,
+          "base_strength": 0.47702651700016274,
+          "base_fitness": 0.6149163112361057,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.04333333333333333,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "miraidon-low-power-mode",
+            "iron-treads",
+            "carracosta",
+            "hypno",
+            "darmanitan-zen",
+            "annihilape"
+          ]
+        },
+        {
+          "seed": 51,
+          "best_fitness": 0.7827323262742599,
+          "base_strength": 0.4915962258012039,
+          "base_fitness": 0.6191212151631488,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.03083333333333333,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "hitmonchan",
+            "landorus-incarnate",
+            "cofagrigus",
+            "eternatus",
+            "rotom-mow"
+          ]
+        }
+      ],
+      "elapsed_seconds": 734.367996931076
+    },
+    {
+      "config_name": "d0.20_w0.05",
+      "diversity_weight": 0.2,
+      "weakness_lambda": 0.05,
+      "population_size": 150,
+      "generations": 250,
+      "n_seeds": 10,
+      "mean_best_fitness": 0.7505497587377896,
+      "std_best_fitness": 0.010766954244751714,
+      "cv_best_fitness": 0.014345423630351514,
+      "mean_base_strength": 0.4776753050268424,
+      "mean_unique_archetypes": 6.0,
+      "max_best_fitness": 0.7734960978012971,
+      "min_best_fitness": 0.7362779465167817,
+      "pass_target": false,
+      "seed_runs": [
+        {
+          "seed": 42,
+          "best_fitness": 0.7492032802093306,
+          "base_strength": 0.46461070440865465,
+          "base_fitness": 0.5880921690982195,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.03333333333333334,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "sneasler",
+            "rhyperior",
+            "stoutland",
+            "miraidon-drive-mode",
+            "florges",
+            "cursola"
+          ]
+        },
+        {
+          "seed": 43,
+          "best_fitness": 0.7582461301299015,
+          "base_strength": 0.4458044574589231,
+          "base_fitness": 0.6165794634632348,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.05277777777777777,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "roserade",
+            "miraidon-drive-mode",
+            "darmanitan-zen",
+            "mabosstiff",
+            "sneasler",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 44,
+          "best_fitness": 0.7395059547141836,
+          "base_strength": 0.47302977061981455,
+          "base_fitness": 0.6075615102697391,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.0625,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "miraidon",
+            "froslass",
+            "florges",
+            "slowking-galar",
+            "rhyperior",
+            "okidogi"
+          ]
+        },
+        {
+          "seed": 45,
+          "best_fitness": 0.7397038239507465,
+          "base_strength": 0.47566243696111926,
+          "base_fitness": 0.5910927128396355,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.04583333333333334,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "dusknoir",
+            "omastar",
+            "munkidori",
+            "skuntank",
+            "miraidon",
+            "buzzwole"
+          ]
+        },
+        {
+          "seed": 46,
+          "best_fitness": 0.7581888795558238,
+          "base_strength": 0.48952920123637544,
+          "base_fitness": 0.6151333240002683,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.05138888888888889,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "togekiss",
+            "polteageist",
+            "zamazenta-crowned",
+            "leafeon",
+            "grafaiai",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 47,
+          "best_fitness": 0.7482184417227192,
+          "base_strength": 0.4919603058402473,
+          "base_fitness": 0.5912739972782747,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.037500000000000006,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "espeon",
+            "rhyperior",
+            "zamazenta",
+            "toxapex",
+            "cursola",
+            "haxorus"
+          ]
+        },
+        {
+          "seed": 48,
+          "best_fitness": 0.7734960978012971,
+          "base_strength": 0.4448649747844477,
+          "base_fitness": 0.6179405422457415,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.03888888888888889,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "zekrom",
+            "sneasler",
+            "flutter-mane",
+            "blissey",
+            "eldegoss",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 49,
+          "best_fitness": 0.745698118623187,
+          "base_strength": 0.49188579795021964,
+          "base_fitness": 0.6012536741787426,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.05,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "walking-wake",
+            "rhyperior",
+            "hitmontop",
+            "vikavolt",
+            "dusknoir",
+            "eternatus"
+          ]
+        },
+        {
+          "seed": 50,
+          "best_fitness": 0.756958914153925,
+          "base_strength": 0.5182617537009924,
+          "base_fitness": 0.6139033585983695,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.05138888888888889,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "zamazenta-crowned",
+            "cofagrigus",
+            "rhyperior",
+            "dragalge",
+            "hypno",
+            "tapu-bulu"
+          ]
+        },
+        {
+          "seed": 51,
+          "best_fitness": 0.7362779465167817,
+          "base_strength": 0.48114364730762976,
+          "base_fitness": 0.5890557242945594,
+          "entropy_bonus": 0.2,
+          "weakness_penalty": -0.04722222222222223,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "omastar",
+            "hitmonchan",
+            "iron-jugulis",
+            "goodra-hisui",
+            "mesprit",
+            "zeraora"
+          ]
+        }
+      ],
+      "elapsed_seconds": 732.554758310318
+    },
+    {
+      "config_name": "d0.25_w0.00",
+      "diversity_weight": 0.25,
+      "weakness_lambda": 0.0,
+      "population_size": 150,
+      "generations": 250,
+      "n_seeds": 10,
+      "mean_best_fitness": 0.8574244970928623,
+      "std_best_fitness": 0.01312873557822805,
+      "cv_best_fitness": 0.015311827015371779,
+      "mean_base_strength": 0.4830678867740361,
+      "mean_unique_archetypes": 6.0,
+      "max_best_fitness": 0.8779918535358369,
+      "min_best_fitness": 0.8306011412678088,
+      "pass_target": false,
+      "seed_runs": [
+        {
+          "seed": 42,
+          "best_fitness": 0.8306011412678088,
+          "base_strength": 0.4356012689116643,
+          "base_fitness": 0.5861566968233644,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "meowscarada",
+            "gholdengo",
+            "necrozma-ultra",
+            "emolga",
+            "tauros-paldea-combat-breed"
+          ]
+        },
+        {
+          "seed": 43,
+          "best_fitness": 0.8624212980448558,
+          "base_strength": 0.4712601268911665,
+          "base_fitness": 0.6179768536004113,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "darmanitan-zen",
+            "miraidon-drive-mode",
+            "rhyperior",
+            "virizion",
+            "okidogi",
+            "raticate-alola"
+          ]
+        },
+        {
+          "seed": 44,
+          "best_fitness": 0.850390857270904,
+          "base_strength": 0.47058809175207417,
+          "base_fitness": 0.6059464128264596,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "shaymin-land",
+            "weezing-galar",
+            "typhlosion-hisui",
+            "flutter-mane",
+            "buzzwole",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 45,
+          "best_fitness": 0.852797788497922,
+          "base_strength": 0.5006790304213438,
+          "base_fitness": 0.6083533440534775,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "dusknoir",
+            "garchomp",
+            "slowbro-galar",
+            "miraidon",
+            "gallade",
+            "omastar"
+          ]
+        },
+        {
+          "seed": 46,
+          "best_fitness": 0.8761257990240421,
+          "base_strength": 0.4637140068326013,
+          "base_fitness": 0.6316813545795976,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "kartana",
+            "mantine",
+            "flutter-mane",
+            "rhyperior",
+            "darmanitan-zen",
+            "buzzwole"
+          ]
+        },
+        {
+          "seed": 47,
+          "best_fitness": 0.8545424045998832,
+          "base_strength": 0.5171109484301285,
+          "base_fitness": 0.6100979601554387,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "zamazenta-crowned",
+            "runerigus",
+            "groudon",
+            "rapidash-galar",
+            "wormadam-plant",
+            "omastar"
+          ]
+        },
+        {
+          "seed": 48,
+          "best_fitness": 0.8524131392370823,
+          "base_strength": 0.4606186757768017,
+          "base_fitness": 0.6079686947926378,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "decidueye",
+            "gengar",
+            "miraidon-drive-mode",
+            "heracross",
+            "florges"
+          ]
+        },
+        {
+          "seed": 49,
+          "best_fitness": 0.8779918535358369,
+          "base_strength": 0.5265300146412885,
+          "base_fitness": 0.6335474090913924,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "chi-yu",
+            "miraidon-low-power-mode",
+            "stakataka",
+            "hitmonchan",
+            "rhyperior",
+            "mantine"
+          ]
+        },
+        {
+          "seed": 50,
+          "best_fitness": 0.8514130474455601,
+          "base_strength": 0.4783593622905482,
+          "base_fitness": 0.6069686030011157,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "regice",
+            "marshadow",
+            "calyrex",
+            "gengar",
+            "rhyperior",
+            "tapu-bulu"
+          ]
+        },
+        {
+          "seed": 51,
+          "best_fitness": 0.8655476420047277,
+          "base_strength": 0.5062173417927445,
+          "base_fitness": 0.6211031975602832,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "dialga-origin",
+            "flutter-mane",
+            "dusknoir",
+            "dragalge",
+            "lilligant-hisui",
+            "rhyperior"
+          ]
+        }
+      ],
+      "elapsed_seconds": 579.0025157928467
+    },
+    {
+      "config_name": "d0.25_w0.01",
+      "diversity_weight": 0.25,
+      "weakness_lambda": 0.01,
+      "population_size": 150,
+      "generations": 250,
+      "n_seeds": 10,
+      "mean_best_fitness": 0.8440979076044405,
+      "std_best_fitness": 0.009200428605339962,
+      "cv_best_fitness": 0.01089971734612029,
+      "mean_base_strength": 0.48214237839596547,
+      "mean_unique_archetypes": 6.0,
+      "max_best_fitness": 0.8586838418936559,
+      "min_best_fitness": 0.8270977570369723,
+      "pass_target": false,
+      "seed_runs": [
+        {
+          "seed": 42,
+          "best_fitness": 0.8586838418936559,
+          "base_strength": 0.4902726533268261,
+          "base_fitness": 0.6242393974492114,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.01,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "alakazam",
+            "miraidon-glide-mode",
+            "sinistcha",
+            "dusknoir",
+            "okidogi"
+          ]
+        },
+        {
+          "seed": 43,
+          "best_fitness": 0.8379164197650385,
+          "base_strength": 0.46134488368309745,
+          "base_fitness": 0.6070830864317052,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.013611111111111112,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rabsca",
+            "miraidon-drive-mode",
+            "shiftry",
+            "chi-yu",
+            "okidogi",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 44,
+          "best_fitness": 0.8390702164584797,
+          "base_strength": 0.477900439238653,
+          "base_fitness": 0.6096257720140352,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.014999999999999996,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "flutter-mane",
+            "blastoise",
+            "ferrothorn",
+            "omastar",
+            "okidogi",
+            "garchomp"
+          ]
+        },
+        {
+          "seed": 45,
+          "best_fitness": 0.8521310194037961,
+          "base_strength": 0.534605335936229,
+          "base_fitness": 0.6232421305149072,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.015555555555555553,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "calyrex-shadow",
+            "thundurus-therian",
+            "rhyperior",
+            "klinklang",
+            "crabominable",
+            "shuckle"
+          ]
+        },
+        {
+          "seed": 46,
+          "best_fitness": 0.8373788881262493,
+          "base_strength": 0.48629803156011064,
+          "base_fitness": 0.6004344436818048,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.0075000000000000015,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "kangaskhan",
+            "miraidon-aquatic-mode",
+            "hoopa",
+            "sneasler",
+            "toxapex"
+          ]
+        },
+        {
+          "seed": 47,
+          "best_fitness": 0.8385465933628112,
+          "base_strength": 0.46656629250040677,
+          "base_fitness": 0.6079910378072556,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.013888888888888886,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "zamazenta",
+            "weavile",
+            "ampharos",
+            "iron-moth",
+            "orbeetle",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 48,
+          "best_fitness": 0.8481322177060866,
+          "base_strength": 0.47183910850821537,
+          "base_fitness": 0.6153544399283088,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.011666666666666664,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "tauros-paldea-blaze-breed",
+            "miraidon",
+            "naganadel",
+            "wo-chien",
+            "mantine"
+          ]
+        },
+        {
+          "seed": 49,
+          "best_fitness": 0.8270977570369723,
+          "base_strength": 0.5036842362127867,
+          "base_fitness": 0.59737553481475,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.014722222222222222,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "miraidon-drive-mode",
+            "golem",
+            "chi-yu",
+            "registeel",
+            "passimian",
+            "vespiquen"
+          ]
+        },
+        {
+          "seed": 50,
+          "best_fitness": 0.8472108271303558,
+          "base_strength": 0.46882153896209533,
+          "base_fitness": 0.6155441604636891,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.012777777777777775,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "miraidon-low-power-mode",
+            "urshifu-single-strike",
+            "hippowdon",
+            "dragalge",
+            "darmanitan-zen",
+            "relicanth"
+          ]
+        },
+        {
+          "seed": 51,
+          "best_fitness": 0.8548112951609601,
+          "base_strength": 0.46009126403123474,
+          "base_fitness": 0.6256446284942934,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.015277777777777776,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "darmanitan-zen",
+            "tatsugiri-droopy",
+            "zarude-dada",
+            "rhyperior",
+            "eternatus",
+            "hitmonlee"
+          ]
+        }
+      ],
+      "elapsed_seconds": 738.4846968650818
+    },
+    {
+      "config_name": "d0.25_w0.02",
+      "diversity_weight": 0.25,
+      "weakness_lambda": 0.02,
+      "population_size": 150,
+      "generations": 250,
+      "n_seeds": 10,
+      "mean_best_fitness": 0.8332321115972535,
+      "std_best_fitness": 0.011157387908744891,
+      "cv_best_fitness": 0.013390491981108218,
+      "mean_base_strength": 0.4907265495363592,
+      "mean_unique_archetypes": 6.0,
+      "max_best_fitness": 0.855578348006564,
+      "min_best_fitness": 0.8097935848451291,
+      "pass_target": false,
+      "seed_runs": [
+        {
+          "seed": 42,
+          "best_fitness": 0.8097935848451291,
+          "base_strength": 0.44326272978688797,
+          "base_fitness": 0.5886824737340179,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.023333333333333327,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "beheeyem",
+            "absol",
+            "steelix",
+            "thundurus-therian",
+            "omastar",
+            "koraidon"
+          ]
+        },
+        {
+          "seed": 43,
+          "best_fitness": 0.8354104028889892,
+          "base_strength": 0.48115780055311536,
+          "base_fitness": 0.6148548473334335,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.02388888888888889,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rabsca",
+            "rhyperior",
+            "miraidon-aquatic-mode",
+            "chi-yu",
+            "okidogi",
+            "lurantis-totem"
+          ]
+        },
+        {
+          "seed": 44,
+          "best_fitness": 0.8363818589955181,
+          "base_strength": 0.49275614120709293,
+          "base_fitness": 0.620270747884407,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.028333333333333332,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "flutter-mane",
+            "nihilego",
+            "dusknoir",
+            "slither-wing",
+            "serperior",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 45,
+          "best_fitness": 0.8210275705517546,
+          "base_strength": 0.48049487554904835,
+          "base_fitness": 0.6099164594406434,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.03333333333333332,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "steelix",
+            "thundurus-incarnate",
+            "omastar",
+            "miraidon",
+            "skeledirge",
+            "heracross"
+          ]
+        },
+        {
+          "seed": 46,
+          "best_fitness": 0.8322195319125507,
+          "base_strength": 0.4816120058565154,
+          "base_fitness": 0.6144417541347729,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.026666666666666658,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "darmanitan-zen",
+            "deoxys-defense",
+            "flutter-mane",
+            "luxray",
+            "sneasler",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 47,
+          "best_fitness": 0.855578348006564,
+          "base_strength": 0.535813242231983,
+          "base_fitness": 0.6361339035621195,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.024999999999999994,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "shuckle",
+            "roserade",
+            "mew",
+            "flutter-mane",
+            "buzzwole"
+          ]
+        },
+        {
+          "seed": 48,
+          "best_fitness": 0.8358724145838432,
+          "base_strength": 0.5437384089799903,
+          "base_fitness": 0.6180946368060655,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.026666666666666672,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "mesprit",
+            "shuckle",
+            "miraidon-aquatic-mode",
+            "gengar",
+            "heracross",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 49,
+          "best_fitness": 0.837154589780814,
+          "base_strength": 0.4870457133561087,
+          "base_fitness": 0.6171545897808141,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.024444444444444446,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "mew",
+            "flutter-mane",
+            "golisopod",
+            "vikavolt",
+            "okidogi",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 50,
+          "best_fitness": 0.832676413800217,
+          "base_strength": 0.4762965674312673,
+          "base_fitness": 0.6132319693557725,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.025,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "eternatus",
+            "regice",
+            "rhyperior",
+            "pawmot",
+            "mantine",
+            "overqwil"
+          ]
+        },
+        {
+          "seed": 51,
+          "best_fitness": 0.8362064006071551,
+          "base_strength": 0.4850880104115829,
+          "base_fitness": 0.6245397339404885,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.03277777777777778,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "hitmonchan",
+            "iron-jugulis",
+            "darmanitan-zen",
+            "zamazenta-crowned",
+            "abomasnow"
+          ]
+        }
+      ],
+      "elapsed_seconds": 730.7107510566711
+    },
+    {
+      "config_name": "d0.25_w0.03",
+      "diversity_weight": 0.25,
+      "weakness_lambda": 0.03,
+      "population_size": 150,
+      "generations": 250,
+      "n_seeds": 10,
+      "mean_best_fitness": 0.8242703393660846,
+      "std_best_fitness": 0.009740368697039458,
+      "cv_best_fitness": 0.01181695886877406,
+      "mean_base_strength": 0.47959181714657556,
+      "mean_unique_archetypes": 6.0,
+      "max_best_fitness": 0.8444577628534721,
+      "min_best_fitness": 0.8044590719067678,
+      "pass_target": false,
+      "seed_runs": [
+        {
+          "seed": 42,
+          "best_fitness": 0.821201521103778,
+          "base_strength": 0.48235724743777453,
+          "base_fitness": 0.6192570766593335,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.042499999999999996,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "eternatus",
+            "chi-yu",
+            "regice",
+            "rhyperior",
+            "emolga",
+            "tauros-paldea-combat-breed"
+          ]
+        },
+        {
+          "seed": 43,
+          "best_fitness": 0.8293572412410126,
+          "base_strength": 0.4458044574589231,
+          "base_fitness": 0.6165794634632348,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.03166666666666666,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "roserade",
+            "miraidon",
+            "darmanitan-zen",
+            "mabosstiff",
+            "sneasler",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 44,
+          "best_fitness": 0.8191457401798771,
+          "base_strength": 0.48982885960631206,
+          "base_fitness": 0.6147012957354326,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.03999999999999999,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "leafeon",
+            "rhyperior",
+            "cryogonal",
+            "slowking-galar",
+            "chi-yu",
+            "zamazenta"
+          ]
+        },
+        {
+          "seed": 45,
+          "best_fitness": 0.8265338417915304,
+          "base_strength": 0.5287265332682609,
+          "base_fitness": 0.632089397347086,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.049999999999999996,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "miraidon-glide-mode",
+            "slowking-galar",
+            "keldeo-ordinary",
+            "rhyperior",
+            "weavile",
+            "shuckle"
+          ]
+        },
+        {
+          "seed": 46,
+          "best_fitness": 0.8276617982814001,
+          "base_strength": 0.4669957702944526,
+          "base_fitness": 0.6132173538369556,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.03,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "regice",
+            "gengar",
+            "passimian",
+            "miraidon-aquatic-mode",
+            "musharna"
+          ]
+        },
+        {
+          "seed": 47,
+          "best_fitness": 0.8210995981994776,
+          "base_strength": 0.4745222059541241,
+          "base_fitness": 0.6116551537550332,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.03499999999999999,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "omastar",
+            "bouffalant",
+            "flutter-mane",
+            "celebi",
+            "steelix",
+            "buzzwole"
+          ]
+        },
+        {
+          "seed": 48,
+          "best_fitness": 0.8298917895616299,
+          "base_strength": 0.48129673011224994,
+          "base_fitness": 0.6129473451171854,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.0275,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "miraidon-drive-mode",
+            "rhyperior",
+            "toxapex",
+            "gengar",
+            "gothitelle",
+            "okidogi"
+          ]
+        },
+        {
+          "seed": 49,
+          "best_fitness": 0.8444577628534721,
+          "base_strength": 0.49728794533918985,
+          "base_fitness": 0.6266799850756942,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.026666666666666665,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "hitmonlee",
+            "roserade",
+            "darkrai",
+            "latias",
+            "regice"
+          ]
+        },
+        {
+          "seed": 50,
+          "best_fitness": 0.8188950285419018,
+          "base_strength": 0.48296860257035956,
+          "base_fitness": 0.613617250764124,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.039166666666666676,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "celebi",
+            "pangoro",
+            "flutter-mane",
+            "overqwil",
+            "regice"
+          ]
+        },
+        {
+          "seed": 51,
+          "best_fitness": 0.8044590719067678,
+          "base_strength": 0.4461298194241093,
+          "base_fitness": 0.5933479607956567,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.03333333333333332,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "omastar",
+            "kommo-o",
+            "overqwil",
+            "ogerpon",
+            "spectrier",
+            "claydol"
+          ]
+        }
+      ],
+      "elapsed_seconds": 729.9928789138794
+    },
+    {
+      "config_name": "d0.25_w0.05",
+      "diversity_weight": 0.25,
+      "weakness_lambda": 0.05,
+      "population_size": 150,
+      "generations": 250,
+      "n_seeds": 10,
+      "mean_best_fitness": 0.8036204338488933,
+      "std_best_fitness": 0.009391709947100101,
+      "cv_best_fitness": 0.011686748558792929,
+      "mean_base_strength": 0.48596098910037416,
+      "mean_unique_archetypes": 6.0,
+      "max_best_fitness": 0.8159851169641136,
+      "min_best_fitness": 0.78759775831139,
+      "pass_target": false,
+      "seed_runs": [
+        {
+          "seed": 42,
+          "best_fitness": 0.8137800977620616,
+          "base_strength": 0.4887606962746055,
+          "base_fitness": 0.608224542206506,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.038888888888888896,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "iron-jugulis",
+            "regice",
+            "tauros",
+            "amoonguss",
+            "zamazenta"
+          ]
+        },
+        {
+          "seed": 43,
+          "best_fitness": 0.8050796955635106,
+          "base_strength": 0.5083186920449,
+          "base_fitness": 0.6134130288968439,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.052777777777777785,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "exeggutor-alola",
+            "rhyperior",
+            "shuckle",
+            "sneasler",
+            "calyrex-shadow",
+            "stoutland"
+          ]
+        },
+        {
+          "seed": 44,
+          "best_fitness": 0.8032914733999129,
+          "base_strength": 0.4600483162518302,
+          "base_fitness": 0.6157914733999129,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.056944444444444436,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "miraidon-aquatic-mode",
+            "ogerpon",
+            "darmanitan-zen",
+            "rhyperior",
+            "persian-alola",
+            "okidogi"
+          ]
+        },
+        {
+          "seed": 45,
+          "best_fitness": 0.7984024171578822,
+          "base_strength": 0.48259931673987316,
+          "base_fitness": 0.61368019493566,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.05972222222222221,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "steelix",
+            "mew",
+            "carracosta",
+            "flutter-mane",
+            "vikavolt-totem",
+            "buzzwole"
+          ]
+        },
+        {
+          "seed": 46,
+          "best_fitness": 0.8159851169641136,
+          "base_strength": 0.5295184642915244,
+          "base_fitness": 0.622929561408558,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.05138888888888889,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rabsca",
+            "deoxys-defense",
+            "gourgeist-large",
+            "dragalge",
+            "zamazenta-crowned",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 47,
+          "best_fitness": 0.7901006974954676,
+          "base_strength": 0.4806230681633317,
+          "base_fitness": 0.5887118086065788,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.04305555555555557,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "zapdos-galar",
+            "stoutland",
+            "omastar",
+            "bronzong",
+            "cursola",
+            "miraidon"
+          ]
+        },
+        {
+          "seed": 48,
+          "best_fitness": 0.7985507680353839,
+          "base_strength": 0.45849406214413535,
+          "base_fitness": 0.6041063235909395,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.05,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "omastar",
+            "miraidon-drive-mode",
+            "munkidori",
+            "heracross",
+            "dubwool",
+            "ting-lu"
+          ]
+        },
+        {
+          "seed": 49,
+          "best_fitness": 0.811239543080505,
+          "base_strength": 0.4881478770131772,
+          "base_fitness": 0.6140173208582829,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.04722222222222223,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "miraidon-drive-mode",
+            "polteageist",
+            "tornadus-incarnate",
+            "toxapex",
+            "rhyperior",
+            "tauros-paldea-blaze-breed"
+          ]
+        },
+        {
+          "seed": 50,
+          "best_fitness": 0.78759775831139,
+          "base_strength": 0.47150317227916055,
+          "base_fitness": 0.60009775831139,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.05694444444444444,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "zamazenta",
+            "rhyperior",
+            "comfey",
+            "shaymin-land",
+            "mantine",
+            "overqwil"
+          ]
+        },
+        {
+          "seed": 51,
+          "best_fitness": 0.8121767707187043,
+          "base_strength": 0.4915962258012039,
+          "base_fitness": 0.6191212151631488,
+          "entropy_bonus": 0.25,
+          "weakness_penalty": -0.05138888888888889,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "hitmonchan",
+            "landorus-incarnate",
+            "cofagrigus",
+            "rotom-mow",
+            "eternatus"
+          ]
+        }
+      ],
+      "elapsed_seconds": 732.3263523578644
+    },
+    {
+      "config_name": "d0.30_w0.00",
+      "diversity_weight": 0.3,
+      "weakness_lambda": 0.0,
+      "population_size": 150,
+      "generations": 250,
+      "n_seeds": 10,
+      "mean_best_fitness": 0.9084696787996869,
+      "std_best_fitness": 0.010549202923318285,
+      "cv_best_fitness": 0.011612058354282546,
+      "mean_base_strength": 0.489574963396779,
+      "mean_unique_archetypes": 6.0,
+      "max_best_fitness": 0.9322068325754505,
+      "min_best_fitness": 0.8930517905276945,
+      "pass_target": false,
+      "seed_runs": [
+        {
+          "seed": 42,
+          "best_fitness": 0.917052760090852,
+          "base_strength": 0.475128355295266,
+          "base_fitness": 0.6226083156464076,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "darkrai",
+            "darmanitan-zen",
+            "hydrapple",
+            "rhyperior",
+            "zapdos-galar",
+            "scizor"
+          ]
+        },
+        {
+          "seed": 43,
+          "best_fitness": 0.9322068325754505,
+          "base_strength": 0.5446546282739548,
+          "base_fitness": 0.6377623881310059,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "flutter-mane",
+            "exeggutor",
+            "rhyperior",
+            "latios",
+            "okidogi",
+            "shuckle"
+          ]
+        },
+        {
+          "seed": 44,
+          "best_fitness": 0.8930517905276945,
+          "base_strength": 0.48988205628762005,
+          "base_fitness": 0.59860734608325,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "koraidon-swimming-build",
+            "toxapex",
+            "hydreigon",
+            "dugtrio-alola",
+            "iron-leaves",
+            "omastar"
+          ]
+        },
+        {
+          "seed": 45,
+          "best_fitness": 0.8987422393564823,
+          "base_strength": 0.479455832113226,
+          "base_fitness": 0.6042977949120379,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "steelix",
+            "omastar",
+            "shaymin-land",
+            "calyrex-shadow",
+            "crabominable",
+            "feraligatr"
+          ]
+        },
+        {
+          "seed": 46,
+          "best_fitness": 0.8990832303688625,
+          "base_strength": 0.4695988286969253,
+          "base_fitness": 0.6046387859244181,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "barbaracle",
+            "mantine",
+            "pawmot",
+            "calyrex-shadow",
+            "rhyperior",
+            "goodra-hisui"
+          ]
+        },
+        {
+          "seed": 47,
+          "best_fitness": 0.9138546443339435,
+          "base_strength": 0.5189297218155198,
+          "base_fitness": 0.619410199889499,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "zamazenta-crowned",
+            "runerigus",
+            "great-tusk",
+            "latias",
+            "wormadam-plant",
+            "omastar"
+          ]
+        },
+        {
+          "seed": 48,
+          "best_fitness": 0.9088639923101627,
+          "base_strength": 0.45571042785098426,
+          "base_fitness": 0.6144195478657183,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "sneasler",
+            "decidueye",
+            "rhyperior",
+            "houndstone",
+            "eternatus",
+            "darmanitan-zen"
+          ]
+        },
+        {
+          "seed": 49,
+          "best_fitness": 0.9046170545193346,
+          "base_strength": 0.4805643403286156,
+          "base_fitness": 0.6101726100748901,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "walking-wake",
+            "aegislash-shield",
+            "miraidon-drive-mode",
+            "hitmontop",
+            "slowking-galar",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 50,
+          "best_fitness": 0.906239500262197,
+          "base_strength": 0.48077745241581266,
+          "base_fitness": 0.6117950558177525,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "miraidon-low-power-mode",
+            "rhyperior",
+            "togekiss",
+            "dragalge",
+            "sirfetchd",
+            "decidueye"
+          ]
+        },
+        {
+          "seed": 51,
+          "best_fitness": 0.9109847436518888,
+          "base_strength": 0.5010479908898651,
+          "base_fitness": 0.6165402992074444,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": 0.0,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "vanilluxe",
+            "rhyperior",
+            "hitmontop",
+            "iron-jugulis",
+            "miraidon-low-power-mode",
+            "probopass"
+          ]
+        }
+      ],
+      "elapsed_seconds": 580.6301395893097
+    },
+    {
+      "config_name": "d0.30_w0.01",
+      "diversity_weight": 0.3,
+      "weakness_lambda": 0.01,
+      "population_size": 150,
+      "generations": 250,
+      "n_seeds": 10,
+      "mean_best_fitness": 0.8880192911315336,
+      "std_best_fitness": 0.010144774159896506,
+      "cv_best_fitness": 0.011424047046286363,
+      "mean_base_strength": 0.4835177159590044,
+      "mean_unique_archetypes": 6.0,
+      "max_best_fitness": 0.9056286474907732,
+      "min_best_fitness": 0.8716420210165304,
+      "pass_target": false,
+      "seed_runs": [
+        {
+          "seed": 42,
+          "best_fitness": 0.8772636572676928,
+          "base_strength": 0.4379783634293151,
+          "base_fitness": 0.6011525461565818,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.01833333333333333,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "nihilego",
+            "tauros-paldea-combat-breed",
+            "claydol",
+            "pangoro",
+            "omastar",
+            "miraidon"
+          ]
+        },
+        {
+          "seed": 43,
+          "best_fitness": 0.8794712070183741,
+          "base_strength": 0.4976380348137303,
+          "base_fitness": 0.5991934292405963,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.014166666666666666,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "ferrothorn",
+            "lugia",
+            "tauros-paldea-aqua-breed",
+            "eternatus",
+            "raticate-alola",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 44,
+          "best_fitness": 0.8716420210165304,
+          "base_strength": 0.48707483325199286,
+          "base_fitness": 0.5952531321276415,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.018055555555555554,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "zamazenta",
+            "victini",
+            "aegislash-shield",
+            "omastar",
+            "serperior",
+            "zygarde-10-power-construct"
+          ]
+        },
+        {
+          "seed": 45,
+          "best_fitness": 0.8855370618528196,
+          "base_strength": 0.49412396290873606,
+          "base_fitness": 0.6063703951861529,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.015277777777777776,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "miraidon-glide-mode",
+            "omastar",
+            "alakazam",
+            "buzzwole",
+            "stakataka",
+            "gastrodon"
+          ]
+        },
+        {
+          "seed": 46,
+          "best_fitness": 0.8911885959665493,
+          "base_strength": 0.49648755490483165,
+          "base_fitness": 0.606466373744327,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.009722222222222224,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "tauros-paldea-blaze-breed",
+            "miraidon",
+            "hoopa",
+            "grimmsnarl",
+            "toxapex"
+          ]
+        },
+        {
+          "seed": 47,
+          "best_fitness": 0.8975109022663816,
+          "base_strength": 0.45207727346673177,
+          "base_fitness": 0.6127886800441593,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.009722222222222224,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "absol",
+            "blissey",
+            "latias",
+            "wormadam-plant",
+            "zamazenta-crowned"
+          ]
+        },
+        {
+          "seed": 48,
+          "best_fitness": 0.9056286474907732,
+          "base_strength": 0.5035453066536522,
+          "base_fitness": 0.6259064252685509,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.014722222222222223,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "miraidon-drive-mode",
+            "gengar",
+            "annihilape",
+            "stakataka",
+            "mantine"
+          ]
+        },
+        {
+          "seed": 49,
+          "best_fitness": 0.8990814083121211,
+          "base_strength": 0.488960793883195,
+          "base_fitness": 0.6251925194232323,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.020555555555555553,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "heracross",
+            "keldeo-resolute",
+            "stakataka",
+            "flutter-mane",
+            "omastar",
+            "torterra"
+          ]
+        },
+        {
+          "seed": 50,
+          "best_fitness": 0.8902041690904667,
+          "base_strength": 0.49451846429152435,
+          "base_fitness": 0.609926391312689,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.014166666666666662,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "goodra-hisui",
+            "celebi",
+            "sirfetchd",
+            "darkrai",
+            "mantine",
+            "golem"
+          ]
+        },
+        {
+          "seed": 51,
+          "best_fitness": 0.8826652410336254,
+          "base_strength": 0.4827725719863347,
+          "base_fitness": 0.6029430188114031,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.014722222222222222,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "brambleghast",
+            "alakazam",
+            "rhyperior",
+            "dustox",
+            "zamazenta-crowned",
+            "calyrex-ice"
+          ]
+        }
+      ],
+      "elapsed_seconds": 728.8701331615448
+    },
+    {
+      "config_name": "d0.30_w0.02",
+      "diversity_weight": 0.3,
+      "weakness_lambda": 0.02,
+      "population_size": 150,
+      "generations": 250,
+      "n_seeds": 10,
+      "mean_best_fitness": 0.8829130808741142,
+      "std_best_fitness": 0.006163774465995907,
+      "cv_best_fitness": 0.006981179234419722,
+      "mean_base_strength": 0.48350221246136327,
+      "mean_unique_archetypes": 6.0,
+      "max_best_fitness": 0.8915834831830651,
+      "min_best_fitness": 0.8751876251923769,
+      "pass_target": false,
+      "seed_runs": [
+        {
+          "seed": 42,
+          "best_fitness": 0.8776045465327358,
+          "base_strength": 0.46264665690580775,
+          "base_fitness": 0.6014934354216246,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.01833333333333334,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "muk",
+            "banette",
+            "keldeo-resolute",
+            "miraidon-low-power-mode",
+            "florges",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 43,
+          "best_fitness": 0.8804137805346849,
+          "base_strength": 0.4619637221408817,
+          "base_fitness": 0.6081915583124626,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.022222222222222216,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "tsareena",
+            "rhyperior",
+            "wishiwashi-school",
+            "flutter-mane",
+            "sneasler",
+            "reuniclus"
+          ]
+        },
+        {
+          "seed": 44,
+          "best_fitness": 0.8810393180787477,
+          "base_strength": 0.46751439726695954,
+          "base_fitness": 0.6110393180787477,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.02444444444444444,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "shaymin-sky",
+            "rhyperior",
+            "bellibolt",
+            "buzzwole",
+            "gengar",
+            "regice"
+          ]
+        },
+        {
+          "seed": 45,
+          "best_fitness": 0.8904685343530714,
+          "base_strength": 0.519574589230519,
+          "base_fitness": 0.6215796454641824,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.02555555555555555,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "munkidori",
+            "electivire",
+            "rhyperior",
+            "calyrex-shadow",
+            "crabominable",
+            "shuckle"
+          ]
+        },
+        {
+          "seed": 46,
+          "best_fitness": 0.8751876251923769,
+          "base_strength": 0.46482267772897345,
+          "base_fitness": 0.6046320696368213,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.02388888888888888,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "regice",
+            "manectric",
+            "quaquaval",
+            "calyrex-shadow",
+            "muk"
+          ]
+        },
+        {
+          "seed": 47,
+          "best_fitness": 0.8886311800583021,
+          "base_strength": 0.479767691556857,
+          "base_fitness": 0.6158534022805242,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.021666666666666664,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "flutter-mane",
+            "drampa",
+            "cloyster",
+            "celebi",
+            "okidogi",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 48,
+          "best_fitness": 0.8915834831830651,
+          "base_strength": 0.4906124938994632,
+          "base_fitness": 0.6215834831830651,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.02444444444444444,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "wishiwashi-school",
+            "gengar",
+            "hitmontop",
+            "miraidon-low-power-mode",
+            "mantine"
+          ]
+        },
+        {
+          "seed": 49,
+          "best_fitness": 0.8775399872071173,
+          "base_strength": 0.5176084268748984,
+          "base_fitness": 0.6125399872071174,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.029444444444444447,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "carracosta",
+            "zamazenta-crowned",
+            "aegislash-shield",
+            "zygarde-10-power-construct",
+            "vikavolt",
+            "latias"
+          ]
+        },
+        {
+          "seed": 50,
+          "best_fitness": 0.8899690721529253,
+          "base_strength": 0.4947907922563852,
+          "base_fitness": 0.6149690721529254,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.019444444444444445,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "lilligant-hisui",
+            "rhyperior",
+            "dragalge",
+            "necrozma-dawn",
+            "orbeetle",
+            "darkrai"
+          ]
+        },
+        {
+          "seed": 51,
+          "best_fitness": 0.8766932814481165,
+          "base_strength": 0.4757206767528876,
+          "base_fitness": 0.606137725892561,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.023888888888888883,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "omastar",
+            "buzzwole",
+            "iron-jugulis",
+            "skuntank",
+            "miraidon-low-power-mode",
+            "steelix"
+          ]
+        }
+      ],
+      "elapsed_seconds": 726.912983417511
+    },
+    {
+      "config_name": "d0.30_w0.03",
+      "diversity_weight": 0.3,
+      "weakness_lambda": 0.03,
+      "population_size": 150,
+      "generations": 250,
+      "n_seeds": 10,
+      "mean_best_fitness": 0.8718264471815912,
+      "std_best_fitness": 0.013656145035754378,
+      "cv_best_fitness": 0.015663834332970132,
+      "mean_base_strength": 0.4951472588254434,
+      "mean_unique_archetypes": 6.0,
+      "max_best_fitness": 0.8884785833530937,
+      "min_best_fitness": 0.8478600189551835,
+      "pass_target": false,
+      "seed_runs": [
+        {
+          "seed": 42,
+          "best_fitness": 0.8478600189551835,
+          "base_strength": 0.43932552464616886,
+          "base_fitness": 0.5875822411774058,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.034166666666666665,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "sneasler",
+            "rhyperior",
+            "miraidon-low-power-mode",
+            "electivire",
+            "florges",
+            "shiftry"
+          ]
+        },
+        {
+          "seed": 43,
+          "best_fitness": 0.8793572412410128,
+          "base_strength": 0.4458044574589231,
+          "base_fitness": 0.6165794634632349,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.03166666666666666,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "roserade",
+            "rhyperior",
+            "darmanitan-zen",
+            "mabosstiff",
+            "sneasler",
+            "miraidon-drive-mode"
+          ]
+        },
+        {
+          "seed": 44,
+          "best_fitness": 0.8566243820129847,
+          "base_strength": 0.47138831950544985,
+          "base_fitness": 0.603846604235207,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.04166666666666665,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "tsareena",
+            "rhyperior",
+            "bellibolt",
+            "marshadow",
+            "enamorus-therian",
+            "iron-moth"
+          ]
+        },
+        {
+          "seed": 45,
+          "best_fitness": 0.8698287754711392,
+          "base_strength": 0.5144348462664715,
+          "base_fitness": 0.6187176643600282,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.04333333333333333,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "miraidon-glide-mode",
+            "rhyperior",
+            "gengar",
+            "okidogi",
+            "veluza",
+            "shuckle"
+          ]
+        },
+        {
+          "seed": 46,
+          "best_fitness": 0.8536414528260379,
+          "base_strength": 0.4978511469009273,
+          "base_fitness": 0.6033636750482602,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.04416666666666667,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "wormadam-sandy",
+            "diancie",
+            "raikou",
+            "koraidon",
+            "overqwil",
+            "omastar"
+          ]
+        },
+        {
+          "seed": 47,
+          "best_fitness": 0.8881659679769108,
+          "base_strength": 0.5352451602407678,
+          "base_fitness": 0.6287215235324664,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.034999999999999996,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "grimmsnarl",
+            "rhyperior",
+            "shuckle",
+            "roserade",
+            "okidogi",
+            "calyrex-shadow"
+          ]
+        },
+        {
+          "seed": 48,
+          "best_fitness": 0.878003800153597,
+          "base_strength": 0.46505124450951685,
+          "base_fitness": 0.6135593557091525,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.03,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "mesprit",
+            "rhyperior",
+            "miraidon-aquatic-mode",
+            "gengar",
+            "passimian",
+            "glaceon"
+          ]
+        },
+        {
+          "seed": 49,
+          "best_fitness": 0.8884785833530937,
+          "base_strength": 0.49689002765576706,
+          "base_fitness": 0.6198674722419827,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.025833333333333337,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "polteageist",
+            "hitmonlee",
+            "toxapex",
+            "miraidon-drive-mode",
+            "latias"
+          ]
+        },
+        {
+          "seed": 50,
+          "best_fitness": 0.8798181482854783,
+          "base_strength": 0.5463808361802506,
+          "base_fitness": 0.6262070371743671,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.04083333333333333,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "omastar",
+            "iron-valiant",
+            "hippowdon",
+            "overqwil",
+            "shuckle",
+            "miraidon-low-power-mode"
+          ]
+        },
+        {
+          "seed": 51,
+          "best_fitness": 0.8764861015404732,
+          "base_strength": 0.5391010248901904,
+          "base_fitness": 0.6320416570960289,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.049999999999999996,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "eternatus",
+            "lilligant-hisui",
+            "iron-jugulis",
+            "shuckle",
+            "rotom-heat",
+            "rhyperior"
+          ]
+        }
+      ],
+      "elapsed_seconds": 732.9158020019531
+    },
+    {
+      "config_name": "d0.30_w0.05",
+      "diversity_weight": 0.3,
+      "weakness_lambda": 0.05,
+      "population_size": 150,
+      "generations": 250,
+      "n_seeds": 10,
+      "mean_best_fitness": 0.8478901180523369,
+      "std_best_fitness": 0.009801611141422823,
+      "cv_best_fitness": 0.011560001623721965,
+      "mean_base_strength": 0.4804758906783797,
+      "mean_unique_archetypes": 6.0,
+      "max_best_fitness": 0.8615939527504246,
+      "min_best_fitness": 0.8264240730732587,
+      "pass_target": false,
+      "seed_runs": [
+        {
+          "seed": 42,
+          "best_fitness": 0.8529668266463859,
+          "base_strength": 0.5097872132747683,
+          "base_fitness": 0.6238001599797192,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.06527777777777778,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "alakazam",
+            "miraidon-low-power-mode",
+            "shuckle",
+            "shiftry",
+            "okidogi"
+          ]
+        },
+        {
+          "seed": 43,
+          "best_fitness": 0.8264240730732587,
+          "base_strength": 0.47053847405238336,
+          "base_fitness": 0.5764240730732586,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.044444444444444446,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "orbeetle",
+            "miraidon-drive-mode",
+            "ogerpon-wellspring-mask",
+            "mabosstiff",
+            "armarouge",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 44,
+          "best_fitness": 0.8401438295787712,
+          "base_strength": 0.46230567756629254,
+          "base_fitness": 0.5831993851343268,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.037500000000000006,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "giratina-altered",
+            "grafaiai",
+            "rabsca",
+            "rillaboom",
+            "darkrai",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 45,
+          "best_fitness": 0.8419959660380454,
+          "base_strength": 0.43963689604685213,
+          "base_fitness": 0.5947737438158233,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.04722222222222223,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "registeel",
+            "absol",
+            "alakazam",
+            "miraidon-drive-mode",
+            "crabominable",
+            "rhyperior"
+          ]
+        },
+        {
+          "seed": 46,
+          "best_fitness": 0.8601928236613605,
+          "base_strength": 0.5011418578168212,
+          "base_fitness": 0.6129706014391383,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.047222222222222235,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "ribombee",
+            "hitmontop",
+            "toxapex",
+            "rhyperior",
+            "hoopa-unbound",
+            "miraidon"
+          ]
+        },
+        {
+          "seed": 47,
+          "best_fitness": 0.8535529271953683,
+          "base_strength": 0.4861148527737108,
+          "base_fitness": 0.6132751494175905,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.05416666666666667,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "aurorus",
+            "rhyperior",
+            "orbeetle",
+            "okidogi",
+            "cursola",
+            "miraidon"
+          ]
+        },
+        {
+          "seed": 48,
+          "best_fitness": 0.8615939527504246,
+          "base_strength": 0.4868241418578168,
+          "base_fitness": 0.618538397194869,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.0513888888888889,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "dusknoir",
+            "miraidon-aquatic-mode",
+            "gengar",
+            "buzzwole",
+            "mantine"
+          ]
+        },
+        {
+          "seed": 49,
+          "best_fitness": 0.8452947264694459,
+          "base_strength": 0.4499925166748007,
+          "base_fitness": 0.6008502820250016,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.05,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "rhyperior",
+            "walking-wake",
+            "spectrier",
+            "vikavolt",
+            "sylveon",
+            "okidogi"
+          ]
+        },
+        {
+          "seed": 50,
+          "best_fitness": 0.8476631059917354,
+          "base_strength": 0.49100976085895565,
+          "base_fitness": 0.6143297726584022,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.061111111111111095,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "zamazenta-crowned",
+            "rhyperior",
+            "magnezone",
+            "dragalge",
+            "mantine",
+            "houndstone"
+          ]
+        },
+        {
+          "seed": 51,
+          "best_fitness": 0.8490729491185731,
+          "base_strength": 0.5074075158613958,
+          "base_fitness": 0.6087951713407954,
+          "entropy_bonus": 0.3,
+          "weakness_penalty": -0.054166666666666655,
+          "imbalance_penalty": -0.005555555555555556,
+          "unique_archetypes": 6,
+          "best_team": [
+            "golem",
+            "hitmonchan",
+            "iron-jugulis",
+            "mewtwo",
+            "regice",
+            "rotom-mow"
+          ]
+        }
+      ],
+      "elapsed_seconds": 730.1773710250854
+    }
+  ],
+  "total_elapsed_seconds": 14213.758629083633
+}

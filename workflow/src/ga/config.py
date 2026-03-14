@@ -28,9 +28,13 @@ def get_base_config():
             "synergy_weight": 0.15,
             
             # Diversity/penalty weights (remaining 0.15-0.30)
-            "diversity_weight": 0.15,      # Entropy bonus coefficient
+            "diversity_weight": 0.30,      # Entropy bonus coefficient
             "imbalance_lambda": 0.20,      # Quadratic balance penalty
-            "weakness_lambda": 0.10,       # Quadratic weakness penalty
+            "weakness_lambda": 0.01,       # Keep slight pressure; avoid over-penalizing search
+
+            # Final-team post-filter guardrails (applied when exporting top teams)
+            "max_shared_weakness_members": 2,   # Reject teams with >=3 weak to any single type
+            "max_total_shared_weakness": 8,     # Optional aggregate cap across all weak types
             
             # BST cap (competitive tier constraint)
             "bst_cap": 3300,               # Total team BST limit (~550 avg = OU tier)

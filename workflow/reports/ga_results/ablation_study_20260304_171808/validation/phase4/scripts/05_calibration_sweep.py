@@ -14,9 +14,11 @@ import json
 import time
 import copy
 import argparse
+import os
 from pathlib import Path
 from datetime import datetime
 from typing import Dict, List
+from concurrent.futures import ProcessPoolExecutor, as_completed
 
 import numpy as np
 import pandas as pd
@@ -70,40 +72,85 @@ def build_config(base_config: Dict, diversity_weight: float, weakness_lambda: fl
     return config
 
 
-def run_config_across_seeds(pokemon_df: pd.DataFrame, config_template: Dict, seeds: List[int]) -> Dict:
+def _run_single_seed(config_template: Dict, seed: int) -> Dict:
+    """Run one seed in a separate process (used for parallel seed execution)."""
+    pokemon_df = load_pokemon_data()
+
+    config = copy.deepcopy(config_template)
+    config["random_seed"] = seed
+    config["name"] = f"{config_template['name']}_seed{seed}"
+
+    ga = PokemonGA(pokemon_df=pokemon_df, config=config)
+    ga.run()
+
+    best_team_df, best_fitness, breakdown = ga.get_best_teams(n=1)[0]
+
+    recomputed_fitness, _ = evaluate_fitness(best_team_df, config)
+    assert abs(float(best_fitness) - float(recomputed_fitness)) < FITNESS_CONSISTENCY_TOL, (
+        f"Fitness consistency failed for {config['name']}: "
+        f"stored={float(best_fitness):.12f}, recomputed={float(recomputed_fitness):.12f}, "
+        f"delta={abs(float(best_fitness) - float(recomputed_fitness)):.12f}"
+    )
+
+    return {
+        "seed": seed,
+        "best_fitness": float(best_fitness),
+        "base_strength": float(breakdown["base_strength"]),
+        "base_fitness": float(breakdown["base_fitness"]),
+        "entropy_bonus": float(breakdown["entropy_bonus"]),
+        "weakness_penalty": float(breakdown["weakness_penalty"]),
+        "imbalance_penalty": float(breakdown["imbalance_penalty"]),
+        "unique_archetypes": int(best_team_df["archetype"].nunique()),
+        "best_team": best_team_df["name"].tolist(),
+    }
+
+
+def run_config_across_seeds(pokemon_df: pd.DataFrame, config_template: Dict, seeds: List[int], max_workers: int = 1) -> Dict:
     seed_runs = []
 
-    for seed in seeds:
-        config = copy.deepcopy(config_template)
-        config["random_seed"] = seed
-        config["name"] = f"{config_template['name']}_seed{seed}"
+    if max_workers <= 1:
+        for seed in seeds:
+            config = copy.deepcopy(config_template)
+            config["random_seed"] = seed
+            config["name"] = f"{config_template['name']}_seed{seed}"
 
-        ga = PokemonGA(pokemon_df=pokemon_df, config=config)
-        ga.run()
+            ga = PokemonGA(pokemon_df=pokemon_df, config=config)
+            ga.run()
 
-        best_team_df, best_fitness, breakdown = ga.get_best_teams(n=1)[0]
+            best_team_df, best_fitness, breakdown = ga.get_best_teams(n=1)[0]
 
-        # Integrity check: stored fitness must match recomputed fitness exactly
-        recomputed_fitness, _ = evaluate_fitness(best_team_df, config)
-        assert abs(float(best_fitness) - float(recomputed_fitness)) < FITNESS_CONSISTENCY_TOL, (
-            f"Fitness consistency failed for {config['name']}: "
-            f"stored={float(best_fitness):.12f}, recomputed={float(recomputed_fitness):.12f}, "
-            f"delta={abs(float(best_fitness) - float(recomputed_fitness)):.12f}"
-        )
+            # Integrity check: stored fitness must match recomputed fitness exactly
+            recomputed_fitness, _ = evaluate_fitness(best_team_df, config)
+            assert abs(float(best_fitness) - float(recomputed_fitness)) < FITNESS_CONSISTENCY_TOL, (
+                f"Fitness consistency failed for {config['name']}: "
+                f"stored={float(best_fitness):.12f}, recomputed={float(recomputed_fitness):.12f}, "
+                f"delta={abs(float(best_fitness) - float(recomputed_fitness)):.12f}"
+            )
 
-        seed_runs.append(
-            {
-                "seed": seed,
-                "best_fitness": float(best_fitness),
-                "base_strength": float(breakdown["base_strength"]),
-                "base_fitness": float(breakdown["base_fitness"]),
-                "entropy_bonus": float(breakdown["entropy_bonus"]),
-                "weakness_penalty": float(breakdown["weakness_penalty"]),
-                "imbalance_penalty": float(breakdown["imbalance_penalty"]),
-                "unique_archetypes": int(best_team_df["archetype"].nunique()),
-                "best_team": best_team_df["name"].tolist(),
+            seed_runs.append(
+                {
+                    "seed": seed,
+                    "best_fitness": float(best_fitness),
+                    "base_strength": float(breakdown["base_strength"]),
+                    "base_fitness": float(breakdown["base_fitness"]),
+                    "entropy_bonus": float(breakdown["entropy_bonus"]),
+                    "weakness_penalty": float(breakdown["weakness_penalty"]),
+                    "imbalance_penalty": float(breakdown["imbalance_penalty"]),
+                    "unique_archetypes": int(best_team_df["archetype"].nunique()),
+                    "best_team": best_team_df["name"].tolist(),
+                }
+            )
+    else:
+        with ProcessPoolExecutor(max_workers=max_workers) as executor:
+            futures = {
+                executor.submit(_run_single_seed, config_template, seed): seed
+                for seed in seeds
             }
-        )
+            for future in as_completed(futures):
+                seed_runs.append(future.result())
+
+    # Keep output deterministic regardless of completion order
+    seed_runs.sort(key=lambda r: r["seed"])
 
     best_scores = np.array([r["best_fitness"] for r in seed_runs], dtype=float)
     base_strengths = np.array([r["base_strength"] for r in seed_runs], dtype=float)
@@ -142,6 +189,12 @@ def main():
     parser.add_argument("--population", type=int, default=60)
     parser.add_argument("--generations", type=int, default=60)
     parser.add_argument("--seeds", type=int, default=5, help="Number of seeds starting at 42")
+    parser.add_argument(
+        "--max-workers",
+        type=int,
+        default=1,
+        help="Parallel workers for seed-level multiprocessing (1 = serial)",
+    )
     parser.add_argument("--output-dir", type=str, default=str(Path(__file__).parent.parent / "results"))
     args = parser.parse_args()
 
@@ -153,6 +206,10 @@ def main():
     print("PHASE 4: CALIBRATION SWEEP")
     print("=" * 72)
     print(f"Population={args.population}, Generations={args.generations}, Seeds={seeds}")
+    if args.max_workers > 1:
+        print(f"Parallel mode: enabled (max_workers={args.max_workers}, cpu_count={os.cpu_count()})")
+    else:
+        print("Parallel mode: disabled (serial)")
     print(f"Grid size={len(diversity_grid)} x {len(weakness_grid)} = {len(diversity_grid) * len(weakness_grid)} configs")
 
     start = time.time()
@@ -181,7 +238,7 @@ def main():
             print(f"\n[{idx}/{total_configs}] Testing diversity_weight={d:.2f}, weakness_lambda={w:.2f}...")
             cfg_start = time.time()
 
-            result = run_config_across_seeds(pokemon_df, config, seeds)
+            result = run_config_across_seeds(pokemon_df, config, seeds, max_workers=args.max_workers)
             elapsed = time.time() - cfg_start
             result["elapsed_seconds"] = elapsed
             all_results.append(result)
