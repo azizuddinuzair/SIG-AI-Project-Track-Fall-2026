@@ -143,7 +143,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-CONTEXT/
+
 
 # Spyder project settings
 .spyderproject
@@ -209,3 +209,4 @@ __marimo__/
 
 #custom
 quickstart.py
+CONTEXT/
