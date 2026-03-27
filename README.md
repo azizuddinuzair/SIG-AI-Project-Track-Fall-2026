@@ -19,7 +19,6 @@ This project is a showcase of advanced AI, data science, and software engineerin
 ## How to Explore
 - See [`workflow/README.md`](workflow/README.md) for project structure and setup
 - Run the app: `py -m streamlit run workflow/app/streamlit_app.py`
-- Start the backend: `py -m uvicorn workflow.app.api:app --reload`
 - Dive into [`workflow/reports`](workflow/reports) for detailed experiment results and analysis
 
 ---
