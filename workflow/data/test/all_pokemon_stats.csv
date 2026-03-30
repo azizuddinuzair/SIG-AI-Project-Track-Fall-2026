@@ -1287,14 +1287,6 @@ id,name,type1,type2,hp,attack,defense,special-attack,special-defense,speed
 10261,squawkabilly-yellow-plumage,normal,flying,82,96,51,45,51,92
 10262,squawkabilly-white-plumage,normal,flying,82,96,51,45,51,92
 10263,gimmighoul-roaming,ghost,,45,30,25,75,45,80
-10264,koraidon-limited-build,fighting,dragon,100,135,115,85,100,135
-10265,koraidon-sprinting-build,fighting,dragon,100,135,115,85,100,135
-10266,koraidon-swimming-build,fighting,dragon,100,135,115,85,100,135
-10267,koraidon-gliding-build,fighting,dragon,100,135,115,85,100,135
-10268,miraidon-low-power-mode,electric,dragon,100,85,100,135,115,135
-10269,miraidon-drive-mode,electric,dragon,100,85,100,135,115,135
-10270,miraidon-aquatic-mode,electric,dragon,100,85,100,135,115,135
-10271,miraidon-glide-mode,electric,dragon,100,85,100,135,115,135
 10272,ursaluna-bloodmoon,ground,normal,113,70,120,135,65,52
 10273,ogerpon-wellspring-mask,grass,water,80,120,84,60,96,110
 10274,ogerpon-hearthflame-mask,grass,fire,80,120,84,60,96,110
