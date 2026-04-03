@@ -876,7 +876,7 @@ def _render_team_generator_mode(data_df: pd.DataFrame) -> None:
                         """
 <h3>🧭 Team Builder Guide</h3>
 <p><strong><span style='font-size: 1.06rem;'>🟡 Anchor Pokemon</span></strong><br>
-Guaranteed team members. If you always want Pikachu or Garchomp, select them as anchors and the system builds around them.</p>
+Guaranteed team members. If you always want Charizard or Garchomp, select them as anchors and the system builds around them (fully evolved forms only).</p>
 <p><strong><span style='font-size: 1.06rem;'>⚔️ Team Composition</span></strong><br>
 Defines your team structure. Each Pokemon has a role. Some examples:</p>
 <ul>
