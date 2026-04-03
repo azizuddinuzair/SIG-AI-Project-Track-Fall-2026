@@ -1210,7 +1210,7 @@ def main() -> None:
         st.caption("Saved teams are session-only and will not persist after the session ends.")
         st.markdown("---")
         st.markdown(
-            '<a href="https://github.com/acm-uic/SIG-AI-Project-Track-Fall-2026" target="_blank"><button style="width:100%;padding:0.5em 0.8em;font-size:1.1em;background:#3B82F6;color:white;border:none;border-radius:8px;cursor:pointer;">Repo Here</button></a>',
+            '<a href="https://github.com/acm-uic/SIG-AI-Project-Track-Fall-2026" target="_blank"><button style="width:100%;padding:0.5em 0.8em;font-size:1.1em;background:#3B82F6;color:white;border:none;border-radius:8px;cursor:pointer;">View Repo</button></a>',
             unsafe_allow_html=True,
         )
 
