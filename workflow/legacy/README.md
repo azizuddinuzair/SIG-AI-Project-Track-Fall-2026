@@ -1,13 +1,11 @@
-# Legacy Directory
+# Legacy
 
-This directory contains scripts and code from earlier phases of the project. These are preserved for reference, reproducibility, and to document the project's evolution.
+This folder preserves earlier versions of scripts and workflows from the project’s development.
 
-## Contents
-- **Old Scripts**: Early versions of data processing, GA, or analysis scripts.
-- **Deprecated Workflows**: Approaches or experiments that were replaced or improved upon.
+## Purpose
+- keep old approaches for reference
+- document how the project evolved
+- provide context for decisions that were later replaced or improved
 
-## How to Use
-- Reference legacy scripts to understand the project's development history.
-- Use as a resource for troubleshooting or for ideas in future work.
-
-Legacy code is not actively maintained but is kept for transparency and historical context.
+## Notes
+The legacy code is not the primary path for running the project. It exists mainly for traceability and historical context.

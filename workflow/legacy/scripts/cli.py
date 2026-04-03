@@ -9,6 +9,7 @@ Commands:
 
 from __future__ import annotations
 
+import atexit
 import argparse
 import json
 import subprocess
@@ -18,6 +19,7 @@ from datetime import datetime
 from pathlib import Path
 from collections import Counter
 from typing import Dict, List, Tuple
+from uuid import uuid4
 
 import pandas as pd
 
@@ -30,9 +32,13 @@ from src.ga import PokemonGA, get_config_c
 from src.ga.config import get_config_a, get_config_b, get_config_random
 from src.ga.optimization import load_pokemon_data
 from src.ga.fitness import TYPE_NAMES, get_type_effectiveness
+from src.team_store import TeamStore
 
 PIVOT_CANDIDATE_THRESHOLD = 0.62
 ABILITY_DATA_PATH = PROJ_ROOT / "data" / "pokemon_abilities.csv"
+CLI_SESSION_ID_KEY = "cli-session"
+_CLI_SESSION_ID: str | None = None
+_CLI_TEAM_STORE: TeamStore | None = None
 
 
 def _print_header(title: str) -> None:
@@ -68,6 +74,21 @@ def _input_yes_no(prompt: str, default_yes: bool = True) -> bool:
         if raw in {"n", "no"}:
             return False
         print("Please enter y or n.")
+
+
+def _get_cli_session_id() -> str:
+    global _CLI_SESSION_ID
+    if _CLI_SESSION_ID is None:
+        _CLI_SESSION_ID = f"{CLI_SESSION_ID_KEY}-{uuid4().hex}"
+    return _CLI_SESSION_ID
+
+
+def _get_cli_team_store() -> TeamStore:
+    global _CLI_TEAM_STORE
+    if _CLI_TEAM_STORE is None:
+        _CLI_TEAM_STORE = TeamStore()
+        atexit.register(_CLI_TEAM_STORE.close)
+    return _CLI_TEAM_STORE
 
 
 def _safe_input(prompt: str) -> str | None:
@@ -330,6 +351,96 @@ def _build_ga_result_payload(
         },
         "top_teams": top_teams_json,
     }
+
+
+def _build_saved_team_payload(
+    team_df: pd.DataFrame,
+    fitness: float,
+    breakdown: Dict,
+    *,
+    rank: int = 1,
+    analysis: Dict | None = None,
+) -> Dict:
+    payload = {
+        "rank": int(rank),
+        "fitness": float(fitness),
+        "breakdown": breakdown,
+        "pokemon": _team_to_records(team_df),
+    }
+    if analysis is not None:
+        payload["analysis"] = analysis
+    return payload
+
+
+def _prompt_save_generated_team(
+    *,
+    team_df: pd.DataFrame,
+    fitness: float,
+    breakdown: Dict,
+    config_name: str,
+    composition_name: str,
+    power_mode: str,
+    analysis: Dict | None = None,
+) -> None:
+    if not _input_yes_no("Save this team to your session collection?", default_yes=True):
+        return
+
+    default_nickname = f"{composition_name.replace('_', ' ').title()} Team"
+    raw_nickname = _safe_input(f"Nickname [{default_nickname}]: ")
+    if raw_nickname is None:
+        print("Save cancelled.")
+        return
+
+    nickname = raw_nickname.strip() or default_nickname
+    team_payload = _build_saved_team_payload(team_df, fitness, breakdown, analysis=analysis)
+    metadata = {
+        "config_name": config_name,
+        "composition_name": composition_name,
+        "power_mode": power_mode,
+        "session_id": _get_cli_session_id(),
+        "saved_via": "legacy-cli",
+        "timestamp": datetime.now().isoformat(),
+    }
+
+    team_id = _get_cli_team_store().save_team(
+        session_id=_get_cli_session_id(),
+        nickname=nickname,
+        team_payload=team_payload,
+        metadata=metadata,
+    )
+    print(f"Saved as '{nickname}' (team id: {team_id}).")
+
+
+def _print_saved_teams() -> None:
+    session_id = _get_cli_session_id()
+    saved_teams = _get_cli_team_store().list_teams(session_id=session_id)
+
+    _print_header("SAVED TEAMS")
+    if not saved_teams:
+        print("No saved teams in this CLI session yet.")
+        return
+
+    print(f"Session ID: {session_id}")
+    for index, record in enumerate(saved_teams, 1):
+        pokemon_names = ", ".join(pokemon.get("name", "?") for pokemon in record["team_payload"].get("pokemon", []))
+        print(
+            f"{index}. {record['nickname']} | rank {record.get('rank', 0)} | "
+            f"fitness {float(record.get('fitness', 0.0)):.4f} | {pokemon_names}"
+        )
+        metadata = record.get("metadata", {})
+        composition = metadata.get("composition_name")
+        power_mode = metadata.get("power_mode")
+        if composition or power_mode:
+            details = []
+            if composition:
+                details.append(f"composition={composition}")
+            if power_mode:
+                details.append(f"power_mode={power_mode}")
+            print("   " + ", ".join(details))
+
+    if _input_yes_no("Clear all saved teams for this session?", default_yes=False):
+        _get_cli_team_store().clear_session(session_id)
+        print("Session saved teams cleared.")
 
 
 def _team_signature(team_df: pd.DataFrame) -> tuple:
@@ -887,6 +998,7 @@ def interactive_team_generator() -> None:
 
     # Optionally analyze the team
     analyze = _input_yes_no("\nAnalyze this team in detail?", default_yes=True)
+    analysis = None
     if analyze:
         analysis = analyze_team_by_names([p["name"] for p in team_df.to_dict("records")], pokemon_df)
         print("\n" + "-" * 80)
@@ -943,6 +1055,16 @@ def interactive_team_generator() -> None:
             print(f"\nRecommendations:")
             for rec in analysis['recommendations']:
                 print(f"  * {rec}")
+
+    _prompt_save_generated_team(
+        team_df=team_df,
+        fitness=fitness,
+        breakdown=breakdown,
+        config_name=config["name"],
+        composition_name=composition_name,
+        power_mode=power_mode_name,
+        analysis=analysis,
+    )
 
     if output_dir is not None:
         # Print relative path from project root
@@ -1034,6 +1156,7 @@ def interactive_random_generator() -> None:
 
     # Optionally analyze the team
     analyze = _input_yes_no("\nAnalyze this team in detail?", default_yes=False)
+    analysis = None
     if analyze:
         analysis = analyze_team_by_names([p["name"] for p in team_df.to_dict("records")], pokemon_df)
         print("\n" + "-" * 80)
@@ -1053,6 +1176,16 @@ def interactive_random_generator() -> None:
             print(f"\nRecommendations:")
             for rec in analysis['recommendations']:
                 print(f"  * {rec}")
+
+    _prompt_save_generated_team(
+        team_df=team_df,
+        fitness=fitness,
+        breakdown=breakdown,
+        config_name=config["name"],
+        composition_name="random",
+        power_mode="open",
+        analysis=analysis,
+    )
 
     if output_dir is not None:
         # Print relative path from project root
@@ -1178,7 +1311,7 @@ def interactive_team_analyzer() -> None:
 
 
 def interactive_pokemon_info() -> None:
-    _print_header("MENU 4: POKEMON INFO")
+    _print_header("MENU 5: POKEMON INFO")
     print("View typing, stats, archetype, and pivot profile for one Pokemon.")
 
     pokemon_df = load_pokemon_data()
@@ -1275,10 +1408,11 @@ def run_interactive_menu() -> int:
         print("1. Team Generator (anchor-based)")
         print("2. Team Analyzer")
         print("3. Random Team Generator")
-        print("4. Pokemon Info")
-        print("5. Exit")
+        print("4. View Saved Teams")
+        print("5. Pokemon Info")
+        print("6. Exit")
 
-        raw_choice = _safe_input("Enter choice [1-5]: ")
+        raw_choice = _safe_input("Enter choice [1-6]: ")
         if raw_choice is None:
             print("\nInput interrupted. Exiting.")
             return 0
@@ -1299,15 +1433,20 @@ def run_interactive_menu() -> int:
                 print("\nInput interrupted. Exiting.")
                 return 0
         elif choice == "4":
-            _run_with_error_guard("Pokemon Info", interactive_pokemon_info)
+            _run_with_error_guard("View Saved Teams", _print_saved_teams)
             if not _pause_to_menu():
                 print("\nInput interrupted. Exiting.")
                 return 0
         elif choice == "5":
+            _run_with_error_guard("Pokemon Info", interactive_pokemon_info)
+            if not _pause_to_menu():
+                print("\nInput interrupted. Exiting.")
+                return 0
+        elif choice == "6":
             print("Goodbye.")
             return 0
         else:
-            print("Invalid choice. Please enter 1, 2, 3, 4, or 5.")
+            print("Invalid choice. Please enter 1, 2, 3, 4, 5, or 6.")
 
 
 def run_cluster(args: argparse.Namespace) -> int:

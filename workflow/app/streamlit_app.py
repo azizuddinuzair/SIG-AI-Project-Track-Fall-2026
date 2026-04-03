@@ -15,6 +15,7 @@ import traceback
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Callable
+from uuid import uuid4
 
 import pandas as pd
 import streamlit as st
@@ -27,6 +28,9 @@ if str(PROJECT_ROOT) not in sys.path:
 from src.ga import PokemonGA, load_pokemon_data
 from src.ga.config import get_config_a, get_config_b, get_config_c, get_config_random
 from src.ga.fitness import TYPE_NAMES
+from src.ga.job_queue import get_ga_job_queue
+from src.ga.job_runner import build_ga_job_request, run_ga_job
+from src.team_store import TeamStore
 
 from legacy.scripts.cli import analyze_team_by_names
 
@@ -35,6 +39,116 @@ st.set_page_config(page_title="Pokemon Team Optimizer", layout="wide")
 
 PIVOT_CANDIDATE_THRESHOLD = 0.62
 ABILITY_DATA_PATH = PROJECT_ROOT / "data" / "pokemon_abilities.csv"
+SESSION_ID_KEY = "team_session_id"
+TEAM_STORE_KEY = "team_session_store"
+ACTIVE_JOB_ID_KEY = "active_ga_job_id"
+LAST_RESULT_KEY = "last_ga_result"
+
+
+def _get_session_id() -> str:
+    session_id = st.session_state.get(SESSION_ID_KEY)
+    if not session_id:
+        session_id = uuid4().hex
+        st.session_state[SESSION_ID_KEY] = session_id
+    return session_id
+
+
+def _get_team_store() -> TeamStore:
+    store = st.session_state.get(TEAM_STORE_KEY)
+    if store is None:
+        store = TeamStore()
+        st.session_state[TEAM_STORE_KEY] = store
+    return store
+
+
+def _submit_ga_job(
+    *,
+    config_name: str,
+    population: int,
+    generations: int,
+    seed: int,
+    top_n: int,
+    locked_names: list[str],
+    composition_name: str = "balanced",
+    composition_weight: float = 0.20,
+    power_mode: str = "standard",
+) -> tuple[str | None, str | None]:
+    request = build_ga_job_request(
+        config_name=config_name,
+        population=population,
+        generations=generations,
+        seed=seed,
+        top_n=top_n,
+        locked_names=locked_names,
+        composition_name=composition_name,
+        composition_weight=composition_weight,
+        power_mode=power_mode,
+    )
+    return get_ga_job_queue().submit(request)
+
+
+def _get_active_job_record():
+    job_id = st.session_state.get(ACTIVE_JOB_ID_KEY)
+    if not job_id:
+        return None
+    return get_ga_job_queue().get_job(job_id)
+
+
+def _is_generation_in_progress() -> bool:
+    record = _get_active_job_record()
+    if record is None:
+        return False
+    return record.status in {"queued", "running"}
+
+
+def _poll_ga_job_status() -> None:
+    job_id = st.session_state.get(ACTIVE_JOB_ID_KEY)
+    if not job_id:
+        return
+
+    record = get_ga_job_queue().get_job(job_id)
+    if record is None:
+        st.session_state.pop(ACTIVE_JOB_ID_KEY, None)
+        return
+
+    if record.status in {"queued", "running"}:
+        with st.status("Generating team...", state="running", expanded=True):
+            st.write(f"Current job status: **{record.status}**")
+            st.write(f"Job ID: `{record.job_id}`")
+            st.caption("You can keep using other app sections while this runs.")
+            if st.button("Refresh Job Status", key=f"refresh_job_{record.job_id}"):
+                st.rerun()
+        return
+
+    if record.status == "completed" and record.result is not None:
+        st.session_state[LAST_RESULT_KEY] = record.result
+        st.session_state.pop(ACTIVE_JOB_ID_KEY, None)
+        st.success("Your GA job completed.")
+        st.caption(f"Job ID: {record.job_id}")
+        return
+
+    if record.status == "failed":
+        st.session_state.pop(ACTIVE_JOB_ID_KEY, None)
+        st.error("GA job failed.")
+        if record.error:
+            st.caption(record.error)
+        return
+
+
+def _render_latest_ga_result(data_df: pd.DataFrame) -> None:
+    result = st.session_state.get(LAST_RESULT_KEY)
+    if not result:
+        return
+
+    with st.expander("Latest GA Result", expanded=False):
+        _render_ga_results(result, data_df, include_analysis=True)
+
+
+def _render_job_output_section(data_df: pd.DataFrame) -> None:
+    st.markdown("---")
+    st.markdown("### Job Status & Latest Result")
+    _poll_ga_job_status()
+    _render_latest_ga_result(data_df)
 
 
 def _inject_theme() -> None:
@@ -381,64 +495,30 @@ def _run_ga_workflow(
     composition_weight: float = 0.20,
     power_mode: str = "standard",
 ) -> dict[str, Any]:
-    config = _config_from_name(config_name)
-    config["name"] = f"Streamlit_{config_name}"
-    config["population"]["size"] = population
-    config["population"]["generations"] = generations
-    config["random_seed"] = seed
+    from src.ga.job_runner import run_ga_job
 
-    data_df = load_pokemon_data()
-    presets = _build_composition_presets()
-    target_map = _normalize_composition_target(presets[composition_name], data_df)
-    power_cfg = _power_mode_config(power_mode)
-
-    config["fitness"]["composition_weight"] = float(composition_weight)
-    config["fitness"]["target_archetype_counts"] = target_map
-    config["fitness"]["bst_cap"] = int(power_cfg["bst_cap"])
-    config["fitness"]["bst_penalty_weight"] = float(power_cfg["bst_penalty_weight"])
-    config["fitness"]["pivot_weight"] = 0.0
-    config["fitness"]["target_pivot_count"] = 0
-    config["fitness"]["pivot_threshold"] = PIVOT_CANDIDATE_THRESHOLD
-    if composition_name == "pivot_pressure":
-        config["fitness"]["pivot_weight"] = 0.18
-        config["fitness"]["target_pivot_count"] = 3
-
-    stdout_buffer = io.StringIO()
-    stderr_buffer = io.StringIO()
-    with contextlib.redirect_stdout(stdout_buffer), contextlib.redirect_stderr(stderr_buffer):
-        ga = PokemonGA(data_df, config, output_dir=None, locked_pokemon=locked_names)
-        history_df = ga.run()
-        best_teams = ga.get_best_teams(top_n)
-
-    stderr_output = stderr_buffer.getvalue()
-    run_log = stdout_buffer.getvalue()
-    if stderr_output:
-        run_log += "\n--- warnings ---\n" + stderr_output
-
-    top_teams_payload = []
-    for rank, (team_df, fitness, breakdown) in enumerate(best_teams, start=1):
-        top_teams_payload.append(
-            {
-                "rank": rank,
-                "fitness": float(fitness),
-                "breakdown": breakdown,
-                "pokemon": _serialize_team(team_df),
-            }
-        )
-
-    return {
-        "run_log": run_log,
-        "history": history_df,
-        "best_fitness": float(best_teams[0][1]) if best_teams else None,
-        "top_teams": top_teams_payload,
-        "config_used": config,
-    }
+    request = build_ga_job_request(
+        config_name=config_name,
+        population=population,
+        generations=generations,
+        seed=seed,
+        top_n=top_n,
+        locked_names=locked_names,
+        composition_name=composition_name,
+        composition_weight=composition_weight,
+        power_mode=power_mode,
+    )
+    return run_ga_job(request)
 
 
 def _render_ga_results(results: dict[str, Any], data_df: pd.DataFrame, include_analysis: bool = True) -> None:
     st.success("GA run completed successfully.")
     if results["best_fitness"] is not None:
         st.metric("Best Fitness", f"{results['best_fitness']:.4f}")
+
+    run_context = results.get("run_context", {})
+    session_id = _get_session_id()
+    team_store = _get_team_store()
 
     history_df = results["history"]
     if not history_df.empty:
@@ -449,6 +529,7 @@ def _render_ga_results(results: dict[str, Any], data_df: pd.DataFrame, include_a
 
     st.subheader("Generated Team")
     for team in results["top_teams"]:
+        save_key_prefix = f"{run_context.get('run_id', 'run')}_{team['rank']}"
         with st.expander(f"Rank {team['rank']} | Fitness {team['fitness']:.4f}", expanded=team["rank"] == 1):
             team_table_df = _team_table(team["pokemon"])
             st.dataframe(team_table_df, use_container_width=True, hide_index=True)
@@ -465,6 +546,32 @@ def _render_ga_results(results: dict[str, Any], data_df: pd.DataFrame, include_a
                 key=f"dl_team_{team['rank']}",
                 use_container_width=True,
             )
+
+            nickname_key = f"team_nickname_{save_key_prefix}"
+            default_nickname = st.session_state.get(
+                nickname_key,
+                team["pokemon"][0]["name"] if team["pokemon"] else f"Team {team['rank']}",
+            )
+            nickname = st.text_input(
+                "Nickname",
+                value=str(default_nickname),
+                key=nickname_key,
+                help="Give this team a name before saving it to the session database.",
+            )
+            if st.button("Save Team", key=f"save_team_{save_key_prefix}", use_container_width=True):
+                nickname_clean = nickname.strip()
+                if not nickname_clean:
+                    st.warning("Please enter a nickname before saving.")
+                else:
+                    team_id = team_store.save_team(
+                        session_id=session_id,
+                        nickname=nickname_clean,
+                        team_payload=team,
+                        metadata={**run_context, "session_id": session_id},
+                    )
+                    st.success(f"Saved as '{nickname_clean}'.")
+                    st.caption(f"Team ID: {team_id}")
+                    st.caption("Open View Generated Teams from the sidebar to revisit saved teams in this session.")
 
             if include_analysis:
                 st.markdown("### Team Analyzer")
@@ -770,6 +877,10 @@ def _render_team_generator_mode(data_df: pd.DataFrame) -> None:
             "Random Seed",
             "Keep the same seed to reproduce a similar run. Change the seed when you want different team outcomes.",
         )
+        _guide_section(
+            "Refresh Process",
+            "After you press Generate Team, check Job Status & Latest Result at the bottom. Use Refresh Job Status there to poll progress. While one generation is queued/running, starting another is blocked.",
+        )
 
     names = sorted(data_df["name"].astype(str).tolist())
     style_labels = {
@@ -866,26 +977,30 @@ def _render_team_generator_mode(data_df: pd.DataFrame) -> None:
             st.warning("Select at least one anchor Pokemon.")
             return
 
-        with st.spinner(f"Optimizing team (running {generations} generations)..."):
-            ok, payload, msg, log_path = _run_safe(
-                "team_generator",
-                lambda: _run_ga_workflow(
-                    config_name=profile_to_config[profile_label],
-                    population=int(population),
-                    generations=int(generations),
-                    seed=int(seed),
-                    top_n=int(top_n),
-                    locked_names=anchors,
-                    composition_name=composition_name,
-                    composition_weight=float(composition_weight),
-                    power_mode=power_mode,
-                ),
+        if _is_generation_in_progress():
+            active = _get_active_job_record()
+            active_id = active.job_id if active is not None else "unknown"
+            st.warning(
+                f"A generation is already in progress (Job ID: {active_id}). Please use Refresh Job Status in the bottom section before starting another run."
             )
+            return
 
-        if ok:
-            _render_ga_results(payload, data_df, include_analysis=True)
+        job_id, error = _submit_ga_job(
+            config_name=profile_to_config[profile_label],
+            population=int(population),
+            generations=int(generations),
+            seed=int(seed),
+            top_n=int(top_n),
+            locked_names=anchors,
+            composition_name=composition_name,
+            composition_weight=float(composition_weight),
+            power_mode=power_mode,
+        )
+        if error:
+            st.warning(error)
         else:
-            _friendly_failure("Team Generator", msg, log_path)
+            st.session_state[ACTIVE_JOB_ID_KEY] = job_id
+            st.rerun()
 
 
 def _render_random_team_mode(data_df: pd.DataFrame) -> None:
@@ -907,6 +1022,10 @@ def _render_random_team_mode(data_df: pd.DataFrame) -> None:
         _guide_section(
             "Random Seed",
             "Use a fixed seed for repeatable experiments. Change it when you want fresh random variation.",
+        )
+        _guide_section(
+            "Refresh Process",
+            "After you press Generate Random Team, check Job Status & Latest Result at the bottom. Use Refresh Job Status there to poll progress. While one generation is queued/running, starting another is blocked.",
         )
 
     names = sorted(data_df["name"].astype(str).tolist())
@@ -961,27 +1080,105 @@ def _render_random_team_mode(data_df: pd.DataFrame) -> None:
 
 
     if st.button("Generate Random Team", type="primary", use_container_width=True):
-        locked = [] if anchor == "(None)" else [anchor]
-        with st.spinner("Generating random team..."):
-            ok, payload, msg, log_path = _run_safe(
-                "random_team",
-                lambda: _run_ga_workflow(
-                    config_name="Random",
-                    population=int(population),
-                    generations=int(generations),
-                    seed=int(seed),
-                    top_n=int(top_n),
-                    locked_names=locked,
-                    composition_name="balanced",
-                    composition_weight=0.20,
-                    power_mode="standard",
-                ),
+        if _is_generation_in_progress():
+            active = _get_active_job_record()
+            active_id = active.job_id if active is not None else "unknown"
+            st.warning(
+                f"A generation is already in progress (Job ID: {active_id}). Please use Refresh Job Status in the bottom section before starting another run."
             )
+            return
 
-        if ok:
-            _render_ga_results(payload, data_df, include_analysis=True)
+        locked = [] if anchor == "(None)" else [anchor]
+        job_id, error = _submit_ga_job(
+            config_name="Random",
+            population=int(population),
+            generations=int(generations),
+            seed=int(seed),
+            top_n=int(top_n),
+            locked_names=locked,
+            composition_name="balanced",
+            composition_weight=0.20,
+            power_mode="standard",
+        )
+        if error:
+            st.warning(error)
         else:
-            _friendly_failure("Random Team", msg, log_path)
+            st.session_state[ACTIVE_JOB_ID_KEY] = job_id
+            st.rerun()
+
+
+def _render_saved_teams_mode(data_df: pd.DataFrame) -> None:
+    st.markdown("### View Generated Teams")
+    st.caption("Saved teams are session-scoped and cleared when this session ends.")
+
+    session_id = _get_session_id()
+    team_store = _get_team_store()
+    saved_teams = team_store.list_teams(session_id=session_id)
+
+    if st.button("Clear Saved Teams", type="secondary"):
+        team_store.clear_session(session_id)
+        st.success("Cleared all saved teams for this session.")
+        st.rerun()
+
+    if not saved_teams:
+        st.info("No teams have been saved in this session yet.")
+        return
+
+    st.write(f"{len(saved_teams)} saved team(s) in this session.")
+
+    for record in saved_teams:
+        team_payload = record["team_payload"]
+        metadata = record.get("metadata", {})
+        team_names = [p["name"] for p in team_payload.get("pokemon", []) if "name" in p]
+        team_table_df = _team_table(team_payload.get("pokemon", []))
+        breakdown_df = _format_breakdown(team_payload.get("breakdown", {}))
+        record_key = record["id"]
+
+        with st.expander(
+            f"{record['nickname']} | Rank {record.get('rank', 0)} | Fitness {float(record.get('fitness', 0.0)):.4f}",
+            expanded=False,
+        ):
+            col_meta, col_actions = st.columns([2, 1])
+            with col_meta:
+                st.write(f"**Saved:** {record.get('created_at', 'Unknown')}")
+                st.write(f"**Config:** {metadata.get('config_name', 'Unknown')}")
+                st.write(f"**Composition:** {metadata.get('composition_name', 'Unknown')}")
+                st.write(f"**Power Mode:** {metadata.get('power_mode', 'Unknown')}")
+                st.write(f"**Seed:** {metadata.get('seed', 'Unknown')}")
+            with col_actions:
+                renamed_value = st.text_input(
+                    "Rename",
+                    value=record["nickname"],
+                    key=f"rename_{record_key}",
+                )
+                if st.button("Update Nickname", key=f"update_{record_key}", use_container_width=True):
+                    if renamed_value.strip():
+                        team_store.rename_team(record_key, renamed_value)
+                        st.success("Nickname updated.")
+                        st.rerun()
+                    else:
+                        st.warning("Nickname cannot be empty.")
+                if st.button("Delete Team", key=f"delete_{record_key}", use_container_width=True):
+                    team_store.delete_team(record_key)
+                    st.success("Saved team deleted.")
+                    st.rerun()
+
+            st.dataframe(team_table_df, use_container_width=True, hide_index=True)
+            if not breakdown_df.empty:
+                st.dataframe(breakdown_df, use_container_width=True, hide_index=True)
+
+            if team_names:
+                with st.expander("Re-open Analysis", expanded=False):
+                    _render_analysis_panel(team_names, data_df, key_suffix=f"_saved_{record_key}")
+
+            st.download_button(
+                label="Download Saved Team JSON",
+                data=json.dumps(team_payload, indent=2, default=str).encode("utf-8"),
+                file_name=f"saved_team_{record_key}.json",
+                mime="application/json",
+                key=f"download_saved_{record_key}",
+                use_container_width=True,
+            )
 
 
 def main() -> None:
@@ -1000,20 +1197,20 @@ def main() -> None:
         unsafe_allow_html=True,
     )
 
-
     with st.sidebar:
         st.header("Mode")
         mode = st.radio(
             "Select",
-            options=["Team Generator", "Team Analyzer", "Random Team", "Pokemon Info"],
+            options=["Team Generator", "Team Analyzer", "Random Team", "Pokemon Info", "View Generated Teams"],
             index=0,
-            help="Choose what you want to do: build a team, analyze a team, explore random lineups, or inspect one Pokemon.",
+            help="Choose what you want to do: build a team, analyze a team, explore random lineups, inspect one Pokemon, or review saved teams.",
         )
         st.markdown("---")
         st.caption("If something goes wrong, a Download Error Log button will appear.")
+        st.caption("Saved teams are session-only and will not persist after the session ends.")
         st.markdown("---")
         st.markdown(
-            '<a href="https://github.com/acm-uic/SIG-AI-Project-Track-Fall-2026" target="_blank"><button style="width:100%;padding:0.5em 0.8em;font-size:1.1em;background:#3B82F6;color:white;border:none;border-radius:8px;cursor:pointer;">Repo Here</button></a>',
+            '<a href="https://github.com/acm-uic/SIG-AI-Project-Track-Fall-2026" target="_blank"><button style="width:100%;padding:0.5em 0.8em;font-size:1.1em;background:#3B82F6;color:white;border:none;border-radius:8px;cursor:pointer;">View Repo</button></a>',
             unsafe_allow_html=True,
         )
 
@@ -1023,8 +1220,12 @@ def main() -> None:
         _render_team_analyzer_mode(data_df)
     elif mode == "Pokemon Info":
         _render_pokemon_info_mode(data_df)
+    elif mode == "View Generated Teams":
+        _render_saved_teams_mode(data_df)
     else:
         _render_random_team_mode(data_df)
+
+    _render_job_output_section(data_df)
 
     with st.expander("Run Metadata"):
         st.code(

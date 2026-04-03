@@ -1,26 +1,19 @@
 # SIG-AI-Project-Track-Fall-2026
 
-Welcome to the ACM UIC SIG AI Project Track (Fall 2026) repository!
+Pokémon Team Optimization is a research-style project that uses a genetic algorithm to build competitive teams from Pokémon data. The repository is organized to show the full workflow: data preparation, optimization logic, a Streamlit interface, and detailed experiment reporting.
 
-This project is a showcase of advanced AI, data science, and software engineering, using Pokémon data as a fun and challenging case study. The codebase is modular, production-ready, and demonstrates:
+## Project Focus
+- **Optimization**: evolve six-Pokémon teams with a custom GA.
+- **Data Science**: clustering, feature engineering, and role discovery.
+- **Presentation**: a Streamlit app for exploring teams and results.
+- **Documentation**: reports and implementation notes that explain the work, not just the setup.
 
-- **Full-stack Python development**: Streamlit frontend and FastAPI backend
-- **Custom Genetic Algorithm (GA) engine**: For optimizing competitive Pokémon teams
-- **Data science workflows**: Clustering, feature engineering, and ablation studies
-- **Modern software practices**: Clean code, modularity, and reproducibility
+## Repository Map
+- [`workflow/`](workflow/README.md): main project code, data, scripts, and experiment outputs.
+- [`implementations/`](implementations/README.md): deeper explanations of the main technical pieces.
+- [`workflow/reports/`](workflow/reports/README.md): ablation studies, results, and research artifacts.
 
-## What makes this project cool?
-- **Interactive Web App**: Build, analyze, and optimize Pokémon teams in your browser
-- **API-first Architecture**: All business logic is in the backend, making it scalable and testable
-- **Research-Driven**: Every experiment, from clustering to GA ablation, is documented and reproducible
-- **Extensive Testing & Reporting**: See the step-by-step results and analysis in [`workflow/reports`](workflow/reports)
-- **Real-World Engineering**: Designed for both research and practical deployment
+## Run
+- App: `py -m streamlit run workflow/app/streamlit_app.py`
 
-## How to Explore
-- See [`workflow/README.md`](workflow/README.md) for project structure and setup
-- Run the app: `py -m streamlit run workflow/app/streamlit_app.py`
-- Dive into [`workflow/reports`](workflow/reports) for detailed experiment results and analysis
-
----
-
-For more details, check the README files in each subdirectory.
+For a more detailed walkthrough of the project structure and experiments, start with [`workflow/README.md`](workflow/README.md).

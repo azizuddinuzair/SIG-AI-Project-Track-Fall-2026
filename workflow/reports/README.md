@@ -1,16 +1,12 @@
-# Reports Directory
+# Reports
 
-This directory contains all research deliverables, experiment results, and analysis for the Pokémon Team Optimization project.
+This folder is the project’s evidence trail. It documents what was tried, what changed, and what the GA produced.
 
-## Contents
-- **Ablation Studies**: Detailed breakdowns of how different algorithmic choices (e.g., fitness functions, mutation rates, team constraints) affect performance and diversity.
-- **Optimization Results**: Generation-by-generation metrics, best teams, and statistical summaries of GA runs.
-- **Data Analysis**: Insights from clustering, feature engineering, and exploratory data analysis.
-- **Experiment Logs**: Step-by-step records of each experiment, including configuration, random seeds, and outcomes.
+## Main Themes
+- ablation studies comparing GA configurations
+- final optimization results and best teams
+- clustering analysis and archetype discovery
+- experiment notes, metrics, and charts
 
-## How to Use
-- Review ablation studies to understand the impact of each design choice.
-- Consult optimization results for evidence of progress and model improvements.
-- Use data analysis reports to inform future experiments or feature engineering.
-
-All reports are written for transparency, reproducibility, and to support future research or productization.
+## How to Read It
+Start with the ablation and summary reports to understand which design choices improved the optimizer, then move to the clustering and deliverable folders for the supporting analysis.

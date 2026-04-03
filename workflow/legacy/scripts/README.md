@@ -1,21 +1,15 @@
-# Scripts Layout
+# Legacy Scripts
 
-This directory is organized by workflow area:
+This folder keeps older orchestration and analysis scripts from earlier phases of the project.
 
-- `cli.py`: User-facing menu CLI (team generator, team analyzer, TBD menu slots)
-- `ga/`: GA run/orchestration scripts
-- `validation/`: validation and quality-check scripts
-- `analysis/`: analysis utilities for clustering/ablation outputs
+## Organization
+- `cli.py`: older menu-driven entry point
+- `ga/`: GA experiment runners and orchestration helpers
+- `validation/`: quality checks and verification scripts
+- `analysis/`: clustering and ablation analysis utilities
 - `utils/`: maintenance helpers
-- `creating_csv/`: dataset generation and feature prep scripts
-- `test/`: clustering-focused script tests
-- `build_role_move_priors.py`: role-prior builder (kept at top-level for compatibility)
+- `creating_csv/`: dataset and feature generation scripts
+- `test/`: legacy script tests
 
-## Common Commands
-
-```bash
-py scripts/cli.py
-py scripts/ga/run_ga_601.py
-py scripts/validation/validate_601_clustering.py
-py scripts/analysis/cluster_analyzer.py
-```
+## Why It Exists
+These files are preserved for traceability and comparison, not as the primary path for running the current project.

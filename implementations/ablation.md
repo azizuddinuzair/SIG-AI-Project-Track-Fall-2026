@@ -1,20 +1,22 @@
 # Ablation Studies & Experimental Design
 
-This document explains the ablation studies, experimental setups, and key findings from the Pokémon Team Optimization project.
+This document explains the experimental setup and key findings used to compare GA configurations in the Pokémon Team Optimization project.
 
 ## Motivation
-Ablation studies help isolate the impact of each algorithmic component (e.g., fitness function, mutation rate) on overall performance.
+Ablation studies help isolate the impact of initialization strategy, fitness shaping, and penalties on team quality.
 
 ## Key Components
-- **Experimental Design**: Systematic removal or modification of GA components to measure their effect.
-- **Metrics**: Team win rate, diversity, type coverage, and convergence speed.
-- **Findings**: Certain features (e.g., advanced fitness, clustering) significantly improve results; others have marginal impact.
+- **Experimental design**: Compares multiple GA configurations instead of relying on one tuned run.
+- **Configs**: Baseline, weighted initialization, full optimization, and inclusive/randomized generation.
+- **Metrics**: Fitness, entropy, convergence behavior, diversity, and realism constraints.
+- **Interpretation**: The goal is not only higher scores, but better team composition and usable results.
 
 ## Technical Details
-- Experiments are reproducible with fixed seeds and documented configs.
-- Results are logged and visualized in the `reports/` directory.
+- Runs are reproducible with fixed seeds and documented config templates.
+- Results are summarized in the reports directory and the implementation writeups.
+- The project now also uses queueing and session persistence, so UX behavior is part of the system design story, not just the algorithm story.
 
 ## Results
-Ablation studies guide future improvements and validate the effectiveness of each design choice.
+The experiments show how fitness weights and penalties influence team diversity and realism, and why the project moved toward a more balanced configuration rather than a purely score-maximizing one.
 
-For details, see `workflow/reports/`.
+For details, see [workflow/reports/](../workflow/reports/).

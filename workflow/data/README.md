@@ -1,15 +1,11 @@
-# Data Directory
+# Data
 
-This directory contains all datasets, engineered features, and clustering results used in the project.
+This folder holds the datasets that power the project: the source Pokémon data, engineered features, and clustering outputs used by the optimization workflow.
 
-## Contents
-- **Raw Data**: Original Pokémon datasets, including stats, moves, and types.
-- **Engineered Features**: Additional features created for GA and ML workflows (e.g., type coverage, synergy scores).
-- **Clustering Results**: Outputs from clustering algorithms used for role discovery and team diversity.
+## What’s Included
+- raw Pokémon stats, moves, and type information
+- engineered features for optimization and analysis
+- clustering outputs used for archetype and role discovery
 
-## How to Use
-- Use raw data as the foundation for all experiments.
-- Reference engineered features for advanced analysis or model input.
-- Review clustering results to understand team composition and diversity.
-
-All data is versioned and documented for reproducibility and transparency.
+## Why It Matters
+The quality of the GA results depends on how well the data is prepared. This folder is the foundation for the team optimizer and the experiment reports.

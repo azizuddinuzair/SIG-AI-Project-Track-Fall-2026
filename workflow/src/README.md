@@ -1,15 +1,12 @@
-# Source Directory
+# Source
 
-This directory contains the core genetic algorithm (GA) engine, fitness functions, and supporting modules for the Pokémon Team Optimization project.
+This folder contains the core optimization code behind the project.
 
-## Contents
-- **ga/**: Main GA implementation, including selection, crossover, mutation, and fitness evaluation.
-- **utils/**: Helper functions and shared logic for GA operations.
-- **config/**: Configuration files and presets for experiments.
+## Core Ideas
+- build legal six-Pokémon teams
+- score teams with a custom fitness function
+- evolve populations through selection, crossover, and mutation
+- support multiple experiment configurations for comparison
 
-## How to Use
-- Modify GA parameters or fitness functions in `ga/` to experiment with optimization strategies.
-- Use utilities for common operations across GA modules.
-- Adjust configuration files to run different experiments or ablation studies.
-
-The source code is modular and designed for extensibility and research.
+## Why It Matters
+This is the engine of the project. The Streamlit app presents the results, but the GA logic here is what actually generates and evaluates teams.

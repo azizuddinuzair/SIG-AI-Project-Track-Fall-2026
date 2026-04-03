@@ -112,28 +112,23 @@ See `scripts/README.md` for categorized script paths:
 - `scripts/analysis/`
 - `scripts/utils/`
 
-# Workflow Directory
+# Workflow
 
-This directory contains the core code, data, and research assets for the Pokémon Team Optimization project.
+This folder is the heart of the project. It contains the optimization code, datasets, scripts, and experiment outputs used to turn Pokémon data into competitive team recommendations.
 
-## Structure & Purpose
-- **app/**: User-facing Streamlit frontend and FastAPI backend for interactive team generation, analysis, and data serving.
-- **data/**: All datasets, engineered features, and clustering results used for GA and ML workflows.
-- **legacy/**: Scripts and code from earlier project phases, preserved for reproducibility and reference.
-- **reports/**: Step-by-step results, analysis, and research deliverables for every experiment and workflow.
-- **scripts/**: Automation, validation, and analysis scripts for running experiments and checking results.
-- **src/**: Core genetic algorithm engine, fitness functions, and supporting modules.
+## What Lives Here
+- **app/**: the Streamlit interface used to explore teams and results.
+- **data/**: cleaned datasets, engineered features, and clustering inputs.
+- **src/**: the core GA and supporting optimization logic.
+- **reports/**: ablation studies, metrics, visuals, and experiment writeups.
+- **scripts/**: utilities for running experiments and producing deliverables.
+- **legacy/**: older scripts kept for traceability and comparison.
 
-## Project Workflow
-1. **Data Preparation**: Raw Pokémon data is cleaned and enhanced with engineered features and clustering (see `data/`).
-2. **GA Execution**: The genetic algorithm (in `src/ga/`) generates diverse, high-fitness teams, exporting generation snapshots for downstream analysis.
-3. **Role Discovery**: Scripts in `legacy/scripts/` and `src/` analyze GA teams to discover competitive roles using move-based heuristics.
-4. **Reporting**: All results, metrics, and artifacts are saved in `reports/` for transparency and reproducibility.
+## Project Story
+The workflow moves from raw data to team optimization: data is prepared, archetypes are learned, the GA searches for strong lineups, and the results are documented in reports. The emphasis is on reproducible experimentation and explainable team construction.
 
-## Technical Highlights
-- Modular, research-grade codebase with clear separation of concerns.
-- All experiments and results are reproducible and documented.
-- Designed for both research and practical deployment.
-
-For a step-by-step breakdown of experiments and findings, see [`reports/`](reports/).
+## Start Points
+- Read [`reports/`](reports/README.md) for the experimental results and ablation study.
+- Read [`src/`](src/README.md) for the optimization logic.
+- Read [`app/`](app/README.md) for the user-facing interface.
 
