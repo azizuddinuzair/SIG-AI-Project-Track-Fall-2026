@@ -1,4 +1,4 @@
-# SIG-AI-Project-Track-Fall-2026
+# PokeTeam Optimizer
 
 Pokémon Team Optimization is a research-style project that uses a genetic algorithm to build competitive teams from Pokémon data. The repository is organized to show the full workflow: data preparation, optimization logic, a Streamlit interface, and detailed experiment reporting.
 

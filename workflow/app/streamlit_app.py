@@ -970,7 +970,7 @@ def _render_team_generator_mode(data_df: pd.DataFrame) -> None:
             help="Reuse the same seed to reproduce results.",
         )
     # Informative note for user expectation
-    st.caption(f"This process may take up to 1-2 minutes for large populations/generations. Please wait for results to appear. (Running {generations} generations.)")
+    st.caption(f"This process may a couple of minutes for default populations/generations. Please wait for results to appear. (Running {generations} generations.)")
 
     if st.button("Generate Team", type="primary", use_container_width=True):
         if not anchors:
@@ -981,7 +981,7 @@ def _render_team_generator_mode(data_df: pd.DataFrame) -> None:
             active = _get_active_job_record()
             active_id = active.job_id if active is not None else "unknown"
             st.warning(
-                f"A generation is already in progress (Job ID: {active_id}). Please use Refresh Job Status in the bottom section before starting another run."
+                f"A generation is already in progress (Job ID: {active_id}). Please wait for current generation to end before starting another run."
             )
             return
 
