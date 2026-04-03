@@ -112,13 +112,25 @@ def _poll_ga_job_status() -> None:
         return
 
     if record.status in {"queued", "running"}:
+        refresh_clicked = False
         with st.status("Generating team...", state="running", expanded=True):
             st.write(f"Current job status: **{record.status}**")
             st.write(f"Job ID: `{record.job_id}`")
             st.caption("You can keep using other app sections while this runs.")
             if st.button("Refresh Job Status", key=f"refresh_job_{record.job_id}"):
-                st.rerun()
-        return
+                refresh_clicked = True
+
+        # Re-poll immediately when user clicks refresh so completed/failed states
+        # can be surfaced in this same interaction instead of waiting for another rerun.
+        if refresh_clicked:
+            refreshed = get_ga_job_queue().get_job(job_id)
+            if refreshed is None:
+                st.session_state.pop(ACTIVE_JOB_ID_KEY, None)
+                return
+            record = refreshed
+
+        if record.status in {"queued", "running"}:
+            return
 
     if record.status == "completed" and record.result is not None:
         st.session_state[LAST_RESULT_KEY] = record.result
@@ -879,8 +891,8 @@ Same seed = reproducible results<br>
 Different seed = new teams</p>
 <p><strong><span style='font-size: 1.06rem;'>🔄 Refresh Process</span></strong><br>
 After clicking <em>Generate Team</em>:<br>
-1. Check <strong>Job Status &amp; Latest Result</strong><br>
-2. Click <strong>Refresh Job Status</strong><br>
+Check <strong>Job Status &amp; Latest Result</strong> and wait for your result to appear.<br>
+<em>Click <strong>Refresh Job Status</strong> if the status panel has not updated yet, or if you want to manually poll for the latest progress.</em><br>
 Only one generation runs at a time</p>
 <p><strong><span style='font-size: 1.06rem;'>🌈 Team Diversity Tip</span></strong><br>
 If teams look similar:<br>
@@ -1032,8 +1044,8 @@ Same seed = reproducible random results<br>
 Different seed = fresh team outcomes</p>
 <p><strong><span style='font-size: 1.06rem;'>🔄 Refresh Process</span></strong><br>
 After clicking <em>Generate Random Team</em>:<br>
-1. Check <strong>Job Status &amp; Latest Result</strong> at the bottom<br>
-2. Click <strong>Refresh Job Status</strong><br>
+Check <strong>Job Status &amp; Latest Result</strong> at the bottom and wait for your result to appear.<br>
+<em>Click <strong>Refresh Job Status</strong> if the status panel has not updated yet, or if you want to manually poll for the latest progress.</em><br>
 Only one generation runs at a time</p>
 <p><strong><span style='font-size: 1.06rem;'>🌈 Team Diversity Tip</span></strong><br>
 If teams look too similar:<br>
