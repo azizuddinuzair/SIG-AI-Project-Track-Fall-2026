@@ -849,43 +849,53 @@ def _render_team_generator_mode(data_df: pd.DataFrame) -> None:
     st.markdown("### Team Generator")
     st.caption("Build around anchors, choose a composition style, then optimize.")
     with st.expander("Quick Guide", expanded=False):
-        _guide_section(
-            "Anchor Pokemon",
-            "These are guaranteed team members. If you always want Pikachu or Garchomp included, select them as anchors and the system builds around them.",
-        )
-        _guide_section(
-            "Team Composition",
-            "Composition means your team structure. Each Pokemon has an archetype (a team job), like tank (takes hits), sweeper (finishes weakened enemies), or generalist (flexible role).",
-        )
-        _guide_section(
-            "Composition Strictness",
-            "Higher strictness makes the model follow your chosen structure more exactly. Lower strictness allows creative picks if they improve score.",
-        )
-        _guide_section(
-            "Power Mode",
-            "Controls how hard the optimizer limits teams with very high combined base stats. Use Standard unless you specifically want looser or stricter power limits.",
-        )
-        _guide_section(
-            "Optimization Profile",
-            "Profiles change how the genetic algorithm explores teams. Full Balance is usually best for beginners because it balances strength, coverage, and diversity.",
-        )
-        _guide_section(
-            "Population / Generations",
-            "Population is how many team ideas are tested each round. Generations are how many rounds of improvement happen. Larger values usually improve quality but increase runtime.",
-        )
-        _guide_section(
-            "Random Seed",
-            "Keep the same seed to reproduce a similar run. Change the seed when you want different team outcomes.",
-        )
-        _guide_section(
-            "Refresh Process",
-            "After you press Generate Team, check Job Status & Latest Result at the bottom. Use Refresh Job Status there to poll progress. While one generation is queued/running, starting another is blocked.",
-        )
-        _guide_section(
-            "Team Diversity Note",
-            "Lower population/generation settings are faster but can return repeated top teams. If your top teams look too similar, increase either Population or Generations.",
+        st.markdown(
+            """
+### 🧭 Team Builder Guide
+
+**🟡 Anchor Pokemon**
+Guaranteed team members. If you always want Pikachu or Garchomp, select them as anchors and the system builds around them.
+
+**⚔️ Team Composition**
+Defines your team structure. Each Pokemon has a role. Some examples:
+- **Tank** -> absorbs damage
+- **Sweeper** -> finishes enemies
+- **Generalist** -> flexible role
+
+**🎚️ Composition Strictness**
+- High -> follows structure strictly
+- Low -> allows creative, high-scoring picks
+
+**💪 Power Mode**
+Controls limits on high-stat teams.
+👉 Use *Standard* unless you want stricter or looser limits.
+
+**🧬 Optimization Profile**
+Changes how the algorithm explores teams.
+👉 *Full Balance* is best for beginners.
+
+**🔁 Population / Generations**
+- **Population** = teams per round
+- **Generations** = number of rounds
+👉 Higher = better results, slower runtime
+
+**🎲 Random Seed**
+Same seed = reproducible results
+Different seed = new teams
+
+**🔄 Refresh Process**
+After clicking *Generate Team*:
+1. Check **Job Status & Latest Result**
+2. Click **Refresh Job Status**
+⚠️ Only one generation runs at a time
+
+**🌈 Team Diversity Tip**
+If teams look similar:
+👉 Increase *Population* or *Generations*
+"""
         )
 
+    st.markdown("#### Build Inputs")
     names = sorted(data_df["name"].astype(str).tolist())
     style_labels = {
         "balanced": "Balanced",
@@ -946,7 +956,7 @@ def _render_team_generator_mode(data_df: pd.DataFrame) -> None:
         st.caption("If top teams repeat at fast settings, increase Population or Generations for more diversity.")
         
 
-    st.markdown("#### GA Runtime")
+    st.markdown("#### Runtime Controls")
     c1, c2, c3, c4 = st.columns(4)
     with c1:
         population = st.slider(
@@ -975,7 +985,7 @@ def _render_team_generator_mode(data_df: pd.DataFrame) -> None:
             help="Reuse the same seed to reproduce results.",
         )
     # Informative note for user expectation
-    st.caption(f"This process may a couple of minutes for default populations/generations. Please wait for results to appear. (Running {generations} generations.)")
+    st.caption(f"This process may take a couple of minutes for default populations/generations. Please wait for results to appear. (Running {generations} generations.)")
 
     if st.button("Generate Team", type="primary", use_container_width=True):
         if not anchors:
@@ -1012,31 +1022,38 @@ def _render_random_team_mode(data_df: pd.DataFrame) -> None:
     st.markdown("### Random Team")
     st.caption("Generate a creative team with optional single anchor.")
     with st.expander("Quick Guide", expanded=False):
-        _guide_section(
-            "Optional Anchor",
-            "Pick one favorite Pokemon to force into the team, or leave it empty for a fully free random-style search.",
-        )
-        _guide_section(
-            "Top Teams To Show",
-            "Choose how many final candidates you want to compare. Showing more options helps if you want to pick based on playstyle preference.",
-        )
-        _guide_section(
-            "Population / Generations",
-            "Even in Random Team mode, the optimizer still evaluates many possible teams. Higher values mean deeper search and usually better random candidates.",
-        )
-        _guide_section(
-            "Random Seed",
-            "Use a fixed seed for repeatable experiments. Change it when you want fresh random variation.",
-        )
-        _guide_section(
-            "Refresh Process",
-            "After you press Generate Random Team, check Job Status & Latest Result at the bottom. Use Refresh Job Status there to poll progress. While one generation is queued/running, starting another is blocked.",
-        )
-        _guide_section(
-            "Team Diversity Note",
-            "Lower population/generation settings are faster but can return repeated top teams. If your top teams look too similar, increase either Population or Generations.",
+        st.markdown(
+            """
+### 🎲 Random Team Guide
+
+**🟡 Optional Anchor**
+Pick one favorite Pokemon to force into the team, or leave it empty for a fully free random-style search.
+
+**🏆 Top Teams to Show**
+Choose how many final candidates to compare. More options help if you want to choose by playstyle.
+
+**🔁 Population / Generations**
+- **Population** = teams tested per round
+- **Generations** = number of improvement rounds
+👉 Higher = better search quality, slower runtime
+
+**🎲 Random Seed**
+Same seed = reproducible random results
+Different seed = fresh team outcomes
+
+**🔄 Refresh Process**
+After clicking *Generate Random Team*:
+1. Check **Job Status & Latest Result** at the bottom
+2. Click **Refresh Job Status**
+⚠️ Only one generation runs at a time
+
+**🌈 Team Diversity Tip**
+If teams look too similar:
+👉 Increase *Population* or *Generations*
+"""
         )
 
+    st.markdown("#### Build Inputs")
     names = sorted(data_df["name"].astype(str).tolist())
     anchor_options = ["(None)"] + names
 
@@ -1076,6 +1093,8 @@ def _render_random_team_mode(data_df: pd.DataFrame) -> None:
             key="rand_gen",
             help="More rounds means more refinement of team candidates.",
         )
+
+    st.markdown("#### Runtime Controls")
 
     c1, c2 = st.columns(2)
     with c1:
