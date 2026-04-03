@@ -850,49 +850,43 @@ def _render_team_generator_mode(data_df: pd.DataFrame) -> None:
     st.caption("Build around anchors, choose a composition style, then optimize.")
     with st.expander("Quick Guide", expanded=False):
         st.markdown(
-            """
-### 🧭 Team Builder Guide
-
-**🟡 Anchor Pokemon**
-Guaranteed team members. If you always want Pikachu or Garchomp, select them as anchors and the system builds around them.
-
-**⚔️ Team Composition**
-Defines your team structure. Each Pokemon has a role. Some examples:
-- **Tank** -> absorbs damage
-- **Sweeper** -> finishes enemies
-- **Generalist** -> flexible role
-
-**🎚️ Composition Strictness**
-- High -> follows structure strictly
-- Low -> allows creative, high-scoring picks
-
-**💪 Power Mode**
-Controls limits on high-stat teams.
-👉 Use *Standard* unless you want stricter or looser limits.
-
-**🧬 Optimization Profile**
-Changes how the algorithm explores teams.
-👉 *Full Balance* is best for beginners.
-
-**🔁 Population / Generations**
-- **Population** = teams per round
-- **Generations** = number of rounds
-👉 Higher = better results, slower runtime
-
-**🎲 Random Seed**
-Same seed = reproducible results
-Different seed = new teams
-
-**🔄 Refresh Process**
-After clicking *Generate Team*:
-1. Check **Job Status & Latest Result**
-2. Click **Refresh Job Status**
-⚠️ Only one generation runs at a time
-
-**🌈 Team Diversity Tip**
-If teams look similar:
-👉 Increase *Population* or *Generations*
-"""
+                        """
+<h3>🧭 Team Builder Guide</h3>
+<p><strong>🟡 Anchor Pokemon</strong><br>
+Guaranteed team members. If you always want Pikachu or Garchomp, select them as anchors and the system builds around them.</p>
+<p><strong>⚔️ Team Composition</strong><br>
+Defines your team structure. Each Pokemon has a role. Some examples:</p>
+<ul>
+    <li><strong>Tank</strong> - absorbs damage</li>
+    <li><strong>Sweeper</strong> - finishes enemies</li>
+    <li><strong>Generalist</strong> - flexible role</li>
+</ul>
+<p><strong>🎚️ Composition Strictness</strong><br>
+High - follows structure strictly<br>
+Low - allows creative, high-scoring picks</p>
+<p><strong>💪 Power Mode</strong><br>
+Controls limits on high-stat teams.<br>
+Use <em>Standard</em> unless you want stricter or looser limits.</p>
+<p><strong>🧬 Optimization Profile</strong><br>
+Changes how the algorithm explores teams.<br>
+<em>Full Balance</em> is best for beginners.</p>
+<p><strong>🔁 Population / Generations</strong><br>
+Population = teams per round<br>
+Generations = number of rounds<br>
+Higher = better results, slower runtime</p>
+<p><strong>🎲 Random Seed</strong><br>
+Same seed = reproducible results<br>
+Different seed = new teams</p>
+<p><strong>🔄 Refresh Process</strong><br>
+After clicking <em>Generate Team</em>:<br>
+1. Check <strong>Job Status &amp; Latest Result</strong><br>
+2. Click <strong>Refresh Job Status</strong><br>
+Only one generation runs at a time</p>
+<p><strong>🌈 Team Diversity Tip</strong><br>
+If teams look similar:<br>
+Increase <em>Population</em> or <em>Generations</em></p>
+""",
+                        unsafe_allow_html=True,
         )
 
     st.markdown("#### Build Inputs")
@@ -1024,33 +1018,28 @@ def _render_random_team_mode(data_df: pd.DataFrame) -> None:
     with st.expander("Quick Guide", expanded=False):
         st.markdown(
             """
-### 🎲 Random Team Guide
-
-**🟡 Optional Anchor**
-Pick one favorite Pokemon to force into the team, or leave it empty for a fully free random-style search.
-
-**🏆 Top Teams to Show**
-Choose how many final candidates to compare. More options help if you want to choose by playstyle.
-
-**🔁 Population / Generations**
-- **Population** = teams tested per round
-- **Generations** = number of improvement rounds
-👉 Higher = better search quality, slower runtime
-
-**🎲 Random Seed**
-Same seed = reproducible random results
-Different seed = fresh team outcomes
-
-**🔄 Refresh Process**
-After clicking *Generate Random Team*:
-1. Check **Job Status & Latest Result** at the bottom
-2. Click **Refresh Job Status**
-⚠️ Only one generation runs at a time
-
-**🌈 Team Diversity Tip**
-If teams look too similar:
-👉 Increase *Population* or *Generations*
-"""
+<h3>🎲 Random Team Guide</h3>
+<p><strong>🟡 Optional Anchor</strong><br>
+Pick one favorite Pokemon to force into the team, or leave it empty for a fully free random-style search.</p>
+<p><strong>🏆 Top Teams to Show</strong><br>
+Choose how many final candidates to compare. More options help if you want to choose by playstyle.</p>
+<p><strong>🔁 Population / Generations</strong><br>
+Population = teams tested per round<br>
+Generations = number of improvement rounds<br>
+Higher = better search quality, slower runtime</p>
+<p><strong>🎲 Random Seed</strong><br>
+Same seed = reproducible random results<br>
+Different seed = fresh team outcomes</p>
+<p><strong>🔄 Refresh Process</strong><br>
+After clicking <em>Generate Random Team</em>:<br>
+1. Check <strong>Job Status &amp; Latest Result</strong> at the bottom<br>
+2. Click <strong>Refresh Job Status</strong><br>
+Only one generation runs at a time</p>
+<p><strong>🌈 Team Diversity Tip</strong><br>
+If teams look too similar:<br>
+Increase <em>Population</em> or <em>Generations</em></p>
+""",
+            unsafe_allow_html=True,
         )
 
     st.markdown("#### Build Inputs")
