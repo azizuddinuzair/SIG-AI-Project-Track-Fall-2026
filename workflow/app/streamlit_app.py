@@ -43,6 +43,7 @@ SESSION_ID_KEY = "team_session_id"
 TEAM_STORE_KEY = "team_session_store"
 ACTIVE_JOB_ID_KEY = "active_ga_job_id"
 LAST_RESULT_KEY = "last_ga_result"
+LAST_STATUS_CHECK_KEY = "last_ga_status_check"
 
 
 def _get_session_id() -> str:
@@ -106,6 +107,8 @@ def _poll_ga_job_status() -> None:
     if not job_id:
         return
 
+    st.session_state[LAST_STATUS_CHECK_KEY] = datetime.now().strftime("%H:%M:%S")
+
     record = get_ga_job_queue().get_job(job_id)
     if record is None:
         st.session_state.pop(ACTIVE_JOB_ID_KEY, None)
@@ -116,9 +119,13 @@ def _poll_ga_job_status() -> None:
         with st.status("Generating team...", state="running", expanded=True):
             st.write(f"Current job status: **{record.status}**")
             st.write(f"Job ID: `{record.job_id}`")
+            last_checked = st.session_state.get(LAST_STATUS_CHECK_KEY)
+            if last_checked:
+                st.caption(f"Last checked: {last_checked}")
             st.caption("You can keep using other app sections while this runs.")
             if st.button("Refresh Job Status", key=f"refresh_job_{record.job_id}"):
                 refresh_clicked = True
+                st.session_state[LAST_STATUS_CHECK_KEY] = datetime.now().strftime("%H:%M:%S")
 
         # Re-poll immediately when user clicks refresh so completed/failed states
         # can be surfaced in this same interaction instead of waiting for another rerun.
@@ -130,17 +137,21 @@ def _poll_ga_job_status() -> None:
             record = refreshed
 
         if record.status in {"queued", "running"}:
+            if refresh_clicked:
+                st.info("Status checked. Job is still running.")
             return
 
     if record.status == "completed" and record.result is not None:
         st.session_state[LAST_RESULT_KEY] = record.result
         st.session_state.pop(ACTIVE_JOB_ID_KEY, None)
+        st.session_state.pop(LAST_STATUS_CHECK_KEY, None)
         st.success("Your GA job completed.")
         st.caption(f"Job ID: {record.job_id}")
         return
 
     if record.status == "failed":
         st.session_state.pop(ACTIVE_JOB_ID_KEY, None)
+        st.session_state.pop(LAST_STATUS_CHECK_KEY, None)
         st.error("GA job failed.")
         if record.error:
             st.caption(record.error)
